@@ -32,6 +32,7 @@
     <includedmodule>differentialgeometry</includedmodule>
     <includedmodule>topologyandgroups</includedmodule>
     <includedmodule>riemanniangeometry</includedmodule>
+    <includedmodule>variationalmethods</includedmodule>
   </pathway>
 
   <pathway id="applied" name="Applied Mathematics" startfromyear="2" startfromterm="2">

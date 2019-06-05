@@ -46,7 +46,7 @@
   <module id="algebra2" ects="7.5">
     <name>Algebra 2</name>
     <year>1</year>
-    <syllabus>math0005.pdf</syllabus>
+    <syllabus>math0006.pdf</syllabus>
     <term>2</term>
     <code>
       <current>MATH0006</current>
@@ -672,6 +672,20 @@
     </prerequisites>
   </module>
 
+  <module id="variationalmethods" ects = "7.5">
+      <name>Variational Methods for Partial Differential Equations</name>
+      <year>3</year>
+      <term>1</term>
+      <syllabus>math0092_0.pdf</syllabus>
+      <code>
+          <old>MATHXXXX</old>
+          <current>MATH0092</current>
+      </code>
+      <prerequisites>
+          <prerequisite type="needed">analysis4</prerequisite>
+      </prerequisites>
+  </module>
+
   <module id="probability" ects="7.5">
     <name>Probability</name>
     <year>3.5</year>
@@ -814,7 +828,7 @@
     <name>Lie Groups and Lie Algebras</name>
     <year>4</year>
     <term>1</term>
-    <syllabus>math0074.pdf</syllabus>
+    <syllabus>math0075.pdf</syllabus>
     <code>
       <old>MATHM206</old>
       <current>MATH0075</current>
