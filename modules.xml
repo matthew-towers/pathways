@@ -8,7 +8,7 @@
   <module id="analysis1" ects="7.5">
     <name>Analysis 1</name>
     <year>1</year>
-    <syllabus>math0003.pdf</syllabus>
+    <syllabus>math0003_0.pdf</syllabus>
     <term>1</term>
     <code>
       <current>MATH0003</current>
@@ -20,7 +20,7 @@
   <module id="analysis2" ects="7.5">
     <name>Analysis 2</name>
     <year>1</year>
-    <syllabus>math0004.pdf</syllabus>
+    <syllabus>math0004_0.pdf</syllabus>
     <term>2</term>
     <code>
       <current>MATH0004</current>
@@ -34,7 +34,7 @@
   <module id="algebra1" ects="7.5">
     <name>Algebra 1</name>
     <year>1</year>
-    <syllabus>math0005.pdf</syllabus>
+    <syllabus>math0005_0.pdf</syllabus>
     <term>1</term>
     <code>
       <current>MATH0005</current>
@@ -46,7 +46,7 @@
   <module id="algebra2" ects="7.5">
     <name>Algebra 2</name>
     <year>1</year>
-    <syllabus>math0006.pdf</syllabus>
+    <syllabus>math0006_0.pdf</syllabus>
     <term>2</term>
     <code>
       <current>MATH0006</current>
@@ -60,7 +60,7 @@
   <module id="algebraforjointhonours" ects="7.5">
     <name>Algebra for Joint Honours Students</name>
     <year>1</year>
-    <syllabus>math0007.pdf</syllabus>
+    <syllabus>math0007_0.pdf</syllabus>
     <term>2</term>
     <code>
       <current>MATH0007</current>
@@ -75,7 +75,7 @@
   <module id="applied1" ects="7.5">
     <name>Applied Mathematics</name>
     <year>1</year>
-    <syllabus>math0008.pdf</syllabus>
+    <syllabus>math0008_0.pdf</syllabus>
     <term>1</term>
     <code>
       <current>MATH0008</current>
@@ -87,7 +87,7 @@
   <module id="applied2" ects="7.5">
     <name>Newtonian Mechanics</name>
     <year>1</year>
-    <syllabus>math0009.pdf</syllabus>
+    <syllabus>math0009_1.pdf</syllabus>
     <term>2</term>
     <code>
       <current>MATH0009</current>
@@ -102,7 +102,7 @@
   <module id="methods1" ects="7.5">
     <name>Mathematical Methods 1</name>
     <year>1</year>
-    <syllabus>math0010.pdf</syllabus>
+    <syllabus>math0010_0.pdf</syllabus>
     <term>1</term>
     <code>
       <current>MATH0010</current>
@@ -115,7 +115,7 @@
     <name>Mathematical Methods 2</name>
     <year>1</year>
     <term>2</term>
-    <syllabus>math0011.pdf</syllabus>
+    <syllabus>math0011_1.pdf</syllabus>
     <code>
       <current>MATH0011</current>
       <old>MATH1402</old>
@@ -148,7 +148,7 @@
     <name>Complex Analysis</name>
     <year>2</year>
     <term>1</term>
-    <syllabus>math0013.pdf</syllabus>
+    <syllabus>math0013_2.pdf</syllabus>
     <code>
       <current>MATH0013</current>
       <old>MATH2101</old>
@@ -163,7 +163,7 @@
     <name>Further Linear Algebra</name>
     <year>2</year>
     <term>1</term>
-    <syllabus>math0014.pdf</syllabus>
+    <syllabus>math0014_2.pdf</syllabus>
     <code>
       <current>MATH0014</current>
       <old>MATH2201</old>
@@ -177,7 +177,7 @@
     <name>Fluid Mechanics</name>
     <year>2</year>
     <term>1</term>
-    <syllabus>math0015.pdf</syllabus>
+    <syllabus>math0015_1.pdf</syllabus>
     <code>
       <current>MATH0015</current>
       <old>MATH2301</old>
@@ -192,7 +192,7 @@
     <name>Mathematical Methods 3</name>
     <year>2</year>
     <term>1</term>
-    <syllabus>math0016.pdf</syllabus>
+    <syllabus>math0016_2.pdf</syllabus>
     <code>
       <current>MATH0016</current>
       <old>MATH2401</old>
@@ -208,7 +208,7 @@
     <name>Analysis 4</name>
     <year>2</year>
     <term>2</term>
-    <syllabus>math0051.pdf</syllabus>
+    <syllabus>math0051_1.pdf</syllabus>
     <code>
       <current>MATH0051</current>
       <old>MATH7102</old>
@@ -222,7 +222,7 @@
     <name>Geometry and Groups</name>
     <year>2</year>
     <term>2</term>
-    <syllabus>math0052.pdf</syllabus>
+    <syllabus>math0052_1.pdf</syllabus>
     <code>
       <current>MATH0052</current>
       <old>MATH7112</old>
@@ -238,7 +238,7 @@
     <name>Algebra 4</name>
     <year>2</year>
     <term>2</term>
-    <syllabus>math0053.pdf</syllabus>
+    <syllabus>math0053_1.pdf</syllabus>
     <code>
       <current>MATH0053</current>
       <old>MATH7202</old>
@@ -252,7 +252,7 @@
     <name>Analytical Dynamics</name>
     <year>2</year>
     <term>2</term>
-    <syllabus>math0054.pdf</syllabus>
+    <syllabus>math0054_0.pdf</syllabus>
     <code>
       <current>MATH0054</current>
       <old>MATH7302</old>
@@ -264,10 +264,10 @@
   </module>
 
   <module id="electromagnetism" ects="7.5">
-    <name>Electromagnetism</name>
+    <name>The Mathematics of Maxwell's Equations</name>
     <year>2</year>
     <term>2</term>
-    <syllabus>math0055.pdf</syllabus>
+    <syllabus>math0055_0.pdf</syllabus>
     <code>
       <current>MATH0055</current>
       <old>MATH7304</old>
@@ -281,7 +281,7 @@
     <name>Mathematical Methods 4</name>
     <year>2</year>
     <term>2</term>
-    <syllabus>math0056.pdf</syllabus>
+    <syllabus>math0056_0.pdf</syllabus>
     <code>
       <current>MATH0056</current>
       <old>MATH7402</old>
@@ -296,7 +296,7 @@
     <name>Probability and Statistics</name>
     <year>2</year>
     <term>2</term>
-    <syllabus>math0057.pdf</syllabus>
+    <syllabus>math0057_1.pdf</syllabus>
     <code>
       <current>MATH0057</current>
       <old>MATH7501</old>
@@ -310,7 +310,7 @@
     <name>Computational Methods</name>
     <year>2</year>
     <term>2</term>
-    <syllabus>math0058.pdf</syllabus>
+    <syllabus>math0058_0.pdf</syllabus>
     <code>
       <current>MATH0058</current>
       <old>MATH7601</old>
@@ -326,7 +326,7 @@
     <name>Number Theory</name>
     <year>2</year>
     <term>2</term>
-    <syllabus>math0034.pdf</syllabus>
+    <syllabus>math0034_0.pdf</syllabus>
     <code>
       <current>MATH0034</current>
       <old>MATH7701</old>
@@ -360,7 +360,7 @@
     <name>Measure Theory</name>
     <year>3</year>
     <term>1</term>
-    <syllabus>math0017.pdf</syllabus>
+    <syllabus>math0017_0.pdf</syllabus>
     <code>
       <current>MATH0017</current>
       <old>MATH3101</old>
@@ -375,7 +375,7 @@
     <name>Functional Analysis</name>
     <year>3</year>
     <term>2</term>
-    <syllabus>math0018.pdf</syllabus>
+    <syllabus>math0018_1.pdf</syllabus>
     <code>
       <current>MATH0018</current>
       <old>MATH3103</old>
@@ -389,7 +389,7 @@
     <name>Multivariable Analysis</name>
     <year>3</year>
     <term>1</term>
-    <syllabus>math0019.pdf</syllabus>
+    <syllabus>math0019_1.pdf</syllabus>
     <code>
       <current>MATH0019</current>
       <old>MATH3109</old>
@@ -403,7 +403,7 @@
     <name>Differential Geometry</name>
     <year>3</year>
     <term>1</term>
-    <syllabus>math0020.pdf</syllabus>
+    <syllabus>math0020_1.pdf</syllabus>
     <code>
       <current>MATH0020</current>
       <old>MATH3113</old>
@@ -417,7 +417,7 @@
     <name>Commutative Algebra</name>
     <year>3</year>
     <term>1</term>
-    <syllabus>math0021.pdf</syllabus>
+    <syllabus>math0021_1.pdf</syllabus>
     <code>
       <current>MATH0021</current>
       <old>MATH3201</old>
@@ -431,7 +431,7 @@
     <name>Galois Theory</name>
     <year>3</year>
     <term>1</term>
-    <syllabus>math0022.pdf</syllabus>
+    <syllabus>math0022_0.pdf</syllabus>
     <code>
       <current>MATH0022</current>
       <old>MATH3202</old>
@@ -445,7 +445,7 @@
     <name>Algebraic Topology</name>
     <year>3</year>
     <term>1</term>
-    <syllabus>math0023.pdf</syllabus>
+    <syllabus>math0023_0.pdf</syllabus>
     <code>
       <current>MATH0023</current>
       <old>MATH3203</old>
@@ -459,7 +459,7 @@
     <name>Geophysical Fluids</name>
     <year>3</year>
     <term>2</term>
-    <syllabus>math0024.pdf</syllabus>
+    <syllabus>math0024_0.pdf</syllabus>
     <code>
       <old>MATH3304</old>
       <current>MATH0024</current>
@@ -474,7 +474,7 @@
     <name>Mathematics for General Relativity</name>
     <year>3</year>
     <term>1</term>
-    <syllabus>math0025.pdf</syllabus>
+    <syllabus>math0025_0.pdf</syllabus>
     <code>
       <old>MATH3305</old>
       <current>MATH0025</current>
@@ -488,22 +488,7 @@
     <name>Biomathematics</name>
     <year>3</year>
     <term>1</term>
-    <syllabus>math0026.pdf</syllabus>
-    <code>
-      <old>MATH3307</old>
-      <current>MATH0026</current>
-    </code>
-    <prerequisites>
-      <prerequisite type="needed">applied2</prerequisite>
-      <prerequisite type="needed">methods2</prerequisite>
-    </prerequisites>
-  </module>
-
-  <module id="biomathematics" ects="7.5">
-    <name>Biomathematics</name>
-    <year>3</year>
-    <term>1</term>
-    <syllabus>math0026.pdf</syllabus>
+    <syllabus>math0026_0.pdf</syllabus>
     <code>
       <old>MATH3307</old>
       <current>MATH0026</current>
@@ -518,7 +503,7 @@
     <name>Methods 5</name>
     <year>3</year>
     <term>2</term>
-    <syllabus>math0027.pdf</syllabus>
+    <syllabus>math0027_1.pdf</syllabus>
     <code>
       <old>MATH3401</old>
       <current>MATH0027</current>
@@ -532,7 +517,7 @@
     <name>Combinatorial Optimisation</name>
     <year>3</year>
     <term>1</term>
-    <syllabus>math0028.pdf</syllabus>
+    <syllabus>math0028_0.pdf</syllabus>
     <code>
       <old>MATH3502</old>
       <current>MATH0028</current>
@@ -546,7 +531,7 @@
     <name>Graph Theory</name>
     <year>3</year>
     <term>2</term>
-    <syllabus>math0029.pdf</syllabus>
+    <syllabus>math0029_0.pdf</syllabus>
     <code>
       <old>MATH3503</old>
       <current>MATH0029</current>
@@ -560,7 +545,7 @@
     <name>Mathematical Ecology</name>
     <year>3</year>
     <term>1</term>
-    <syllabus>math0030.pdf</syllabus>
+    <syllabus>math0030_0.pdf</syllabus>
     <code>
       <old>MATH3506</old>
       <current>MATH0030</current>
@@ -574,7 +559,7 @@
     <name>Financial Mathematics</name>
     <year>3</year>
     <term>2</term>
-    <syllabus>math0031.pdf</syllabus>
+    <syllabus>math0031_0.pdf</syllabus>
     <code>
       <old>MATH3508</old>
       <current>MATH0031</current>
@@ -589,7 +574,7 @@
     <name>Introduction to Mathematica</name>
     <year>3</year>
     <term>1</term>
-    <syllabus>math0032.pdf</syllabus>
+    <syllabus>math0032_0.pdf</syllabus>
     <code>
       <old>MATH3601</old>
       <current>MATH0032</current>
@@ -602,7 +587,7 @@
     <name>Numerical Methods</name>
     <year>3</year>
     <term>1</term>
-    <syllabus>math0033.pdf</syllabus>
+    <syllabus>math0033_0.pdf</syllabus>
     <code>
       <old>MATH3603</old>
       <current>MATH0033</current>
@@ -618,7 +603,7 @@
     <name>Algebraic Number Theory</name>
     <year>3</year>
     <term>2</term>
-    <syllabus>math0035.pdf</syllabus>
+    <syllabus>math0035_3.pdf</syllabus>
     <code>
       <old>MATH3704</old>
       <current>MATH0035</current>
@@ -634,7 +619,7 @@
     <name>Elliptic Curves</name>
     <year>3</year>
     <term>1</term>
-    <syllabus>math0036.pdf</syllabus>
+    <syllabus>math0036_1.pdf</syllabus>
     <code>
       <old>MATH3705</old>
       <current>MATH0036</current>
@@ -649,7 +634,7 @@
     <name>Logic</name>
     <year>3</year>
     <term>2</term>
-    <syllabus>math0037.pdf</syllabus>
+    <syllabus>math0037_3.pdf</syllabus>
     <code>
       <old>MATH3801</old>
       <current>MATH0037</current>
@@ -663,7 +648,7 @@
     <name>History of Mathematics</name>
     <year>3</year>
     <term>2</term>
-    <syllabus>math0038.pdf</syllabus>
+    <syllabus>math0038_1.pdf</syllabus>
     <code>
       <old>MATH3802</old>
       <current>MATH0038</current>
@@ -676,7 +661,7 @@
       <name>Variational Methods for Partial Differential Equations</name>
       <year>3</year>
       <term>1</term>
-      <syllabus>math0092_0.pdf</syllabus>
+      <syllabus>math0092_1.pdf</syllabus>
       <code>
           <old>MATHXXXX</old>
           <current>MATH0092</current>
@@ -690,7 +675,7 @@
     <name>Probability</name>
     <year>3.5</year>
     <term>2</term>
-    <syllabus>math0069.pdf</syllabus>
+    <syllabus>math0069_3.pdf</syllabus>
     <code>
       <old>MATHM105</old>
       <current>MATH0069</current>
@@ -704,7 +689,7 @@
     <name>Linear Partial Differential Equations</name>
     <year>3.5</year>
     <term>1</term>
-    <syllabus>math0070.pdf</syllabus>
+    <syllabus>math0070_1.pdf</syllabus>
     <code>
       <old>MATHM110</old>
       <current>MATH0070</current>
@@ -720,7 +705,7 @@
     <name>Representation Theory</name>
     <year>3.5</year>
     <term>2</term>
-    <syllabus>math0073.pdf</syllabus>
+    <syllabus>math0073_1.pdf</syllabus>
     <code>
       <old>MATHM204</old>
       <current>MATH0073</current>
@@ -735,7 +720,7 @@
     <name>Real Fluids</name>
     <year>3.5</year>
     <term>1</term>
-    <syllabus>math0077.pdf</syllabus>
+    <syllabus>math0077_2.pdf</syllabus>
     <code>
       <old>MATHM301</old>
       <current>MATH0077</current>
@@ -751,7 +736,7 @@
     <name>Waves and Wave Scattering</name>
     <year>3.5</year>
     <term>2</term>
-    <syllabus>math0080.pdf</syllabus>
+    <syllabus>math0080_4.pdf</syllabus>
     <code>
       <old>MATHM402</old>
       <current>MATH0080</current>
@@ -765,7 +750,7 @@
     <name>Prime Numbers and their Distribution</name>
     <year>3.5</year>
     <term>2</term>
-    <syllabus>math0083.pdf</syllabus>
+    <syllabus>math0083_3.pdf</syllabus>
     <code>
       <old>MATHM703</old>
       <current>MATH0083</current>
@@ -781,7 +766,7 @@
     <name>Spectral Theory</name>
     <year>4</year>
     <term>1</term>
-    <syllabus>math0071.pdf</syllabus>
+    <syllabus>math0071_1.pdf</syllabus>
     <code>
       <old>MATHM111</old>
       <current>MATH0071</current>
@@ -797,7 +782,7 @@
     <name>Riemannian Geometry</name>
     <year>4</year>
     <term>1</term>
-    <syllabus>math0072.pdf</syllabus>
+    <syllabus>math0072_0.pdf</syllabus>
     <code>
       <old>MATHM114</old>
       <current>MATH0072</current>
@@ -812,7 +797,7 @@
     <name>Topology and Groups</name>
     <year>4</year>
     <term>1</term>
-    <syllabus>math0074.pdf</syllabus>
+    <syllabus>math0074_0.pdf</syllabus>
     <code>
       <old>MATHM205</old>
       <current>MATH0074</current>
@@ -828,7 +813,7 @@
     <name>Lie Groups and Lie Algebras</name>
     <year>4</year>
     <term>1</term>
-    <syllabus>math0075.pdf</syllabus>
+    <syllabus>math0075_1.pdf</syllabus>
     <code>
       <old>MATHM206</old>
       <current>MATH0075</current>
@@ -842,7 +827,7 @@
     <name>Algebraic Geometry</name>
     <year>4</year>
     <term>1</term>
-    <syllabus>math0076.pdf</syllabus>
+    <syllabus>math0076_1.pdf</syllabus>
     <code>
       <old>MATHM211</old>
       <current>MATH0076</current>
@@ -857,7 +842,7 @@
     <name>Asymptotic Methods and Boundary Layer Theory</name>
     <year>4</year>
     <term>2</term>
-    <syllabus>math0078.pdf</syllabus>
+    <syllabus>math0078_0.pdf</syllabus>
     <code>
       <old>MATHM302</old>
       <current>MATH0078</current>
@@ -871,7 +856,7 @@
     <name>Cosmology</name>
     <year>4</year>
     <term>2</term>
-    <syllabus>math0079.pdf</syllabus>
+    <syllabus>math0079_1.pdf</syllabus>
     <code>
       <old>MATHM306</old>
       <current>MATH0079</current>
@@ -885,7 +870,7 @@
     <name>Evolutionary Games and Population Genetics</name>
     <year>4</year>
     <term>2</term>
-    <syllabus>math0082.pdf</syllabus>
+    <syllabus>math0082_1.pdf</syllabus>
     <code>
       <old>MATHM505</old>
       <current>MATH0082</current>
@@ -899,7 +884,7 @@
     <name>Advanced Modelling Techniques</name>
     <year>4</year>
     <term>1</term>
-    <syllabus>math0065.pdf</syllabus>
+    <syllabus>math0065_1.pdf</syllabus>
     <code>
       <old>MATHMM01</old>
       <current>MATH0065</current>
@@ -915,7 +900,7 @@
     <name>Computational and Simulation Methods</name>
     <year>4</year>
     <term>1</term>
-    <syllabus>math0086.pdf</syllabus>
+    <syllabus>math0086_2.pdf</syllabus>
     <code>
       <old>MATHMM04</old>
       <current>MATH0086</current>
@@ -930,7 +915,7 @@
     <name>Quantitative and Computational Finance</name>
     <year>4</year>
     <term>1</term>
-    <syllabus>math0088.pdf</syllabus>
+    <syllabus>math0088_2.pdf</syllabus>
     <code>
       <old>MATHMM21</old>
       <current>MATH0088</current>

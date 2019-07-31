@@ -12,7 +12,7 @@
     <includedmodule>representationtheory</includedmodule>
     <includedmodule>ellipticcurves</includedmodule>
     <includedmodule>algebraicnumbertheory</includedmodule>
-    <includedmodule>primenumbersandtheirdistributions</includedmodule>
+    <includedmodule>primenumbersandtheirdistribution</includedmodule>
     <includedmodule>historyofmathematics</includedmodule>
     <includedmodule>liegroupsandliealgebras</includedmodule>
     <includedmodule>algebraictopology</includedmodule>

@@ -1,0 +1,211 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Jul 24 21:52:52 2019
+
+@author: mjt
+
+Parse the modules.xml file with xml.etree.ElementTree
+
+https://docs.python.org/3/library/xml.etree.elementtree.html
+
+then output a markdown file containing tables of prerequisites suitable for
+processing with Jekyll.
+
+Markdown syntax:
+
+| Module | Prerequisites
+|-----|
+|<a id="math0000id"></a>MATH0000 Math for Mathematicians | <a href="#math0001id">MATH0001</a>, ...
+|<a id="math0001id"></a>MATH0001 Math for Neurologists | <a href="#math0002id">MATH0002</a>, ...
+
+|Module | Prerequisites
+|-----
+|MATH9999 Math for Deities | <a href="#row1">MATH0000</a>
+|MATH9óò9 Math for Corvids | <a href="#row2">MATH0001</a>
+|<a id="module id tag"></a> <a href="url for syllabus"> <code/current> <name> </a> | <a href="#module id tag"> <name of prerequisite> </a> (recommended|"")
+
+... and maybe add a term column too.
+
+In modules.xml:
+
+<modules id="all">
+  <module id="spectraltheory" ects="7.5">
+    <name>Spectral Theory</name>
+    <year>4</year>
+    <term>1</term>
+    <syllabus>math0071.pdf</syllabus>
+    <code>
+      <old>MATHM111</old>
+      <current>MATH0071</current>
+    </code>
+    <prerequisites>
+      <prerequisite type="needed">functionalanalysis</prerequisite>
+      <prerequisite type="needed">multivariableanalysis</prerequisite>
+      <prerequisite type="recommended">measuretheory</prerequisite>
+    </prerequisites>
+  </module>
+</modules>
+
+Year has 3.5 to mean "3 or 4".  Year 2 term 2 courses are "2 or 3"
+
+In pathways.xml:
+
+<pathways>
+  <pathway id="y1y2" name="First and Second Year" startfromyear="1" startfromterm="1"/>
+
+  <pathway id="algebra" name="Algebra" startfromyear="2" startfromterm="2">
+    <includedmodule>algebra4</includedmodule>
+    <includedmodule>commutativealgebra</includedmodule>
+    <includedmodule>galoistheory</includedmodule>
+    <includedmodule>algebraicgeometry</includedmodule>
+    <includedmodule>representationtheory</includedmodule>
+    <includedmodule>ellipticcurves</includedmodule>
+    <includedmodule>algebraicnumbertheory</includedmodule>
+    <includedmodule>primenumbersandtheirdistributions</includedmodule>
+    <includedmodule>historyofmathematics</includedmodule>
+    <includedmodule>liegroupsandliealgebras</includedmodule>
+    <includedmodule>algebraictopology</includedmodule>
+    <includedmodule>algebraicgeometry</includedmodule>
+    <includedmodule>logic</includedmodule>
+  </pathway>
+</pathways>
+"""
+
+import xml.etree.ElementTree as ET
+root = ET.parse('modules.xml').getroot()
+
+urlprefix = root.find('linkprefix').text
+
+# ElementTree has two classes: Element, a node in the doc tree, and ElementTree
+# which is the whole tree.
+#
+# Element has methods for iterating recursively on the subtree below it
+# for module in root.iter('module')
+# 
+# the name of an element is its tag: the tag of a
+# <module id="xxx"> ... </module>
+# is "module"
+# an Element has a .get('attrib') method
+
+#print(type(root))  # xml.etree.ElementTree.Element
+
+#for child in root:
+#    print(child.tag, child.attrib)
+## child.tag is "module" every time, attrib is a dict with keys id and ects
+## except there's one "linkprefix" tag with no attributes
+
+modules = {}
+# modules will be a dict whose keys are module ids.
+# modules[id] will be a dict containing all the info about the module
+
+for module in root.iter('module'):
+    modDict = {}
+    modDict["name"] = module.find('name').text
+    modDict["code"] = module.find('code').find('current').text
+    modDict["year"] = float(module.find('year').text)
+    modDict["term"] = int(module.find('term').text)
+    modDict["syllFile"] = module.find('syllabus').text
+
+    prereqs = module.find('prerequisites')
+    modDict["prereqs"] = [(prereq.text, prereq.get('type')) for prereq in prereqs]
+    # note that there's one prereq which is "some prog kdge" and doesn't
+    # have a 'type', so the .get returns None
+    # print(modDict, "\n")
+
+    modules[module.get('id')] = modDict
+
+# may as well get the y1y2 modules now
+y1y2modules = [id for id in modules.keys() if modules[id]["year"] <= 2]
+# there's no list in pathways.xml, and the xsl file just filters all the
+# modules with year 1 or 2
+
+# now need to parse pathways.xml
+
+# print('\n*******************\n')
+
+# for module_tag in root.findall('module'):
+#    value = module_tag.get('id')
+#    print(value)
+
+pathways = []
+# pathways is a list of the pathways
+# a pathway will be a tuple (name, contents)
+# where name is the pathway name
+# and contents is a list of module ids. We'll sort them later.
+
+pathwayroot = ET.parse('pathways.xml').getroot()
+for pathway in pathwayroot.iter('pathway'):
+    pathwayId = pathway.get('id')
+    pathwayName = pathway.get('name')
+    pathwayStartYear = int(pathway.get('startfromyear'))
+    pathwayStartTerm = int(pathway.get('startfromterm'))
+
+    if pathwayId == 'y1y2':
+        pathways.append((pathwayName, y1y2modules))
+    else:
+        contents = [modId.text for modId in pathway.findall('includedmodule')]
+        pathways.append((pathwayName, contents))
+
+# print(pathways)
+#    print(pathwayName, pathwayId)
+#    # there's also startfromyear and startfromterm
+#    # note that the y1y2 pathway doesn't list its contents
+#    for modId in pathway.findall('includedmodule'):
+#        print("\t", modId.text)
+#    print("\n")
+
+markdownOutput = """---
+layout: page
+title: UCL Pathways
+permalink: /pathways/
+---
+
+"""
+
+
+def tablify(moduleList):
+    # return a string containing a markdown table of the prereqs of the modules
+    # in moduleList
+    header = "| Module | Year | Term | Prerequisites\n|----|----|----|----\n"
+    # sort the module list by year then term. Remember to deal with 3.5
+    moduleList = sorted(moduleList, key=lambda modid: modules[modid]["term"])
+    # print(moduleList)
+    moduleList = sorted(moduleList, key=lambda modid: modules[modid]["year"])
+    # print(moduleList)
+    # this works because Python sorts are guaranteed to be "stable": they don't
+    # change the order of things with the same key, see
+    # https://docs.python.org/3/howto/sorting.html#sort-stability-and-complex-sorts
+    rows = ""
+    for modId in moduleList:
+        rows += tableRow(modId)
+    return header + rows
+
+def tableRow(modId):
+    moddict = modules[modId]
+    # create the row of the table corresponding to modId
+    moduleCol = '<a id="' + modId + '"></a>' + '[' + moddict["code"] + ' ' + moddict["name"] + '](' + urlprefix + moddict["syllFile"] + ')'
+    yearCol = "3 or 4" if moddict["year"] == 3.5 else str(int(moddict["year"]))
+    termCol = str(moddict["term"])
+    prereqsCol = ""
+    for prereqId, prereqType in moddict["prereqs"]:
+        # append prereq code, name, link to prereqsCol, whether it's optional
+        if prereqType is None:
+            prereqsCol += prereqId + ', '
+        elif prereqType == "needed":
+            pd = modules[prereqId]
+            prereqsCol += '<a href="#' + prereqId + '">' + pd["code"] + ' ' + pd["name"] + '</a>, '
+        else:
+            pd = modules[prereqId]
+            prereqsCol += '<a href="#' + prereqId + '">' + pd["code"] + ' ' + pd["name"] + '</a> (recommended), '
+    return '|' + moduleCol + ' | ' + yearCol + ' | ' + termCol + ' | ' + prereqsCol[:-2] + '\n'
+
+# TODO year 3.5
+
+for pathwayName, pathwayContents in pathways:
+    # generate the table, append it to markdownOutput
+    markdownOutput += "## " + pathwayName + "\n\n" + tablify(pathwayContents) + '\n'
+
+f = open("pathways.md", "w")
+f.write(markdownOutput)
+f.close()   
