@@ -82,18 +82,6 @@ urlprefix = root.find('linkprefix').text
 #
 # Element has methods for iterating recursively on the subtree below it
 # for module in root.iter('module')
-# 
-# the name of an element is its tag: the tag of a
-# <module id="xxx"> ... </module>
-# is "module"
-# an Element has a .get('attrib') method
-
-#print(type(root))  # xml.etree.ElementTree.Element
-
-#for child in root:
-#    print(child.tag, child.attrib)
-## child.tag is "module" every time, attrib is a dict with keys id and ects
-## except there's one "linkprefix" tag with no attributes
 
 modules = {}
 # modules will be a dict whose keys are module ids.
@@ -109,51 +97,29 @@ for module in root.iter('module'):
 
     prereqs = module.find('prerequisites')
     modDict["prereqs"] = [(prereq.text, prereq.get('type')) for prereq in prereqs]
-    # note that there's one prereq which is "some prog kdge" and doesn't
-    # have a 'type', so the .get returns None
-    # print(modDict, "\n")
-
     modules[module.get('id')] = modDict
 
-# may as well get the y1y2 modules now
+
 y1y2modules = [id for id in modules.keys() if modules[id]["year"] <= 2]
 # there's no list in pathways.xml, and the xsl file just filters all the
 # modules with year 1 or 2
-
-# now need to parse pathways.xml
-
-# print('\n*******************\n')
-
-# for module_tag in root.findall('module'):
-#    value = module_tag.get('id')
-#    print(value)
 
 pathways = []
 # pathways is a list of the pathways
 # a pathway will be a tuple (name, contents)
 # where name is the pathway name
-# and contents is a list of module ids. We'll sort them later.
+# and contents is a list of module ids.
 
 pathwayroot = ET.parse('pathways.xml').getroot()
 for pathway in pathwayroot.iter('pathway'):
     pathwayId = pathway.get('id')
     pathwayName = pathway.get('name')
-    pathwayStartYear = int(pathway.get('startfromyear'))
-    pathwayStartTerm = int(pathway.get('startfromterm'))
 
     if pathwayId == 'y1y2':
         pathways.append((pathwayName, y1y2modules))
     else:
         contents = [modId.text for modId in pathway.findall('includedmodule')]
         pathways.append((pathwayName, contents))
-
-# print(pathways)
-#    print(pathwayName, pathwayId)
-#    # there's also startfromyear and startfromterm
-#    # note that the y1y2 pathway doesn't list its contents
-#    for modId in pathway.findall('includedmodule'):
-#        print("\t", modId.text)
-#    print("\n")
 
 markdownOutput = """---
 layout: page
@@ -170,9 +136,7 @@ def tablify(moduleList):
     header = "| Module | Year | Term | Prerequisites\n|----|----|----|----\n"
     # sort the module list by year then term. Remember to deal with 3.5
     moduleList = sorted(moduleList, key=lambda modid: modules[modid]["term"])
-    # print(moduleList)
     moduleList = sorted(moduleList, key=lambda modid: modules[modid]["year"])
-    # print(moduleList)
     # this works because Python sorts are guaranteed to be "stable": they don't
     # change the order of things with the same key, see
     # https://docs.python.org/3/howto/sorting.html#sort-stability-and-complex-sorts
@@ -180,6 +144,7 @@ def tablify(moduleList):
     for modId in moduleList:
         rows += tableRow(modId)
     return header + rows
+
 
 def tableRow(modId):
     moddict = modules[modId]
@@ -200,7 +165,6 @@ def tableRow(modId):
             prereqsCol += '<a href="#' + prereqId + '">' + pd["code"] + ' ' + pd["name"] + '</a> (recommended), '
     return '|' + moduleCol + ' | ' + yearCol + ' | ' + termCol + ' | ' + prereqsCol[:-2] + '\n'
 
-# TODO year 3.5
 
 for pathwayName, pathwayContents in pathways:
     # generate the table, append it to markdownOutput
@@ -208,4 +172,4 @@ for pathwayName, pathwayContents in pathways:
 
 f = open("pathways.md", "w")
 f.write(markdownOutput)
-f.close()   
+f.close()
