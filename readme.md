@@ -4,6 +4,12 @@ a webpage with module dependency graphs. There is also a python3 script
 suitable for use with [Jekyll](https://jekyllrb.com/) representing the
 pathways in table format.
 
+The python script scrapes the filenames from the UCL module webpage
+using
+[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/),
+because they keep changing them and making the ones in `modules.xml` 
+out of date `:/`
+
 ---
 
 The following are the XML source files:

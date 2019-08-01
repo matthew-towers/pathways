@@ -5,7 +5,9 @@ Created on Wed Jul 24 21:52:52 2019
 
 @author: mjt
 
-Parse the modules.xml file with xml.etree.ElementTree
+Scrape links from UCL maths module site.
+
+Parse modules.xml with xml.etree.ElementTree
 
 https://docs.python.org/3/library/xml.etree.elementtree.html
 
@@ -15,17 +17,16 @@ processing with Jekyll.
 Markdown syntax:
 
 | Module | Prerequisites
-|-----|
-|<a id="math0000id"></a>MATH0000 Math for Mathematicians | <a href="#math0001id">MATH0001</a>, ...
-|<a id="math0001id"></a>MATH0001 Math for Neurologists | <a href="#math0002id">MATH0002</a>, ...
+|-----|----
+|<a id="math0000id"></a>MATH0000 Math for A | <a href="#math0001id">MATH0001</a>, ...
+|<a id="math0001id"></a>MATH0001 Math for B | <a href="#math0002id">MATH0002</a>, ...
 
 |Module | Prerequisites
-|-----
-|MATH9999 Math for Deities | <a href="#row1">MATH0000</a>
-|MATH9óò9 Math for Corvids | <a href="#row2">MATH0001</a>
+|-----|----
+|MATH9999 Math for X | <a href="#row1">MATH0000</a>
+|MATH9óò9 Math for Y | <a href="#row2">MATH0001</a>
 |<a id="module id tag"></a> <a href="url for syllabus"> <code/current> <name> </a> | <a href="#module id tag"> <name of prerequisite> </a> (recommended|"")
 
-... and maybe add a term column too.
 
 In modules.xml:
 
@@ -71,8 +72,35 @@ In pathways.xml:
   </pathway>
 </pathways>
 """
-
+from bs4 import BeautifulSoup
+import requests
 import xml.etree.ElementTree as ET
+
+###################################################################
+# Get filenames from the UCL maths module webpage                 #
+# They keep changing them, so we can't rely on what's in the xml  #
+###################################################################
+
+url = 'https://www.ucl.ac.uk/maths/current-students/current-undergraduates/module-information-undergraduates'
+page = requests.get(url)
+soup = BeautifulSoup(page.text, 'lxml')  # open("mod_info.html").read()
+spans = soup.find_all('span')
+
+codeToFile = {}
+
+for s in spans:
+    if s.find('a') is not None:
+        filename = s.find('a')['href'].split('/')[-1]
+        moduleCode = filename.split('_')[0] if '_' in filename else filename.split('.')[0]
+        codeToFile[moduleCode.upper()] = filename
+
+# Now codeToFile is a dict with moduleId as keys and filenames as values
+# all the keys are upper cased since that's how they're named in the xml
+
+##########################
+# Now build the markdown #
+##########################
+
 root = ET.parse('modules.xml').getroot()
 
 urlprefix = root.find('linkprefix').text
@@ -149,7 +177,14 @@ def tablify(moduleList):
 def tableRow(modId):
     moddict = modules[modId]
     # create the row of the table corresponding to modId
-    moduleCol = '<a id="' + modId + '"></a>' + '[' + moddict["code"] + ' ' + moddict["name"] + '](' + urlprefix + moddict["syllFile"] + ')'
+
+    if moddict['code'] in codeToFile.keys():
+        filename = codeToFile[moddict['code']]
+    else:
+        print(modId, "not found on the scraped module webpage")
+        filename = moddict["syllFile"]
+
+    moduleCol = '<a id="' + modId + '"></a>' + '[' + moddict["code"] + ' ' + moddict["name"] + '](' + urlprefix + filename + ')'
     yearCol = "3 or 4" if moddict["year"] == 3.5 else str(int(moddict["year"]))
     termCol = str(moddict["term"])
     prereqsCol = ""
