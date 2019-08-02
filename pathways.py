@@ -71,10 +71,33 @@ In pathways.xml:
     <includedmodule>logic</includedmodule>
   </pathway>
 </pathways>
+
+TODO: update modules.xml with the results of parsing the webpage.
+Otherwise the graphviz script is no good.
 """
+from shutil import copyfile
+import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 import requests
-import xml.etree.ElementTree as ET
+
+# Trying to scrape the https webpage gives an SSL error:
+#
+# SSLError: HTTPSConnectionPool(host='www.ucl.ac.uk', port=443): Max retries
+# exceeded with url: /maths/current-students/current-undergraduates/module-information-undergraduates
+# (Caused by SSLError(SSLError(1, '[SSL: DH_KEY_TOO_SMALL] dh key too small
+# (_ssl.c:1056)')))
+#
+# According to
+# https://stackoverflow.com/questions/38015537/python-requests-exceptions-sslerror-dh-key-too-small
+# this is because the server dh key is weak :/
+# The following fix is suggested there, and seems to work:
+
+requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS += 'HIGH:!DH:!aNULL'
+try:
+    requests.packages.urllib3.contrib.pyopenssl.DEFAULT_SSL_CIPHER_LIST += 'HIGH:!DH:!aNULL'
+except AttributeError:
+    # no pyopenssl support used / needed / available
+    pass
 
 ###################################################################
 # Get filenames from the UCL maths module webpage                 #
@@ -82,8 +105,9 @@ import xml.etree.ElementTree as ET
 ###################################################################
 
 url = 'https://www.ucl.ac.uk/maths/current-students/current-undergraduates/module-information-undergraduates'
-page = requests.get(url)
-soup = BeautifulSoup(page.text, 'lxml')  # open("mod_info.html").read()
+#page = requests.get(url)
+# soup = BeautifulSoup(page.text, 'lxml')  # open("mod_info.html").read()
+soup = BeautifulSoup(open("mod_info.html").read(), 'lxml')
 spans = soup.find_all('span')
 
 codeToFile = {}
@@ -101,7 +125,11 @@ for s in spans:
 # Now build the markdown #
 ##########################
 
-root = ET.parse('modules.xml').getroot()
+# we're going to modify the xml, so back it up
+copyfile('modules.xml', 'modules.xml.backup')
+
+tree = ET.parse('modules.xml')
+root = tree.getroot()  # now output with tree.write(file name)
 
 urlprefix = root.find('linkprefix').text
 
@@ -121,12 +149,22 @@ for module in root.iter('module'):
     modDict["code"] = module.find('code').find('current').text
     modDict["year"] = float(module.find('year').text)
     modDict["term"] = int(module.find('term').text)
-    modDict["syllFile"] = module.find('syllabus').text
+
+    if modDict["code"] in codeToFile.keys():
+        scrapedFilename = codeToFile[modDict["code"]]
+        modDict["syllFile"] = scrapedFilename
+        module.find('syllabus').text = scrapedFilename  # update the xml
+    else:
+        print(modDict["code"], "not found on webpage")
+        modDict["syllFile"] = module.find('syllabus').text
 
     prereqs = module.find('prerequisites')
     modDict["prereqs"] = [(prereq.text, prereq.get('type')) for prereq in prereqs]
     modules[module.get('id')] = modDict
 
+# we've updated filenames for all modules in the the xml tree
+# write it out
+tree.write('modules.xml', encoding='utf-8', xml_declaration=True)
 
 y1y2modules = [id for id in modules.keys() if modules[id]["year"] <= 2]
 # there's no list in pathways.xml, and the xsl file just filters all the
@@ -159,8 +197,8 @@ permalink: /pathways/
 
 
 def tablify(moduleList):
-    # return a string containing a markdown table of the prereqs of the modules
-    # in moduleList
+    """return a string containing a markdown table of the prereqs
+    of the modules in moduleList"""
     header = "| Module | Year | Term | Prerequisites\n|----|----|----|----\n"
     # sort the module list by year then term. Remember to deal with 3.5
     moduleList = sorted(moduleList, key=lambda modid: modules[modid]["term"])
@@ -175,14 +213,15 @@ def tablify(moduleList):
 
 
 def tableRow(modId):
+    """create the row of the table corresponding to modId"""
     moddict = modules[modId]
-    # create the row of the table corresponding to modId
 
-    if moddict['code'] in codeToFile.keys():
-        filename = codeToFile[moddict['code']]
-    else:
-        print(modId, "not found on the scraped module webpage")
-        filename = moddict["syllFile"]
+#    if moddict['code'] in codeToFile.keys():
+#        filename = codeToFile[moddict['code']]
+#    else:
+#        print(modId, "not found on the scraped module webpage")
+#        filename = moddict["syllFile"]
+    filename = moddict["syllFile"]
 
     moduleCol = '<a id="' + modId + '"></a>' + '[' + moddict["code"] + ' ' + moddict["name"] + '](' + urlprefix + filename + ')'
     yearCol = "3 or 4" if moddict["year"] == 3.5 else str(int(moddict["year"]))
