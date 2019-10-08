@@ -2,7 +2,8 @@ This is a collection of XML and XSL files and a shell script for generating
 a webpage with module dependency graphs. There is also a python3 script
 `pathways.py` which reads the XML files and outputs a markdown file
 suitable for use with [Jekyll](https://jekyllrb.com/) representing the
-pathways in table format.
+pathways in table format. The output after Jekyll has done its thing is 
+[here](https://www.ucl.ac.uk/~ucahmto/pathways/).
 
 The python script scrapes the filenames from the UCL module webpage
 using

@@ -71,9 +71,6 @@ In pathways.xml:
     <includedmodule>logic</includedmodule>
   </pathway>
 </pathways>
-
-TODO: update modules.xml with the results of parsing the webpage.
-Otherwise the graphviz script is no good.
 """
 from shutil import copyfile
 import xml.etree.ElementTree as ET
@@ -216,14 +213,7 @@ def tableRow(modId):
     """create the row of the table corresponding to modId"""
     moddict = modules[modId]
 
-#    if moddict['code'] in codeToFile.keys():
-#        filename = codeToFile[moddict['code']]
-#    else:
-#        print(modId, "not found on the scraped module webpage")
-#        filename = moddict["syllFile"]
-    filename = moddict["syllFile"]
-
-    moduleCol = '<a id="' + modId + '"></a>' + '[' + moddict["code"] + ' ' + moddict["name"] + '](' + urlprefix + filename + ')'
+    moduleCol = '<a id="' + modId + '"></a>' + '[' + moddict["code"] + ' ' + moddict["name"] + '](' + urlprefix + moddict["syllFile"] + ')'
     yearCol = "3 or 4" if moddict["year"] == 3.5 else str(int(moddict["year"]))
     termCol = str(moddict["term"])
     prereqsCol = ""

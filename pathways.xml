@@ -5,6 +5,7 @@
   <pathway id="y1y2" name="First and Second Year" startfromyear="1" startfromterm="1"/>
   
   <pathway id="algebra" name="Algebra" startfromyear="2" startfromterm="2">
+    <includedmodule>geometryandgroups</includedmodule>
     <includedmodule>algebra4</includedmodule>
     <includedmodule>commutativealgebra</includedmodule>
     <includedmodule>galoistheory</includedmodule>
