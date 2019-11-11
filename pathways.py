@@ -210,6 +210,8 @@ title: UCL Pathways
 permalink: /pathways/
 ---
 
+There is also a [graphical version of this pathways document](http://www.homepages.ucl.ac.uk/~ucahmto/pathways.htm).
+
 """
 
 
