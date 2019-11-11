@@ -11,8 +11,8 @@ Parse modules.xml with xml.etree.ElementTree
 
 https://docs.python.org/3/library/xml.etree.elementtree.html
 
-then output a markdown file containing tables of prerequisites suitable for
-processing with Jekyll.
+then output a markdown file pathways.md containing tables of prerequisites
+suitable for processing with Jekyll.
 
 Markdown syntax:
 
@@ -76,6 +76,8 @@ from shutil import copyfile
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 import requests
+import sys
+from HTMLParser import HTMLParseError
 
 # Trying to scrape the https webpage gives an SSL error:
 #
@@ -92,9 +94,10 @@ import requests
 requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS += 'HIGH:!DH:!aNULL'
 try:
     requests.packages.urllib3.contrib.pyopenssl.DEFAULT_SSL_CIPHER_LIST += 'HIGH:!DH:!aNULL'
-except AttributeError:
+except AttributeError as e:
+    print("attribute error when setting cipher list")
     # no pyopenssl support used / needed / available
-    pass
+    print(e)
 
 ###################################################################
 # Get filenames from the UCL maths module webpage                 #
@@ -102,9 +105,26 @@ except AttributeError:
 ###################################################################
 
 url = 'https://www.ucl.ac.uk/maths/current-students/current-undergraduates/module-information-undergraduates'
-#page = requests.get(url)
-# soup = BeautifulSoup(page.text, 'lxml')  # open("mod_info.html").read()
-soup = BeautifulSoup(open("mod_info.html").read(), 'lxml')
+try:
+    page = requests.get(url)
+    page.raise_for_status()  # raise exception if an http error is returned
+except requests.exceptions.HTTPError as e:
+    print(e)
+    sys.exit(1)  # just give up
+except requests.exceptions.Timeout as e:
+    print(e)
+    sys.exit(1)  # just give up
+except requests.exceptions.RequestException as e:
+    print(e)
+    sys.exit(1)  # just give up
+
+try:
+    soup = BeautifulSoup(page.text, 'lxml')  # open("mod_info.html").read()
+except HTMLParseError as e:
+    print(e)
+    sys.exit(1)
+
+# soup = BeautifulSoup(open("mod_info.html").read(), 'lxml')
 spans = soup.find_all('span')
 
 codeToFile = {}
