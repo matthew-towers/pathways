@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <pathways>
-
 
   <pathway id="y1y2" name="First and Second Year" startfromyear="1" startfromterm="1"/>
   
   <pathway id="algebra" name="Algebra" startfromyear="2" startfromterm="2">
-    <includedmodule>geometryandgroups</includedmodule>
+    <includedmodule>algebra3</includedmodule>
     <includedmodule>algebra4</includedmodule>
     <includedmodule>commutativealgebra</includedmodule>
     <includedmodule>galoistheory</includedmodule>
@@ -17,8 +16,9 @@
     <includedmodule>historyofmathematics</includedmodule>
     <includedmodule>liegroupsandliealgebras</includedmodule>
     <includedmodule>algebraictopology</includedmodule>
-    <includedmodule>algebraicgeometry</includedmodule>
     <includedmodule>logic</includedmodule>
+    <includedmodule>graphtheory</includedmodule>
+    <includedmodule>modularforms</includedmodule>
   </pathway>
   
   <pathway id="analysis" name="Analysis" startfromyear="2" startfromterm="2">
@@ -34,6 +34,8 @@
     <includedmodule>topologyandgroups</includedmodule>
     <includedmodule>riemanniangeometry</includedmodule>
     <includedmodule>variationalmethods</includedmodule>
+    <includedmodule>ellipticpdes</includedmodule>
+    <includedmodule>probabilisticmethod</includedmodule>
   </pathway>
 
   <pathway id="applied" name="Applied Mathematics" startfromyear="2" startfromterm="2">
@@ -47,9 +49,11 @@
     <includedmodule>mathematicsforgeneralrelativity</includedmodule>
     <includedmodule>asymptoticmethods</includedmodule>
     <includedmodule>cosmology</includedmodule>
+    <includedmodule>industrialgeologicalfluids</includedmodule>
   </pathway>
 
   <pathway id="modelling" name="Modelling, Computation and Finance" startfromyear="2" startfromterm="2">
+    <includedmodule>combinatorialoptimisation</includedmodule>
     <includedmodule>evolutionarygames</includedmodule>
     <includedmodule>financialmathematics</includedmodule>
     <includedmodule>biomathematics</includedmodule>
@@ -59,6 +63,7 @@
     <includedmodule>quantitativeandcomputationalfinance</includedmodule>
     <includedmodule>mathematica</includedmodule>
     <includedmodule>numericalmethods</includedmodule>
+    <includedmodule>appliedstochasticmethods</includedmodule>
   </pathway>
-  
+
 </pathways>

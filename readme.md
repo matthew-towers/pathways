@@ -1,69 +1,29 @@
-This is a collection of XML and XSL files and a shell script for generating 
-a webpage with module dependency graphs. There is also a python3 script
-`pathways.py` which reads the XML files and outputs a markdown file
-suitable for use with [Jekyll](https://jekyllrb.com/) representing the
-pathways in table format. The output after Jekyll has done its thing is 
-[here](https://www.ucl.ac.uk/~ucahmto/pathways/).
 
-The python script scrapes the filenames from the UCL module webpage
-using
-[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/),
-because they keep changing them and making the ones in `modules.xml` 
-out of date `:/`
+# Pathways
+
+Pathways has been completely re-written to improve the code, add
+some new features, and to switch away from xml and xsl transforms to
+json and Python.
 
 ---
 
-The following are the XML source files:
+Pathways consists of several files.
 
-- `modules.xml`
-  + an XML tree of all modules and their prerequisites
+ - `modules.json`, containing information about UCL maths modules.
+ - `pathways.json`, splitting the modules into different pathways.
+ - `syllabus_pdf_scanner.py`, a Python script that downloads all the
+ syllabus pdf files from the UCL website, extracts year and term data
+ using [`PyPDF2`](https://pypdf2.readthedocs.io/en/latest/), and uses it
+ to update `modules.json`.
+ - `pathways2.py`, which scrapes the UCL maths module webpage for
+ syllabus filenames using [Beautiful
+ Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), then
+ produces tables of modules and prerequisites in markdown suitable for
+ use in [Jekyll](https://jekyllrb.com/) and visualisations with the help
+ of [`NetworkX`](https://networkx.org/) and
+ [PyGraphviz](https://pygraphviz.github.io/).
 
-- `pathways.xml`
-  + an XML tree which specifies which modules are to be included in which pathway
+You can see the markdown tables
+[here](https://www.ucl.ac.uk/~ucahmto/pathways/) and the graphviz output
+[here](http://www.homepages.ucl.ac.uk/~ucahmto/pathways.htm).
 
-The following are XSL transforms:
-
-- `pax2mox.xsl`
-  + operates on the tree `pathway.xml`
-  + generates a collection of subtrees of modules.xml, one for each pathway
-  + each subtree includes the modules specified in the pathway, together with
-    their prerequisites.
-  + also outputs a webpage pathways.html which will contain all the diagrams
-- `mox2dot.xsl`
-  + converts an XML tree of modules to a graphviz DOT file
-  + you can convert a DOT file to an SVG image via the command
-    `$ dot -Tsvg filename -O`
-
-The following is a shell script:
-
-- `pipeline.sh`
-  + runs the XSLT transforms in the required order and then outputs the webpage
-    `pathways.htm`.
-
---------------------------------------
-
-To make all this work, you will need
-- an XSLT2.0 parser (like Saxon B, <http://saxon.sourceforge.net/>)
-- graphviz (<https://www.graphviz.org/>)
-
-The easy way to run the program is to modify the files `modules.xml` and
-`pathways.xml` to suit your needs, then run pipeline.sh. This will generate
-all the files you need which you can then upload to your website. These files
-are: `pathways.htm` and `pathway-*.svg`
-
-If you can't run a shell script, for whatever reason, then follow these
-instructions instead:
-
-1. First, use your XSLT parser to apply `pax2mox.xsl` to` pathways.xml`:
-```bash
-$ saxonb-xslt -s:pathways.xml -xsl:pax2mox.xsl -o:emptyfile -ext:on
-```
-
-2. Now, for each pathway (e.g. "algebra") in your pathway file, use your
-   XSLT parser to convert the newly created subtree
-   (`pathway-algebra.xml`) into a DOT file; then convert the DOT file
-   into an image using graphviz:
-```bash
-$ saxonb-xslt -s:pathway-algebra.xml -xsl:mox2dot.xsl -o:pathway-algebra
-$ dot -Tsvg "pathway-algebra" -O
-```

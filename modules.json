@@ -1,0 +1,1492 @@
+{
+    "MATH0002": {
+        "id": "economics1",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0002.pdf",
+        "name": "Economics 1 - Combined Studies",
+        "code": "MATH0002",
+        "year": 1.0,
+        "term": 1,
+        "syllabusFilename": "math0002.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2"
+        ],
+        "prereqs": [],
+        "ancillary": false
+    },
+    "MATH0003": {
+        "id": "analysis1",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0003.pdf",
+        "name": "Analysis 1",
+        "code": "MATH0003",
+        "year": 1.0,
+        "term": 1,
+        "syllabusFilename": "math0003.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2"
+        ],
+        "prereqs": [],
+        "ancillary": false
+    },
+    "MATH0004": {
+        "id": "analysis2",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0004.pdf",
+        "name": "Analysis 2",
+        "code": "MATH0004",
+        "year": 1.0,
+        "term": 2,
+        "syllabusFilename": "math0004.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2"
+        ],
+        "prereqs": [
+            [
+                "MATH0003",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0005": {
+        "id": "algebra1",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0005.pdf",
+        "name": "Algebra 1",
+        "code": "MATH0005",
+        "year": 1.0,
+        "term": 1,
+        "syllabusFilename": "math0005.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2"
+        ],
+        "prereqs": [],
+        "ancillary": false
+    },
+    "MATH0006": {
+        "id": "algebra2",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0006.pdf",
+        "name": "Algebra 2",
+        "code": "MATH0006",
+        "year": 1.0,
+        "term": 2,
+        "syllabusFilename": "math0006.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2"
+        ],
+        "prereqs": [
+            [
+                "MATH0005",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0007": {
+        "id": "algebraforjointhonours",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0007.pdf",
+        "name": "Algebra for Joint Honours Students",
+        "code": "MATH0007",
+        "year": 1.0,
+        "term": 2,
+        "syllabusFilename": "math0007.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2"
+        ],
+        "prereqs": [],
+        "ancillary": false
+    },
+    "MATH0008": {
+        "id": "applied1",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0008.pdf",
+        "name": "Applied Mathematics",
+        "code": "MATH0008",
+        "year": 1.0,
+        "term": 1,
+        "syllabusFilename": "math0008.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2"
+        ],
+        "prereqs": [],
+        "ancillary": false
+    },
+    "MATH0009": {
+        "id": "applied2",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0009.pdf",
+        "name": "Newtonian Mechanics",
+        "code": "MATH0009",
+        "year": 1.0,
+        "term": 2,
+        "syllabusFilename": "math0009.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2"
+        ],
+        "prereqs": [
+            [
+                "MATH0008",
+                "needed"
+            ],
+            [
+                "MATH0010",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0010": {
+        "id": "methods1",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0010.pdf",
+        "name": "Mathematical Methods 1",
+        "code": "MATH0010",
+        "year": 1.0,
+        "term": 1,
+        "syllabusFilename": "math0010.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2"
+        ],
+        "prereqs": [],
+        "ancillary": false
+    },
+    "MATH0011": {
+        "id": "methods2",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0011.pdf",
+        "name": "Mathematical Methods 2",
+        "code": "MATH0011",
+        "year": 1.0,
+        "term": 2,
+        "syllabusFilename": "math0011.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2"
+        ],
+        "prereqs": [
+            [
+                "MATH0010",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0013": {
+        "id": "analysis3",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0013.pdf",
+        "name": "Analysis 3 - Complex Analysis",
+        "code": "MATH0013",
+        "year": 2.0,
+        "term": 1,
+        "syllabusFilename": "math0013.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2"
+        ],
+        "prereqs": [
+            [
+                "MATH0003",
+                "needed"
+            ],
+            [
+                "MATH0004",
+                "recommended"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0014": {
+        "id": "algebra3",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0014.pdf",
+        "name": "Algebra 3: Further Linear Algebra",
+        "code": "MATH0014",
+        "year": 2.0,
+        "term": 1,
+        "syllabusFilename": "math0014.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2",
+            "Algebra"
+        ],
+        "prereqs": [
+            [
+                "MATH0006",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0015": {
+        "id": "applied3",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0015.pdf",
+        "name": "Fluid Mechanics",
+        "code": "MATH0015",
+        "year": 2.0,
+        "term": 1,
+        "syllabusFilename": "math0015.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2"
+        ],
+        "prereqs": [
+            [
+                "MATH0011",
+                "needed"
+            ],
+            [
+                "MATH0009",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0016": {
+        "id": "methods3",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0016.pdf",
+        "name": "Mathematical Methods 3",
+        "code": "MATH0016",
+        "year": 2.0,
+        "term": 1,
+        "syllabusFilename": "math0016.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2"
+        ],
+        "prereqs": [
+            [
+                "MATH0011",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0051": {
+        "id": "analysis4",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0051.pdf",
+        "name": "Analysis 4",
+        "code": "MATH0051",
+        "year": 2.5,
+        "term": 2,
+        "syllabusFilename": "math0051.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2",
+            "Analysis"
+        ],
+        "prereqs": [
+            [
+                "MATH0004",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0052": {
+        "id": "geometryandgroups",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0052.pdf",
+        "name": "Geometry and Groups",
+        "code": "MATH0052",
+        "year": 2.5,
+        "term": 2,
+        "syllabusFilename": "math0052.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2",
+            "Analysis"
+        ],
+        "prereqs": [
+            [
+                "MATH0013",
+                "needed"
+            ],
+            [
+                "MATH0006",
+                "needed"
+            ],
+            [
+                "MATH0014",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0053": {
+        "id": "algebra4",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0053.pdf",
+        "name": "Algebra 4",
+        "code": "MATH0053",
+        "year": 2.5,
+        "term": 2,
+        "syllabusFilename": "math0053.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2",
+            "Algebra"
+        ],
+        "prereqs": [
+            [
+                "MATH0006",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0054": {
+        "id": "analyticaldynamics",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0054.pdf",
+        "name": "Analytical Dynamics",
+        "code": "MATH0054",
+        "year": 3.0,
+        "term": 2,
+        "syllabusFilename": "math0054.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Applied Mathematics"
+        ],
+        "prereqs": [
+            [
+                "MATH0011",
+                "needed"
+            ],
+            [
+                "MATH0009",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0055": {
+        "id": "electromagnetism",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0055.pdf",
+        "name": "Mathematics of Electromagnetism and Special Relativity",
+        "code": "MATH0055",
+        "year": 2.5,
+        "term": 2,
+        "syllabusFilename": "math0055.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2",
+            "Applied Mathematics"
+        ],
+        "prereqs": [
+            [
+                "MATH0016",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0056": {
+        "id": "methods4",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0056.pdf",
+        "name": "Mathematical Methods 4",
+        "code": "MATH0056",
+        "year": 2.5,
+        "term": 2,
+        "syllabusFilename": "math0056.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2",
+            "Applied Mathematics"
+        ],
+        "prereqs": [
+            [
+                "MATH0013",
+                "needed"
+            ],
+            [
+                "MATH0016",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0057": {
+        "id": "probabilityandstatistics",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0057.pdf",
+        "name": "Probability and Statistics",
+        "code": "MATH0057",
+        "year": 2.5,
+        "term": 2,
+        "syllabusFilename": "math0057.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2"
+        ],
+        "prereqs": [
+            [
+                "MATH0011",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0058": {
+        "id": "computationalmethods",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0058.pdf",
+        "name": "Computational Methods",
+        "code": "MATH0058",
+        "year": 2.5,
+        "term": 2,
+        "syllabusFilename": "math0058.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2"
+        ],
+        "prereqs": [
+            [
+                "MATH0010",
+                "needed"
+            ],
+            [
+                "MATH0006",
+                "needed"
+            ],
+            [
+                "Some programming knowledge (e.g. Python) desirable",
+                "comment"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0034": {
+        "id": "numbertheory",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0034.pdf",
+        "name": "Number Theory",
+        "code": "MATH0034",
+        "year": 2.5,
+        "term": 2,
+        "syllabusFilename": "math0034.pdf",
+        "isRunning": true,
+        "pathways": [
+            "y1y2"
+        ],
+        "prereqs": [
+            [
+                "MATH0006",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0017": {
+        "id": "measuretheory",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0017.pdf",
+        "name": "Measure Theory",
+        "code": "MATH0017",
+        "year": 3.0,
+        "term": 1,
+        "syllabusFilename": "math0017.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Analysis"
+        ],
+        "prereqs": [
+            [
+                "MATH0051",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0018": {
+        "id": "functionalanalysis",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0018.pdf",
+        "name": "Functional Analysis",
+        "code": "MATH0018",
+        "year": 3.0,
+        "term": 2,
+        "syllabusFilename": "math0018.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Analysis"
+        ],
+        "prereqs": [
+            [
+                "MATH0051",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0019": {
+        "id": "multivariableanalysis",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0019.pdf",
+        "name": "Multivariable Analysis",
+        "code": "MATH0019",
+        "year": 3.0,
+        "term": 1,
+        "syllabusFilename": "math0019.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Analysis"
+        ],
+        "prereqs": [
+            [
+                "MATH0051",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0020": {
+        "id": "differentialgeometry",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0020.pdf",
+        "name": "Differential Geometry",
+        "code": "MATH0020",
+        "year": 3.0,
+        "term": 2,
+        "syllabusFilename": "math0020.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Analysis"
+        ],
+        "prereqs": [
+            [
+                "MATH0011",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0021": {
+        "id": "commutativealgebra",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0021.pdf",
+        "name": "Commutative Algebra",
+        "code": "MATH0021",
+        "year": 3.0,
+        "term": 2,
+        "syllabusFilename": "math0021.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Algebra"
+        ],
+        "prereqs": [
+            [
+                "MATH0053",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0022": {
+        "id": "galoistheory",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0022.pdf",
+        "name": "Galois Theory",
+        "code": "MATH0022",
+        "year": 3.0,
+        "term": 1,
+        "syllabusFilename": "math0022.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Algebra"
+        ],
+        "prereqs": [
+            [
+                "MATH0053",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0023": {
+        "id": "algebraictopology",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0023_1.pdf",
+        "name": "Algebraic Topology",
+        "code": "MATH0023",
+        "year": 3.0,
+        "term": 1,
+        "syllabusFilename": "math0023_1.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Algebra"
+        ],
+        "prereqs": [
+            [
+                "MATH0014",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0024": {
+        "id": "geophysicalfluiddynamics",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0024.pdf",
+        "name": "Geophysical Fluids",
+        "code": "MATH0024",
+        "year": 3.0,
+        "term": 2,
+        "syllabusFilename": "math0024.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Applied Mathematics"
+        ],
+        "prereqs": [
+            [
+                "MATH0015",
+                "needed"
+            ],
+            [
+                "MATH0016",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0025": {
+        "id": "mathematicsforgeneralrelativity",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0025.pdf",
+        "name": "Mathematics for General Relativity",
+        "code": "MATH0025",
+        "year": 3.0,
+        "term": 1,
+        "syllabusFilename": "math0025.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Applied Mathematics"
+        ],
+        "prereqs": [
+            [
+                "MATH0016",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0026": {
+        "id": "biomathematics",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0026.pdf",
+        "name": "Biomathematics",
+        "code": "MATH0026",
+        "year": 3.0,
+        "term": 1,
+        "syllabusFilename": "math0026.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Modelling, Computation and Finance"
+        ],
+        "prereqs": [
+            [
+                "MATH0011",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0027": {
+        "id": "methods5",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0027.pdf",
+        "name": "Methods 5",
+        "code": "MATH0027",
+        "year": 3.0,
+        "term": 2,
+        "syllabusFilename": "math0027.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Applied Mathematics"
+        ],
+        "prereqs": [
+            [
+                "MATH0056",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0028": {
+        "id": "combinatorialoptimisation",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0028.pdf",
+        "name": "Combinatorial Optimisation",
+        "code": "MATH0028",
+        "year": 3.0,
+        "term": 2,
+        "syllabusFilename": "math0028.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Modelling, Computation and Finance"
+        ],
+        "prereqs": [
+            [
+                "MATH0014",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0029": {
+        "id": "graphtheory",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0029.pdf",
+        "name": "Graph Theory and Combinatorics",
+        "code": "MATH0029",
+        "year": 3.0,
+        "term": 1,
+        "syllabusFilename": "math0029.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Algebra"
+        ],
+        "prereqs": [
+            [
+                "MATH0057",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0030": {
+        "id": "mathematicalecology",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0030.pdf",
+        "name": "Mathematical Ecology",
+        "code": "MATH0030",
+        "year": 3.0,
+        "term": 1,
+        "syllabusFilename": "math0030.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Modelling, Computation and Finance"
+        ],
+        "prereqs": [
+            [
+                "MATH0010",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0031": {
+        "id": "financialmathematics",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0031.pdf",
+        "name": "Financial Mathematics",
+        "code": "MATH0031",
+        "year": 3.0,
+        "term": 2,
+        "syllabusFilename": "math0031.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Modelling, Computation and Finance"
+        ],
+        "prereqs": [
+            [
+                "MATH0016",
+                "needed"
+            ],
+            [
+                "MATH0057",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0032": {
+        "id": "mathematica",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0032.pdf",
+        "name": "Introduction to Mathematica",
+        "code": "MATH0032",
+        "year": 3.0,
+        "term": 1,
+        "syllabusFilename": "math0032.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Modelling, Computation and Finance"
+        ],
+        "prereqs": [],
+        "ancillary": false
+    },
+    "MATH0033": {
+        "id": "numericalmethods",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0033.pdf",
+        "name": "Numerical Methods",
+        "code": "MATH0033",
+        "year": 3.0,
+        "term": 1,
+        "syllabusFilename": "math0033.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Modelling, Computation and Finance"
+        ],
+        "prereqs": [
+            [
+                "MATH0006",
+                "needed"
+            ],
+            [
+                "MATH0011",
+                "needed"
+            ],
+            [
+                "MATH0058",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0035": {
+        "id": "algebraicnumbertheory",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0035.pdf",
+        "name": "Algebraic Number Theory",
+        "code": "MATH0035",
+        "year": 3.0,
+        "term": 2,
+        "syllabusFilename": "math0035.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Algebra"
+        ],
+        "prereqs": [
+            [
+                "MATH0034",
+                "needed"
+            ],
+            [
+                "MATH0053",
+                "needed"
+            ],
+            [
+                "MATH0022",
+                "recommended"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0036": {
+        "id": "ellipticcurves",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0036.pdf",
+        "name": "Elliptic Curves",
+        "code": "MATH0036",
+        "year": 3.0,
+        "term": 2,
+        "syllabusFilename": "math0036.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Algebra"
+        ],
+        "prereqs": [
+            [
+                "MATH0034",
+                "needed"
+            ],
+            [
+                "MATH0053",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0037": {
+        "id": "logic",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0037.pdf",
+        "name": "Logic",
+        "code": "MATH0037",
+        "year": 3.0,
+        "term": 2,
+        "syllabusFilename": "math0037.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Algebra"
+        ],
+        "prereqs": [
+            [
+                "MATH0006",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0038": {
+        "id": "historyofmathematics",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0038.pdf",
+        "name": "History of Mathematics",
+        "code": "MATH0038",
+        "year": 3.0,
+        "term": 2,
+        "syllabusFilename": "math0038.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Algebra"
+        ],
+        "prereqs": [],
+        "ancillary": false
+    },
+    "MATH0092": {
+        "id": "variationalmethods",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0092.pdf",
+        "name": "Variational Methods for Partial Differential Equations",
+        "code": "MATH0092",
+        "year": 3.5,
+        "term": 2,
+        "syllabusFilename": "math0092.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Analysis"
+        ],
+        "prereqs": [
+            [
+                "MATH0051",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0090": {
+        "id": "ellipticpdes",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0090.pdf",
+        "name": "Elliptic Partial Differential Equations",
+        "code": "MATH0090",
+        "year": 3.5,
+        "term": 2,
+        "syllabusFilename": "math0090.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Analysis"
+        ],
+        "prereqs": [
+            [
+                "MATH0070",
+                "recommended"
+            ],
+            [
+                "MATH0051",
+                "needed"
+            ],
+            [
+                "MATH0018",
+                "needed"
+            ],
+            [
+                "MATH0019",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0102": {
+        "id": "appliedstochasticmethods",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0102.pdf",
+        "name": "Applied Stochastic Methods",
+        "code": "MATH0102",
+        "year": 3.5,
+        "term": 2,
+        "syllabusFilename": "math0102.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Modelling, Computation and Finance"
+        ],
+        "prereqs": [
+            [
+                "MATH0010",
+                "needed"
+            ],
+            [
+                "MATH0011",
+                "needed"
+            ],
+            [
+                "MATH0056",
+                "recommended"
+            ],
+            [
+                "MATH0031",
+                "recommended"
+            ],
+            [
+                "MATH0065",
+                "recommended"
+            ],
+            [
+                "MATH0057",
+                "recommended"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0069": {
+        "id": "probability",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0069.pdf",
+        "name": "Probability",
+        "code": "MATH0069",
+        "year": 3.5,
+        "term": 2,
+        "syllabusFilename": "math0069.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Analysis"
+        ],
+        "prereqs": [
+            [
+                "MATH0017",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0070": {
+        "id": "lpde",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0070.pdf",
+        "name": "Linear Partial Differential Equations",
+        "code": "MATH0070",
+        "year": 3.5,
+        "term": 1,
+        "syllabusFilename": "math0070.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Analysis"
+        ],
+        "prereqs": [
+            [
+                "MATH0013",
+                "needed"
+            ],
+            [
+                "MATH0016",
+                "needed"
+            ],
+            [
+                "MATH0051",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0073": {
+        "id": "representationtheory",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0073.pdf",
+        "name": "Representation Theory",
+        "code": "MATH0073",
+        "year": 3.5,
+        "term": 2,
+        "syllabusFilename": "math0073.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Algebra"
+        ],
+        "prereqs": [
+            [
+                "MATH0053",
+                "needed"
+            ],
+            [
+                "MATH0021",
+                "recommended"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0077": {
+        "id": "realfluids",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0077.pdf",
+        "name": "Real Fluids",
+        "code": "MATH0077",
+        "year": 3.5,
+        "term": 1,
+        "syllabusFilename": "math0077.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Applied Mathematics"
+        ],
+        "prereqs": [
+            [
+                "MATH0015",
+                "needed"
+            ],
+            [
+                "MATH0016",
+                "needed"
+            ],
+            [
+                "MATH0056",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0080": {
+        "id": "wavesandwavescattering",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0080.pdf",
+        "name": "Waves and Wave Scattering",
+        "code": "MATH0080",
+        "year": 3.5,
+        "term": 2,
+        "syllabusFilename": "math0080.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Applied Mathematics"
+        ],
+        "prereqs": [
+            [
+                "MATH0056",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0083": {
+        "id": "primenumbersandtheirdistribution",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0083.pdf",
+        "name": "Prime Numbers and their Distribution",
+        "code": "MATH0083",
+        "year": 3.5,
+        "term": 1,
+        "syllabusFilename": "math0083.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Algebra"
+        ],
+        "prereqs": [
+            [
+                "MATH0013",
+                "needed"
+            ],
+            [
+                "MATH0051",
+                "needed"
+            ],
+            [
+                "MATH0034",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0071": {
+        "id": "spectraltheory",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0071.pdf",
+        "name": "Spectral Theory",
+        "code": "MATH0071",
+        "year": 4.0,
+        "term": 1,
+        "syllabusFilename": "math0071.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Analysis"
+        ],
+        "prereqs": [
+            [
+                "MATH0018",
+                "needed"
+            ],
+            [
+                "MATH0019",
+                "needed"
+            ],
+            [
+                "MATH0017",
+                "recommended"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0072": {
+        "id": "riemanniangeometry",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0072_2.pdf",
+        "name": "Riemannian Geometry",
+        "code": "MATH0072",
+        "year": 4.0,
+        "term": 1,
+        "syllabusFilename": "math0072_2.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Analysis"
+        ],
+        "prereqs": [
+            [
+                "MATH0019",
+                "needed"
+            ],
+            [
+                "MATH0020",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0074": {
+        "id": "topologyandgroups",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0074.pdf",
+        "name": "Topology and Groups",
+        "code": "MATH0074",
+        "year": 3.5,
+        "term": 1,
+        "syllabusFilename": "math0074.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Analysis"
+        ],
+        "prereqs": [
+            [
+                "MATH0013",
+                "needed"
+            ],
+            [
+                "MATH0051",
+                "needed"
+            ],
+            [
+                "MATH0052",
+                "recommended"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0075": {
+        "id": "liegroupsandliealgebras",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0075.pdf",
+        "name": "Lie Groups and Lie Algebras",
+        "code": "MATH0075",
+        "year": 3.5,
+        "term": 1,
+        "syllabusFilename": "math0075.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Algebra"
+        ],
+        "prereqs": [
+            [
+                "MATH0014",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0076": {
+        "id": "algebraicgeometry",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0076.pdf",
+        "name": "Algebraic Geometry",
+        "code": "MATH0076",
+        "year": 4.0,
+        "term": 1,
+        "syllabusFilename": "math0076.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Algebra"
+        ],
+        "prereqs": [
+            [
+                "MATH0021",
+                "needed"
+            ],
+            [
+                "MATH0022",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0078": {
+        "id": "asymptoticmethods",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0078.pdf",
+        "name": "Asymptotic Approximation Methods",
+        "code": "MATH0078",
+        "year": 4.0,
+        "term": 2,
+        "syllabusFilename": "math0078.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Applied Mathematics"
+        ],
+        "prereqs": [
+            [
+                "MATH0077",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0079": {
+        "id": "cosmology",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0079.pdf",
+        "name": "Cosmology",
+        "code": "MATH0079",
+        "year": 4.0,
+        "term": 2,
+        "syllabusFilename": "math0079.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Applied Mathematics"
+        ],
+        "prereqs": [
+            [
+                "MATH0025",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0082": {
+        "id": "evolutionarygames",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0082.pdf",
+        "name": "Evolutionary Games and Population Genetics",
+        "code": "MATH0082",
+        "year": 4.0,
+        "term": 2,
+        "syllabusFilename": "math0082.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Modelling, Computation and Finance"
+        ],
+        "prereqs": [
+            [
+                "MATH0011",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0065": {
+        "id": "advancedmodelling",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0065.pdf",
+        "name": "Advanced Modelling Techniques",
+        "code": "MATH0065",
+        "year": 4.0,
+        "term": 1,
+        "syllabusFilename": "math0065.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Modelling, Computation and Finance"
+        ],
+        "prereqs": [
+            [
+                "MATH0010",
+                "needed"
+            ],
+            [
+                "MATH0011",
+                "needed"
+            ],
+            [
+                "MATH0013",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0086": {
+        "id": "computationalandsimulationmethods",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0086.pdf",
+        "name": "Computational and Simulation Methods",
+        "code": "MATH0086",
+        "year": 4.0,
+        "term": 1,
+        "syllabusFilename": "math0086.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Modelling, Computation and Finance"
+        ],
+        "prereqs": [
+            [
+                "MATH0056",
+                "needed"
+            ],
+            [
+                "MATH0058",
+                "recommended"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0088": {
+        "id": "quantitativeandcomputationalfinance",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0088.pdf",
+        "name": "Quantitative and Computational Finance",
+        "code": "MATH0088",
+        "year": 4.0,
+        "term": 2,
+        "syllabusFilename": "math0088.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Modelling, Computation and Finance"
+        ],
+        "prereqs": [
+            [
+                "MATH0016",
+                "needed"
+            ],
+            [
+                "MATH0031",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0104": {
+        "id": "modularforms",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0104.pdf",
+        "name": "Modular Forms",
+        "code": "MATH0104",
+        "year": 3.5,
+        "term": 2,
+        "syllabusFilename": "math0104.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Algebra"
+        ],
+        "prereqs": [
+            [
+                "MATH0013",
+                "needed"
+            ],
+            [
+                "MATH0014",
+                "needed"
+            ],
+            [
+                "MATH0034",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0106": {
+        "id": "industrialgeologicalfluids",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0106.pdf",
+        "name": "Industrial and Geological Fluids",
+        "code": "MATH0106",
+        "year": 4.0,
+        "term": 1,
+        "syllabusFilename": "math0106.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Applied Mathematics"
+        ],
+        "prereqs": [
+            [
+                "MATH0015",
+                "needed"
+            ],
+            [
+                "MATH0077",
+                "recommended"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0107": {
+        "id": "probabilisticmethod",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0107.pdf",
+        "name": "Probabilistic Method in Combinatorics",
+        "code": "MATH0107",
+        "year": 3.5,
+        "term": 2,
+        "syllabusFilename": "math0107.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Analysis"
+        ],
+        "prereqs": [
+            [
+                "MATH0029",
+                "recommended"
+            ],
+            [
+                "MATH0028",
+                "recommended"
+            ],
+            [
+                "MATH0057",
+                "recommended"
+            ]
+        ],
+        "ancillary": false
+    }
+}
