@@ -39,9 +39,11 @@ import sys
 import networkx as nx
 import graphviz as gv
 
-scrape = False
+SCRAPE = False
 
-ancillaryModules = [
+MODULE_INFO_URL = "https://www.ucl.ac.uk/maths/current-students/current-undergraduates/module-information-undergraduates"
+
+ANCILLARY_MODULES = [
     "MATH0012",
     "MATH0039",
     "MATH0040",
@@ -136,12 +138,11 @@ for code, modDict in modulesFromJson.items():
 # Mark modules not on the webpage as not running #
 ##################################################
 
-if scrape:
-    url = "https://www.ucl.ac.uk/maths/current-students/current-undergraduates/module-information-undergraduates"
+if SCRAPE:
     print("trying to download ucl modules webpage...")
 
     try:
-        page = requests.get(url)
+        page = requests.get(MODULE_INFO_URL)
         page.raise_for_status()  # raise exception if an http error is returned
     except requests.exceptions.HTTPError as e:
         print(e)
@@ -172,8 +173,8 @@ if scrape:
         a = s.find("a")
         if a is not None:
             # this a holds a link to a module syllabus
-            url = a["href"]
-            filename = url.split("/")[-1]
+            module_url = a["href"]
+            filename = module_url.split("/")[-1]
             moduleCode = (
                 filename.split("_")[0] if "_" in filename else filename.split(".")[0]
             )
@@ -181,11 +182,11 @@ if scrape:
             modulesOnWebPage.add(moduleCode)
 
             if moduleCode in modules:
-                modules[moduleCode].url = url
-                modulesFromJson[moduleCode]["url"] = url
+                modules[moduleCode].url = module_url
+                modulesFromJson[moduleCode]["url"] = module_url
                 modules[moduleCode].syllFile = filename
                 modulesFromJson[moduleCode]["syllabusFilename"] = filename
-            elif moduleCode not in ancillaryModules:
+            elif moduleCode not in ANCILLARY_MODULES:
                 print(
                     "Found non-ancillary module on web not in modules.json: "
                     + moduleCode
@@ -391,26 +392,27 @@ with open("pathways.html", "w") as htmlFile:
 
 def tablify(moduleList):
     """
-    Return a string containing a markdown table of the prereqs
-    of the modules in the list moduleList.
+    Return a string containing a markdown table of the prereqs of the
+    modules in the list moduleList.
     """
     header = "| Module | Year | Term | Prerequisites\n|----|----|----|----\n"
     rows = ""
     for code in moduleList:
-        rows += tableRow(code)  # this is a fold...do it with functools
+        rows += tableRow(modules[code])  # this is a fold...do it with functools
     return header + rows
 
 
-def tableRow(code):
-    """create the row of the table corresponding to modId"""
-    module = modules[code]
+def tableRow(module):
+    """
+    create and return the row of the prereqs table for the given module
+    """
 
     moduleCol = (
         '<a id="'
-        + code
+        + module.code
         + '"></a>'
         + "["
-        + code
+        + module.code
         + " "
         + module.name
         + "]("

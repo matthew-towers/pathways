@@ -7,13 +7,13 @@ import requests
 from PyPDF2 import PdfReader
 from time import sleep
 
-syllabusPath = "/home/mjt/Downloads/syllabuses/"
+SYLLABUS_PATH = "/home/mjt/Downloads/syllabuses/"
 
 def downloadSyllabus(module):
     url = module["url"]
     filename = module["syllabusFilename"]
     r = requests.get(url, allow_redirects=True)
-    with open(syllabusPath + filename, "wb") as pdfFile:
+    with open(SYLLABUS_PATH + filename, "wb") as pdfFile:
         pdfFile.write(r.content)
 
 
@@ -25,7 +25,7 @@ def getAllSyllabuses():
         print("Fetching " + modules["syllabusFilename"] + "\t" + str(i) + " of " + str(n))
         downloadSyllabus(module)
         sleep(10)  # don't get rate-limited
-        
+
 
 def getTermFromSyllabus(filename):
     # input is the filename of a pdf syllabus
@@ -77,7 +77,7 @@ def updateTermInfo():
     with open("modules.json") as f:
         modules = json.load(f)
     for module in modules.values():
-        t = getTermFromSyllabus(syllabusPath + module["syllabusFilename"])
+        t = getTermFromSyllabus(SYLLABUS_PATH + module["syllabusFilename"])
         if t != module["term"]:
             print("Changing " + module["code"] + " from term " +
                     str(module["term"]) + " to term " + str(t))
@@ -92,7 +92,7 @@ def updateYearInfo():
     with open("modules.json") as f:
         modules = json.load(f)
     for module in modules.values():
-        y = getYearFromSyllabus(syllabusPath + module["syllabusFilename"])
+        y = getYearFromSyllabus(SYLLABUS_PATH + module["syllabusFilename"])
         if (y != -1) and (y != module["year"]):
             print("Changing " + module["code"] + " from year " +
                     str(module["year"]) + " to year " + str(y))
