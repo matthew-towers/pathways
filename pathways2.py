@@ -80,6 +80,36 @@ class Module:
         self.url = url
         self.isRunning = running
 
+    def toDict(self):
+        return {
+            "name": self.name,
+            "code": self.code,
+            "year": self.year,
+            "term": self.term,
+            "syllabusFilename": self.syllFile,
+            "prereqs": self.prereqs,
+            "ancillary": self.ancillary,
+            "url": self.url,
+            "isRunning": self.isRunning,
+        }
+
+    @classmethod
+    def dictToModule(cls, m):
+        # convert a module dict, as parsed from json, to a Module
+        # receives Module class as a first argument
+        return cls(
+            m["name"],
+            m["code"],
+            m["year"],
+            m["term"],
+            m["syllabusFilename"],
+            m["prereqs"],
+            m["ancillary"],
+            m["url"],
+            m["isRunning"],
+        )
+
+
 
 class Pathway:
     def __init__(self, name, modules):
@@ -89,35 +119,6 @@ class Pathway:
     def add_module(self, module):
         self.modules.append(module)
 
-
-def dictToModule(m):
-    # convert a module dict as parsed from json to a Module
-    # module dicts don't have the
-    return Module(
-        m["name"],
-        m["code"],
-        m["year"],
-        m["term"],
-        m["syllabusFilename"],
-        m["prereqs"],
-        m["ancillary"],
-        m["url"],
-        m["isRunning"],
-    )
-
-
-def moduleToDict(m):
-    return {
-        "name": m.name,
-        "code": m.code,
-        "year": m.year,
-        "term": m.term,
-        "syllabusFilename": m.syllFile,
-        "prereqs": m.prereqs,
-        "ancillary": m.ancillary,
-        "url": m.url,
-        "isRunning": m.isRunning,
-    }
 
 
 ######################
@@ -130,7 +131,7 @@ with open("modules.json") as f:
 
 modules = {}
 for code, modDict in modulesFromJson.items():
-    modules[code] = dictToModule(modDict)
+    modules[code] = Module.dictToModule(modDict)
 
 ##################################################
 # Scrape filenames from the web, update modules  #
