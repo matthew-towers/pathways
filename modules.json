@@ -5,7 +5,7 @@
         "name": "Economics 1 - Combined Studies",
         "code": "MATH0002",
         "year": 1.0,
-        "term": 1,
+        "term": 1.5,
         "syllabusFilename": "math0002.pdf",
         "isRunning": true,
         "pathways": [
@@ -155,12 +155,12 @@
     },
     "MATH0011": {
         "id": "methods2",
-        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0011.pdf",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0011_syllabus.pdf",
         "name": "Mathematical Methods 2",
         "code": "MATH0011",
         "year": 1.0,
         "term": 2,
-        "syllabusFilename": "math0011.pdf",
+        "syllabusFilename": "math0011_syllabus.pdf",
         "isRunning": true,
         "pathways": [
             "y1y2"
@@ -359,12 +359,12 @@
     },
     "MATH0055": {
         "id": "electromagnetism",
-        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0055.pdf",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0055_4.pdf",
         "name": "Mathematics of Electromagnetism and Special Relativity",
         "code": "MATH0055",
         "year": 2.5,
         "term": 2,
-        "syllabusFilename": "math0055.pdf",
+        "syllabusFilename": "math0055_4.pdf",
         "isRunning": true,
         "pathways": [
             "y1y2",
@@ -554,7 +554,7 @@
     "MATH0021": {
         "id": "commutativealgebra",
         "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0021.pdf",
-        "name": "Commutative Algebra",
+        "name": "Homological Algebra",
         "code": "MATH0021",
         "year": 3.0,
         "term": 2,
@@ -593,12 +593,12 @@
     },
     "MATH0023": {
         "id": "algebraictopology",
-        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0023_1.pdf",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0023_2.pdf",
         "name": "Algebraic Topology",
         "code": "MATH0023",
         "year": 3.0,
         "term": 1,
-        "syllabusFilename": "math0023_1.pdf",
+        "syllabusFilename": "math0023_2.pdf",
         "isRunning": true,
         "pathways": [
             "Algebra"
@@ -730,7 +730,7 @@
         "prereqs": [
             [
                 "MATH0057",
-                "needed"
+                "recommended"
             ]
         ],
         "ancillary": false
@@ -1231,12 +1231,12 @@
     },
     "MATH0075": {
         "id": "liegroupsandliealgebras",
-        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0075.pdf",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0075_2.pdf",
         "name": "Lie Groups and Lie Algebras",
         "code": "MATH0075",
         "year": 3.5,
         "term": 1,
-        "syllabusFilename": "math0075.pdf",
+        "syllabusFilename": "math0075_2.pdf",
         "isRunning": true,
         "pathways": [
             "Algebra"
@@ -1251,12 +1251,12 @@
     },
     "MATH0076": {
         "id": "algebraicgeometry",
-        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0076.pdf",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0076_3.pdf",
         "name": "Algebraic Geometry",
         "code": "MATH0076",
         "year": 4.0,
         "term": 1,
-        "syllabusFilename": "math0076.pdf",
+        "syllabusFilename": "math0076_3.pdf",
         "isRunning": true,
         "pathways": [
             "Algebra"
@@ -1411,12 +1411,12 @@
     },
     "MATH0104": {
         "id": "modularforms",
-        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0104.pdf",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0104_2.pdf",
         "name": "Modular Forms",
         "code": "MATH0104",
         "year": 3.5,
-        "term": 2,
-        "syllabusFilename": "math0104.pdf",
+        "term": 1,
+        "syllabusFilename": "math0104_2.pdf",
         "isRunning": true,
         "pathways": [
             "Algebra"
@@ -1445,7 +1445,7 @@
         "year": 4.0,
         "term": 1,
         "syllabusFilename": "math0106.pdf",
-        "isRunning": true,
+        "isRunning": false,
         "pathways": [
             "Applied Mathematics"
         ],
@@ -1463,12 +1463,12 @@
     },
     "MATH0107": {
         "id": "probabilisticmethod",
-        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0107.pdf",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0107_0.pdf",
         "name": "Probabilistic Method in Combinatorics",
         "code": "MATH0107",
         "year": 3.5,
         "term": 2,
-        "syllabusFilename": "math0107.pdf",
+        "syllabusFilename": "math0107_0.pdf",
         "isRunning": true,
         "pathways": [
             "Analysis"
@@ -1488,5 +1488,152 @@
             ]
         ],
         "ancillary": false
+    },
+    "MATH0108": {
+        "id": "commringsandalg",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/0108_0.pdf",
+        "name": "Commutative Rings and Algebra",
+        "code": "MATH0108",
+        "year": 3,
+        "term": 2,
+        "syllabusFilename": "0108_0.pdf",
+        "isRunning": false,
+        "pathways": [
+            "Algebra"
+        ],
+        "prereqs": [
+            [
+                "MATH0053",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0109": {
+        "id": "lean",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0019_2_0.pdf",
+        "name": "Problem Solving in Lean",
+        "code": "MATH0109",
+        "year": 3,
+        "term": 2,
+        "syllabusFilename": "math0019_2_0.pdf",
+        "isRunning": false,
+        "pathways": [
+            "Algebra"
+        ],
+        "prereqs": [
+            [
+                "Familiarity with the notion of proving theorems (for example, at least one of MATH0034, MATH0051, MATH0052 or MATH0053)",
+                "comment"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0061": {
+        "id": "furtherant",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0061_syllabus_0.pdf",
+        "name": "Further Topics in Algebraic Number Theory",
+        "code": "MATH0061",
+        "year": 4,
+        "term": 2,
+        "syllabusFilename": "math0061_syllabus_0.pdf",
+        "isRunning": true,
+        "pathways": [
+            "Algebra"
+        ],
+        "prereqs": [
+            [
+                "MATH0035",
+                "needed"
+            ],
+            [
+                "MATH0022",
+                "needed"
+            ]
+        ],
+        "ancillary": false
+    },
+    "MATH0110": {
+        "name": "Analysis for Joint Honours",
+        "code": "MATH0110",
+        "year": 1,
+        "term": 1,
+        "syllabusFilename": "math0110_0.pdf",
+        "prereqs": [],
+        "ancillary": false,
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0110_0.pdf",
+        "isRunning": true
+    },
+    "STAT0001": {
+        "name": "Economics 2 - Combined Studies",
+        "code": "STAT0001",
+        "year": 2,
+        "term": 1.5,
+        "syllabusFilename": "stat0001.pdf",
+        "prereqs": [
+            [
+                "MATH0002",
+                "needed"
+            ]
+        ],
+        "ancillary": false,
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/stat0001.pdf",
+        "isRunning": true
+    },
+    "MATH0114": {
+        "name": "Mathematics for Machine Learning and Artificial Intelligence",
+        "code": "MATH0114",
+        "year": 3,
+        "term": 2,
+        "syllabusFilename": "math0114_0.pdf",
+        "prereqs": [
+            [
+                "MATH0003",
+                "needed"
+            ],
+            [
+                "MATH0004",
+                "needed"
+            ],
+            [
+                "MATH0005",
+                "needed"
+            ],
+            [
+                "MATH0006",
+                "needed"
+            ],
+            [
+                "MATH0011",
+                "needed"
+            ],
+            [
+                "MATH0014",
+                "needed"
+            ]
+        ],
+        "ancillary": false,
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0114_0.pdf",
+        "isRunning": true
+    },
+    "MATH0115": {
+        "name": "Solid Mechanics",
+        "code": "MATH0115",
+        "year": 3.5,
+        "term": 2,
+        "syllabusFilename": "math0115_0.pdf",
+        "prereqs": [
+            [
+                "MATH0015",
+                "needed"
+            ],
+            [
+                "MATH0056",
+                "needed"
+            ]
+        ],
+        "ancillary": false,
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0115_0.pdf",
+        "isRunning": true
     }
 }

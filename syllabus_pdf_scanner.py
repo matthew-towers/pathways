@@ -9,6 +9,7 @@ from time import sleep
 
 SYLLABUS_PATH = "/home/mjt/Downloads/syllabuses/"
 
+
 def downloadSyllabus(module):
     url = module["url"]
     filename = module["syllabusFilename"]
@@ -22,7 +23,10 @@ def getAllSyllabuses():
         modules = json.load(f)
     n = len(modules)
     for i, module in enumerate(modules.values()):
-        print("Fetching " + modules["syllabusFilename"] + "\t" + str(i) + " of " + str(n))
+        print(
+            "Fetching " + modules["syllabusFilename"] +
+            "\t" + str(i) + " of " + str(n)
+        )
         downloadSyllabus(module)
         sleep(10)  # don't get rate-limited
 
@@ -79,8 +83,14 @@ def updateTermInfo():
     for module in modules.values():
         t = getTermFromSyllabus(SYLLABUS_PATH + module["syllabusFilename"])
         if t != module["term"]:
-            print("Changing " + module["code"] + " from term " +
-                    str(module["term"]) + " to term " + str(t))
+            print(
+                "Changing "
+                + module["code"]
+                + " from term "
+                + str(module["term"])
+                + " to term "
+                + str(t)
+            )
             module["term"] = t
     print("Writing out modules.json.")
     with open("modules.json", "w") as f:
@@ -94,12 +104,19 @@ def updateYearInfo():
     for module in modules.values():
         y = getYearFromSyllabus(SYLLABUS_PATH + module["syllabusFilename"])
         if (y != -1) and (y != module["year"]):
-            print("Changing " + module["code"] + " from year " +
-                    str(module["year"]) + " to year " + str(y))
+            print(
+                "Changing "
+                + module["code"]
+                + " from year "
+                + str(module["year"])
+                + " to year "
+                + str(y)
+            )
             module["year"] = y
     print("Writing out modules.json")
     with open("modules.json", "w") as f:
         json.dump(modules, f, indent=4)
+
 
 # typical text_extract output
 #   MATH0038 ...
