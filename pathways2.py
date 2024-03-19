@@ -72,33 +72,33 @@ ANCILLARY_MODULES = [
 
 class Module:
     def __init__(
-        self, name, code, year, term, syllFile, prereqs, ancillary, url, running
+        self, name, code, year, term, syllabus_file, prereqs, ancillary, url, running
     ):
         self.name = name
         self.code = code
         self.year = year
         self.term = term
-        self.syllFile = syllFile
+        self.syllabus_file = syllabus_file
         self.prereqs = prereqs
         self.ancillary = ancillary
         self.url = url
-        self.isRunning = running
+        self.is_running = running
 
-    def toDict(self):
+    def to_dict(self):
         return {
             "name": self.name,
             "code": self.code,
             "year": self.year,
             "term": self.term,
-            "syllabusFilename": self.syllFile,
+            "syllabusFilename": self.syllabus_file,
             "prereqs": self.prereqs,
             "ancillary": self.ancillary,
             "url": self.url,
-            "isRunning": self.isRunning,
+            "isRunning": self.is_running,
         }
 
     @classmethod
-    def dictToModule(cls, m):
+    def dict_to_module(cls, m):
         # convert a module dict, as parsed from json, to a Module
         # receives Module class as a first argument
         return cls(
@@ -129,14 +129,14 @@ class Pathway:
 
 
 with open("modules.json") as f:
-    modulesFromJson = json.load(f)
+    modules_from_json = json.load(f)
 
-modules = {}
-for code, modDict in modulesFromJson.items():
-    modules[code] = Module.dictToModule(modDict)
+MODULES = {}
+for code, mod_dict in modules_from_json.items():
+    MODULES[code] = Module.dict_to_module(mod_dict)
 
 ##################################################
-# Scrape filenames from the web, update modules  #
+# Scrape filenames from the web, update MODULES  #
 # Remember which modules had their url changed   #
 # Mark modules not on the webpage as not running #
 ##################################################
@@ -170,13 +170,14 @@ if SCRAPE:
 
     # The UCL CMS puts every syllabus file link in a span
     spans = soup.find_all("span")
-    modulesOnWebPage = set()
+    modules_on_web = set()
     for s in spans:
         a = s.find("a")
         if a is not None:
-            # this a holds a link to a module syllabus
+            # ...then "a" is a hyperlink to a syllabus pdf
+            # with the link text being the module code then the name
             code_and_name = a.contents[0]  # e.g. "MATH0005 Algebra 1"
-            # get rid of weird non-space whitespace
+            # get rid of non-breaking space u00a0
             code_and_name = code_and_name.replace(" ", " ")
             module_url = a["href"]
             filename = module_url.split("/")[-1]
@@ -184,35 +185,43 @@ if SCRAPE:
                 "(MATH|STAT)\\d{4}", code_and_name, re.IGNORECASE
             )
             if module_code_search is None:
-                print(f"No code in{code_and_name}. Abandoning module.")
+                print(f"No code in {code_and_name}. Abandoning module.")
                 continue
             else:
-                moduleCode = module_code_search[0].upper()
-                modulesOnWebPage.add(moduleCode)
-                print(code_and_name)
+                module_code = module_code_search[0].upper()
+                modules_on_web.add(module_code)
                 module_name = code_and_name.split(" ", 1)[1]
                 # split at first space, assume this is the name
-            if moduleCode in modules:
-                modules[moduleCode].url = module_url
-                modulesFromJson[moduleCode]["url"] = module_url
-                modules[moduleCode].syllFile = filename
-                modulesFromJson[moduleCode]["syllabusFilename"] = filename
-            elif moduleCode not in ANCILLARY_MODULES:
+            if module_code in MODULES:
+                MODULES[module_code].url = module_url
+                modules_from_json[module_code]["url"] = module_url
+                MODULES[module_code].syllabus_file = filename
+                modules_from_json[module_code]["syllabusFilename"] = filename
+            elif module_code not in ANCILLARY_MODULES:
                 print(
-                    f"Found non-ancillary module on web not in modules.json: {moduleCode}. Creating a new record."
+                    f"Non-ancillary module on web not in modules.json: {module_code}."
                 )
+                print("Creating a new record.")
                 # create a new entry for modules.json
                 mod = Module(
-                    module_name, moduleCode, 0, 0, filename, [], False, module_url, True
-                )  # cant get the true term, year, prereq info from here so just use blank values. TODO: automatically scrape the pdf
-                modules[moduleCode] = mod
-                modulesFromJson[moduleCode] = mod.toDict()
+                    module_name,
+                    module_code,
+                    0,
+                    0,
+                    filename,
+                    [],
+                    False,
+                    module_url,
+                    True,
+                )  # can't get the true term, year, prereq info from here so just use blank values. TODO: automatically scrape the pdf, or just dl and display and get values from kbd
+                MODULES[module_code] = mod
+                modules_from_json[module_code] = mod.to_dict()
 
-    for moduleCode in modules:
-        if moduleCode not in modulesOnWebPage:
-            print(moduleCode + " not on webpage, setting it to not running.")
-            modules[moduleCode].isRunning = False
-            modulesFromJson[moduleCode]["isRunning"] = False
+    for module_code in MODULES:
+        if module_code not in modules_on_web:
+            print(module_code + " not on webpage, setting it to not running.")
+            MODULES[module_code].is_running = False
+            modules_from_json[module_code]["isRunning"] = False
 
 
 #####################################
@@ -223,23 +232,25 @@ if SCRAPE:
 if SCRAPE:
     print("Writing changes to modules.json...")
     with open("modules.json", "w") as f:
-        # indent makes the file human-readable
-        json.dump(modulesFromJson, f, indent=4)
+        json.dump(modules_from_json, f, indent=4)
+        # indent=4 makes the file human-readable
     print("...done!")
+
+
 #####################################
 # Build networkX prerequisite graph #
 #####################################
 
-prereqGraph = nx.DiGraph()
-prereqGraph.add_nodes_from(modules)
+prereq_graph = nx.DiGraph()
+prereq_graph.add_nodes_from(MODULES)
 # prereqGraph is a graph whose nodes are the module codes
 
-for code, module in modules.items():
-    for prereqCode, prereqType in module.prereqs:
-        if (prereqType == "needed") or (prereqType == "recommended"):
-            prereqGraph.add_edge(prereqCode, code, object=prereqType)
+for code, module in MODULES.items():
+    for prereq_code, prereq_type in module.prereqs:
+        if (prereq_type == "needed") or (prereq_type == "recommended"):
+            prereq_graph.add_edge(prereq_code, code, object=prereq_type)
 
-assert nx.is_directed_acyclic_graph(prereqGraph)
+assert nx.is_directed_acyclic_graph(prereq_graph)
 
 
 #######################
@@ -259,28 +270,28 @@ with open("pathways.json") as f:
 # prerequisites. We want them to be prerequisite-closed when we
 # create our graphs.
 
-pathwayClosures = {}
+pathway_closures = {}
 
-for pathwayName, pathway in pathways.items():
-    pathwayClosure = set()
+for pathway_name, pathway in pathways.items():
+    pathway_closure = set()
     for code in pathway:
-        pathwayClosure.add(code)
-        pathwayClosure.update(nx.ancestors(prereqGraph, code))
-    pathwayClosures[pathwayName] = pathwayClosure
+        pathway_closure.add(code)
+        pathway_closure.update(nx.ancestors(prereq_graph, code))
+    pathway_closures[pathway_name] = pathway_closure
 
 # When using graphviz, we want the pathway entries sorted by year then
 # by term. That means turning the pathway sets into lists.
 
-pathwayClosuresLists = {}
+pathway_closures_lists = {}
 
-for pathwayName, moduleCodeSet in pathwayClosures.items():
-    moduleCodeList = list(moduleCodeSet)
-    moduleCodeList = sorted(moduleCodeList, key=lambda m: modules[m].term)
-    moduleCodeList = sorted(moduleCodeList, key=lambda m: modules[m].year)
+for pathway_name, module_code_set in pathway_closures.items():
+    module_code_list = list(module_code_set)
+    module_code_list = sorted(module_code_list, key=lambda m: MODULES[m].term)
+    module_code_list = sorted(module_code_list, key=lambda m: MODULES[m].year)
     # Python sorts are guaranteed to be "stable": they don't
     # change the order of things with the same key, see
     # https://docs.python.org/3/howto/sorting.html#sort-stability-and-complex-sorts
-    pathwayClosuresLists[pathwayName] = moduleCodeList
+    pathway_closures_lists[pathway_name] = module_code_list
 
 
 ########################
@@ -290,7 +301,7 @@ for pathwayName, moduleCodeSet in pathwayClosures.items():
 # Configure the colours we will use. The colours dict maps (year, term)
 # to a graphviz colour name.
 
-colours = {
+COLOURS = {
     (1, 1): "orange",
     (1, 2): "orange",
     (1, 1.5): "orange",
@@ -308,12 +319,12 @@ colours = {
 }
 
 
-def makeGraphVizGraph(pathwayName, pathwayContents):
+def make_gv_graph(pathway_name, pathway_contents):
     # take a pathway, as a list of module codes sorted by year and term.
     # Make an svg using graphviz and save it.
     # print("building gv graph for " + pathwayName)
-    pathwayGraph = gv.Digraph(
-        filename=pathwayName,
+    pathway_graph = gv.Digraph(
+        filename=pathway_name,
         format="svg",
         node_attr={
             "shape": "box",
@@ -322,54 +333,55 @@ def makeGraphVizGraph(pathwayName, pathwayContents):
             "penwidth": "5",
         },
     )
-    firstModule = modules[pathwayContents[0]]
-    oldYear = firstModule.year
-    oldTerm = firstModule.term
-    currentSubGraph = gv.Digraph(str(oldYear) + " " + str(oldTerm))
-    currentSubGraphNodes = []
-    currentSubGraph.attr(rank="same")
-    # NB: using currentSubGraph.graph_attr.update(rank='same') sets
+    first_mod = MODULES[pathway_contents[0]]
+    old_year = first_mod.year
+    old_term = first_mod.term
+    current_subgraph = gv.Digraph(str(old_year) + " " + str(old_term))
+    current_subgraph_nodes = []
+    current_subgraph.attr(rank="same")
+    # NB: using current_subgraph.graph_attr.update(rank="same") sets
     # everything in the whole graph to the same rank.
-    for code in pathwayContents:
-        module = modules[code]
+    for code in pathway_contents:
+        module = MODULES[code]
         # are we starting a new year or term?  Then set everything to
         # the same rank.
-        if (module.year != oldYear) or (module.term != oldTerm):
+        if (module.year != old_year) or (module.term != old_term):
             # add the old subgraph to the big graph
-            pathwayGraph.subgraph(currentSubGraph)
+            pathway_graph.subgraph(current_subgraph)
             # update oldYear and oldTerm
-            oldYear = module.year
-            oldTerm = module.term
+            old_year = module.year
+            old_term = module.term
             # make a new subgraph
-            currentSubGraph = gv.Digraph(str(oldYear) + " " + str(oldTerm))
-            currentSubGraphNodes = []
-            currentSubGraph.attr(rank="same")
+            current_subgraph = gv.Digraph(str(old_year) + " " + str(old_term))
+            current_subgraph_nodes = []
+            current_subgraph.attr(rank="same")
         # build label for current node
         label = module.code + "\n" + module.name
-        # build url for current node
         url = module.url
         # add a node to the current subgraph
-        currentSubGraph.node(
-            code, label, color=colours[(module.year, module.term)], href=url
+        current_subgraph.node(
+            code, label, color=COLOURS[(module.year, module.term)], href=url
         )
-        currentSubGraphNodes.append(module.code + " " + module.name)
+        current_subgraph_nodes.append(module.code + " " + module.name)
         # build prereq edges
-        for prereqCode, prereqType in module.prereqs:
-            if prereqType == "comment":
-                continue
-            elif prereqType == "needed":
-                pathwayGraph.edge(prereqCode, code)
+        for prereq_code, prereq_type in module.prereqs:
+            if prereq_type == "needed":
+                pathway_graph.edge(prereq_code, code)
+            elif prereq_type == "recommended":
+                pathway_graph.edge(prereq_code, code, style="dashed")
+            elif prereq_type == "comment":
+                pass
             else:
-                pathwayGraph.edge(prereqCode, code, style="dashed")
+                print(f"Invalid prereq type: {module.code}")
     # deal with last subgraph
-    pathwayGraph.subgraph(currentSubGraph)
-    pathwayGraph.render()
+    pathway_graph.subgraph(current_subgraph)
+    pathway_graph.render()
 
 
 # Build a graph for each pathway
 
-for pathwayName, pathwayContents in pathwayClosuresLists.items():
-    makeGraphVizGraph(pathwayName, pathwayContents)
+for pathway_name, pathwayContents in pathway_closures_lists.items():
+    make_gv_graph(pathway_name, pathwayContents)
 
 #######################
 # Build pathways.html #
@@ -385,19 +397,19 @@ for pathwayName, pathwayContents in pathwayClosuresLists.items():
 #  - modelling... pathway
 # Remember to close the html tag
 
-with open("pathways.html", "w") as htmlFile:
+with open("pathways.html", "w") as html_file:
     # add the preamble
     preamble = open("preamble.html").read()
-    htmlFile.write(preamble)
-    htmlFile.write("\n")
+    html_file.write(preamble)
+    html_file.write("\n")
     # add the pathway svgs, one by one
-    for pathwayName in pathways:
-        htmlFile.write("<h1>" + pathwayName + "</h1>\n")
-        svg = open(pathwayName + ".svg").read()
-        htmlFile.write(svg)
-        htmlFile.write("\n")
+    for pathway_name in pathways:
+        html_file.write("<h1>" + pathway_name + "</h1>\n")
+        svg = open(pathway_name + ".svg").read()
+        html_file.write(svg)
+        html_file.write("\n")
     # close the html tag
-    htmlFile.write("</html>")
+    html_file.write("</html>")
 
 
 #####################
@@ -405,60 +417,62 @@ with open("pathways.html", "w") as htmlFile:
 #####################
 
 
-def tablify(moduleList):
+def tablify(module_list):
     """
     Return a string containing a markdown table of the prereqs of the
     modules in the list moduleList.
     """
     header = "| Module | Year | Term | Prerequisites\n|----|----|----|----\n"
-    rows = "".join(tableRow(modules[code]) for code in moduleList)
+    rows = "".join(generate_table_row(MODULES[code]) for code in module_list)
     # for code in moduleList:
     #     # this is a fold...do it with functools
     #     rows += tableRow(modules[code])
     return header + rows
 
 
-def tableRow(module):
+def generate_table_row(module):
     """
     create and return the row of the prereqs table for the given module
     """
 
-    moduleCol = f'<a id="{module.code}"></a>[{module.code} {module.name}]({module.url})'
+    module_col = (
+        f'<a id="{module.code}"></a>[{module.code} {module.name}]({module.url})'
+    )
     if module.year == 2.5:
-        yearCol = "2 or 3"
+        year_col = "2 or 3"
     elif module.year == 3.5:
-        yearCol = "3 or 4"
+        year_col = "3 or 4"
     else:
-        yearCol = str(int(module.year))
+        year_col = str(int(module.year))
     if module.term == 1.5:  # mod runs in both terms
-        termCol = "1 and 2"
+        term_col = "1 and 2"
     else:
-        termCol = str(module.term)
-    prereqsCol = ""
-    for prereqCode, prereqType in module.prereqs:
+        term_col = str(module.term)
+    prereqs_col = ""
+    for prereq_code, prereq_types in module.prereqs:
         # append prereq code, name, link to prereqsCol, whether it's optional
-        if prereqType == "comment":
-            prereqsCol += prereqCode + ", "
-        elif prereqType == "needed":
-            prereqModule = modules[prereqCode]
-            prereqsCol += (
-                f'<a href="#{prereqCode}">{prereqCode} {prereqModule.name}</a>, '
+        if prereq_types == "comment":
+            prereqs_col += prereq_code + ", "
+        elif prereq_types == "needed":
+            prereq_module = MODULES[prereq_code]
+            prereqs_col += (
+                f'<a href="#{prereq_code}">{prereq_code} {prereq_module.name}</a>, '
             )
         else:
-            prereqModule = modules[prereqCode]
-            prereqsCol += f'<a href="#{prereqCode}">{prereqCode} {prereqModule.name}</a> (recommended), '
-    return f"| {moduleCol} | {yearCol} | {termCol} | {prereqsCol[:-2]}\n"
+            prereq_module = MODULES[prereq_code]
+            prereqs_col += f'<a href="#{prereq_code}">{prereq_code} {prereq_module.name}</a> (recommended), '
+    return f"| {module_col} | {year_col} | {term_col} | {prereqs_col[:-2]}\n"
 
 
-with open("pathways.md", "w") as mdFile:
+with open("pathways.md", "w") as md_file:
     # add the preamble
     preamble = open("preamble.md").read()
-    mdFile.write(preamble)
-    mdFile.write("\n")
+    md_file.write(preamble)
+    md_file.write("\n")
     # add the pathway tables, one by one
-    for pathwayName, pathwayModules in pathways.items():
-        pathwayModules = sorted(pathwayModules, key=lambda m: modules[m].term)
-        pathwayModules = sorted(pathwayModules, key=lambda m: modules[m].year)
-        mdFile.write("## " + pathwayName + "\n\n")
-        mdFile.write(tablify(pathwayModules))
-        mdFile.write("\n")
+    for pathway_name, pathway_modules in pathways.items():
+        pathway_modules = sorted(pathway_modules, key=lambda m: MODULES[m].term)
+        pathway_modules = sorted(pathway_modules, key=lambda m: MODULES[m].year)
+        md_file.write("## " + pathway_name + "\n\n")
+        md_file.write(tablify(MODULES))
+        md_file.write("\n")
