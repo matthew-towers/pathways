@@ -1,36 +1,11 @@
-# Pathways: new version
+# Pathways.
 
 # TODO:
-# - [x] open modules.json.  Parse it into a dict of code:Module pairs.
-# - [x] unless a dont-scrape option was passed, scrape the webpage and
-# get which modules are present and their
-# filenames
-# - [x] (unless...) Update filenames in the code:Module dict. If modules not on
-# web, mark as not running. If we
-# have filenames for modules not in the json file, warn about this. We
-# can't actually create the Module object because we can't get year,
-# term, etc.
-# - [x] (unless...) update modules.json (converting from Module objects
-# to dicts)
-# - [x] build the big prereq graph in networkx
-# - [x] assert that it's a DAG
-# - [x] open and parse pathways.json
-# - [ ] for each pathway,
-#     - [x] get the nodes corresp to modules tagged with that pathway
-#     - [x] use networkx ancestors to augment with prereqs
-#     - [x] convert to a list and sort by year and term
-#     - [x] build a graphviz svg
-#     - [x] build a markdown table
-#     - [ ] make networkx subgraphs
-#     - [ ] build a d3js fancy graph
-# - [x] create and write out the full markdown file
-# - [x] create and write out the full html file
+# - [ ] make SCRAPE a command-line argument
+# - [ ] for each pathway build a d3js fancy graph
 # - [ ] create fancy webpage with fancy graphs
-# - [x] fix term and year info by reading pdf files with PyPDF2
 # - [ ] deal with non-running modules
-# - [x] push to github
-# - [x] explain that y-axis in the html file is time
-# - [ ] scrape the syllabus for prereq, year, term data when a new module is found. (Can't really do the prereqs because they can be written weirdly)
+# - [ ] scrape the syllabus/query the user for prereq, year, term data when a new module is found. (Can't really do the prereqs because they can be written weirdly)
 
 import json
 from bs4 import BeautifulSoup
@@ -322,7 +297,6 @@ COLOURS = {
 def make_gv_graph(pathway_name, pathway_contents):
     # take a pathway, as a list of module codes sorted by year and term.
     # Make an svg using graphviz and save it.
-    # print("building gv graph for " + pathwayName)
     pathway_graph = gv.Digraph(
         filename=pathway_name,
         format="svg",
@@ -395,7 +369,6 @@ for pathway_name, pathwayContents in pathway_closures_lists.items():
 #  - analysis pathway
 #  - applied pathway
 #  - modelling... pathway
-# Remember to close the html tag
 
 with open("pathways.html", "w") as html_file:
     # add the preamble
@@ -424,9 +397,6 @@ def tablify(module_list):
     """
     header = "| Module | Year | Term | Prerequisites\n|----|----|----|----\n"
     rows = "".join(generate_table_row(MODULES[code]) for code in module_list)
-    # for code in moduleList:
-    #     # this is a fold...do it with functools
-    #     rows += tableRow(modules[code])
     return header + rows
 
 
@@ -474,5 +444,5 @@ with open("pathways.md", "w") as md_file:
         pathway_modules = sorted(pathway_modules, key=lambda m: MODULES[m].term)
         pathway_modules = sorted(pathway_modules, key=lambda m: MODULES[m].year)
         md_file.write("## " + pathway_name + "\n\n")
-        md_file.write(tablify(MODULES))
+        md_file.write(tablify(pathway_modules))
         md_file.write("\n")

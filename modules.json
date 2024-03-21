@@ -1327,7 +1327,15 @@
     ],
     "prereqs": [
       [
-        "MATH0011",
+        "MATH0008",
+        "needed"
+      ],
+      [
+        "MATH0010",
+        "needed"
+      ],
+      [
+        "MATH0003",
         "needed"
       ]
     ],
@@ -1404,7 +1412,7 @@
       ],
       [
         "MATH0031",
-        "needed"
+        "recommended"
       ]
     ],
     "ancillary": false
@@ -1432,7 +1440,7 @@
       ],
       [
         "MATH0034",
-        "needed"
+        "recommended"
       ]
     ],
     "ancillary": false
