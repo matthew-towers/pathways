@@ -1520,7 +1520,7 @@
   "MATH0109": {
     "id": "lean",
     "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0019_2_0.pdf",
-    "name": "Problem Solving in Lean",
+    "name": "Theorem Proving in Lean",
     "code": "MATH0109",
     "year": 3,
     "term": 2,

@@ -1,7 +1,6 @@
 # Pathways.
 
 # TODO:
-# - [ ] make SCRAPE a command-line argument
 # - [ ] for each pathway build a d3js fancy graph
 # - [ ] create fancy webpage with fancy graphs
 # - [ ] deal with non-running modules
@@ -15,7 +14,18 @@ import networkx as nx
 import graphviz as gv
 import re
 
-SCRAPE = False
+args = sys.argv
+
+if len(args) > 2:
+    print("Too many arguments.")
+    sys.exit(1)
+elif len(args) == 2 and args[1] != "scrape":
+    print("Bad argument.")
+    sys.exit(1)
+elif len(args) == 2 and args[1] == "scrape":
+    SCRAPE = True
+else:
+    SCRAPE = False
 
 if not SCRAPE:
     print("Not scraping.")
