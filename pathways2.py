@@ -57,13 +57,13 @@ ANCILLARY_MODULES = [
 
 class Module:
     def __init__(
-        self, name, code, year, term, syllabus_file, prereqs, ancillary, url, running
+        self, name, code, year, term, syllabus_filename, prereqs, ancillary, url, running
     ):
         self.name = name
         self.code = code
         self.year = year
         self.term = term
-        self.syllabus_file = syllabus_file
+        self.syllabus_filename = syllabus_filename
         self.prereqs = prereqs
         self.ancillary = ancillary
         self.url = url
@@ -75,7 +75,7 @@ class Module:
             "code": self.code,
             "year": self.year,
             "term": self.term,
-            "syllabus_filename": self.syllabus_file,
+            "syllabus_filename": self.syllabus_filename,
             "prereqs": self.prereqs,
             "ancillary": self.ancillary,
             "url": self.url,
@@ -180,7 +180,7 @@ if SCRAPE:
             if module_code in MODULES:
                 MODULES[module_code].url = module_url
                 modules_from_json[module_code]["url"] = module_url
-                MODULES[module_code].syllabus_file = filename
+                MODULES[module_code].syllabus_filename = filename
                 modules_from_json[module_code]["syllabus_filename"] = filename
             elif module_code not in ANCILLARY_MODULES:
                 print(

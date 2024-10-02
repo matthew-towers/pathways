@@ -6,8 +6,8 @@
     "code": "MATH0002",
     "year": 1.0,
     "term": 1.5,
-    "syllabusFilename": "math0002.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0002.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2"
     ],
@@ -21,8 +21,8 @@
     "code": "MATH0003",
     "year": 1.0,
     "term": 1,
-    "syllabusFilename": "math0003.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0003.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2"
     ],
@@ -36,8 +36,8 @@
     "code": "MATH0004",
     "year": 1.0,
     "term": 2,
-    "syllabusFilename": "math0004.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0004.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2"
     ],
@@ -56,8 +56,8 @@
     "code": "MATH0005",
     "year": 1.0,
     "term": 1,
-    "syllabusFilename": "math0005.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0005.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2"
     ],
@@ -71,8 +71,8 @@
     "code": "MATH0006",
     "year": 1.0,
     "term": 2,
-    "syllabusFilename": "math0006.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0006.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2"
     ],
@@ -91,8 +91,8 @@
     "code": "MATH0007",
     "year": 1.0,
     "term": 2,
-    "syllabusFilename": "math0007.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0007.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2"
     ],
@@ -106,8 +106,8 @@
     "code": "MATH0008",
     "year": 1.0,
     "term": 1,
-    "syllabusFilename": "math0008.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0008.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2"
     ],
@@ -121,8 +121,8 @@
     "code": "MATH0009",
     "year": 1.0,
     "term": 2,
-    "syllabusFilename": "math0009.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0009.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2"
     ],
@@ -145,8 +145,8 @@
     "code": "MATH0010",
     "year": 1.0,
     "term": 1,
-    "syllabusFilename": "math0010.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0010.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2"
     ],
@@ -160,8 +160,8 @@
     "code": "MATH0011",
     "year": 1.0,
     "term": 2,
-    "syllabusFilename": "math0011_syllabus.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0011_syllabus.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2"
     ],
@@ -180,8 +180,8 @@
     "code": "MATH0013",
     "year": 2.0,
     "term": 1,
-    "syllabusFilename": "math0013.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0013.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2"
     ],
@@ -204,8 +204,8 @@
     "code": "MATH0014",
     "year": 2.0,
     "term": 1,
-    "syllabusFilename": "math0014.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0014.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2",
       "Algebra"
@@ -225,8 +225,8 @@
     "code": "MATH0015",
     "year": 2.0,
     "term": 1,
-    "syllabusFilename": "math0015.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0015.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2"
     ],
@@ -249,8 +249,8 @@
     "code": "MATH0016",
     "year": 2.5,
     "term": 1,
-    "syllabusFilename": "math0016.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0016.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2"
     ],
@@ -269,8 +269,8 @@
     "code": "MATH0051",
     "year": 2.5,
     "term": 2,
-    "syllabusFilename": "math0051.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0051.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2",
       "Analysis"
@@ -290,8 +290,8 @@
     "code": "MATH0052",
     "year": 2.5,
     "term": 2,
-    "syllabusFilename": "math0052.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0052.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2",
       "Analysis"
@@ -319,8 +319,8 @@
     "code": "MATH0053",
     "year": 2.5,
     "term": 2,
-    "syllabusFilename": "math0053.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0053.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2",
       "Algebra"
@@ -340,8 +340,8 @@
     "code": "MATH0054",
     "year": 3.0,
     "term": 2,
-    "syllabusFilename": "math0054.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0054.pdf",
+    "is_running": true,
     "pathways": [
       "Applied Mathematics"
     ],
@@ -364,8 +364,8 @@
     "code": "MATH0055",
     "year": 2.5,
     "term": 2,
-    "syllabusFilename": "math0055_4.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0055_4.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2",
       "Applied Mathematics"
@@ -385,8 +385,8 @@
     "code": "MATH0056",
     "year": 2.5,
     "term": 2,
-    "syllabusFilename": "math0056.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0056.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2",
       "Applied Mathematics"
@@ -410,8 +410,8 @@
     "code": "MATH0057",
     "year": 2.5,
     "term": 2,
-    "syllabusFilename": "math0057.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0057.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2"
     ],
@@ -430,8 +430,8 @@
     "code": "MATH0058",
     "year": 2.5,
     "term": 2,
-    "syllabusFilename": "math0058.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0058.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2"
     ],
@@ -458,8 +458,8 @@
     "code": "MATH0034",
     "year": 2.5,
     "term": 2,
-    "syllabusFilename": "math0034.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0034.pdf",
+    "is_running": true,
     "pathways": [
       "y1y2"
     ],
@@ -478,8 +478,8 @@
     "code": "MATH0017",
     "year": 3.0,
     "term": 1,
-    "syllabusFilename": "math0017.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0017.pdf",
+    "is_running": true,
     "pathways": [
       "Analysis"
     ],
@@ -498,8 +498,8 @@
     "code": "MATH0018",
     "year": 3.0,
     "term": 2,
-    "syllabusFilename": "math0018.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0018.pdf",
+    "is_running": true,
     "pathways": [
       "Analysis"
     ],
@@ -518,8 +518,8 @@
     "code": "MATH0019",
     "year": 3.0,
     "term": 1,
-    "syllabusFilename": "math0019.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0019.pdf",
+    "is_running": true,
     "pathways": [
       "Analysis"
     ],
@@ -538,8 +538,8 @@
     "code": "MATH0020",
     "year": 3.0,
     "term": 2,
-    "syllabusFilename": "math0020.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0020.pdf",
+    "is_running": true,
     "pathways": [
       "Analysis"
     ],
@@ -558,8 +558,8 @@
     "code": "MATH0021",
     "year": 3.0,
     "term": 2,
-    "syllabusFilename": "math0021.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0021.pdf",
+    "is_running": true,
     "pathways": [
       "Algebra"
     ],
@@ -578,8 +578,8 @@
     "code": "MATH0022",
     "year": 3.0,
     "term": 1,
-    "syllabusFilename": "math0022.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0022.pdf",
+    "is_running": true,
     "pathways": [
       "Algebra"
     ],
@@ -598,8 +598,8 @@
     "code": "MATH0023",
     "year": 3.0,
     "term": 1,
-    "syllabusFilename": "math0023_2.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0023_2.pdf",
+    "is_running": true,
     "pathways": [
       "Algebra"
     ],
@@ -618,8 +618,8 @@
     "code": "MATH0024",
     "year": 3.0,
     "term": 2,
-    "syllabusFilename": "math0024.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0024.pdf",
+    "is_running": true,
     "pathways": [
       "Applied Mathematics"
     ],
@@ -642,8 +642,8 @@
     "code": "MATH0025",
     "year": 3.0,
     "term": 1,
-    "syllabusFilename": "math0025.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0025.pdf",
+    "is_running": true,
     "pathways": [
       "Applied Mathematics"
     ],
@@ -662,8 +662,8 @@
     "code": "MATH0026",
     "year": 3.0,
     "term": 1,
-    "syllabusFilename": "math0026.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0026.pdf",
+    "is_running": true,
     "pathways": [
       "Modelling, Computation and Finance"
     ],
@@ -682,8 +682,8 @@
     "code": "MATH0027",
     "year": 3.0,
     "term": 2,
-    "syllabusFilename": "math0027.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0027.pdf",
+    "is_running": true,
     "pathways": [
       "Applied Mathematics"
     ],
@@ -702,8 +702,8 @@
     "code": "MATH0028",
     "year": 3.0,
     "term": 2,
-    "syllabusFilename": "math0028.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0028.pdf",
+    "is_running": true,
     "pathways": [
       "Modelling, Computation and Finance"
     ],
@@ -722,8 +722,8 @@
     "code": "MATH0029",
     "year": 3.0,
     "term": 1,
-    "syllabusFilename": "math0029.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0029.pdf",
+    "is_running": true,
     "pathways": [
       "Algebra"
     ],
@@ -742,8 +742,8 @@
     "code": "MATH0030",
     "year": 3.0,
     "term": 1,
-    "syllabusFilename": "math0030.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0030.pdf",
+    "is_running": true,
     "pathways": [
       "Modelling, Computation and Finance"
     ],
@@ -762,8 +762,8 @@
     "code": "MATH0031",
     "year": 3.0,
     "term": 2,
-    "syllabusFilename": "math0031.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0031.pdf",
+    "is_running": true,
     "pathways": [
       "Modelling, Computation and Finance"
     ],
@@ -786,8 +786,8 @@
     "code": "MATH0032",
     "year": 3.0,
     "term": 1,
-    "syllabusFilename": "math0032.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0032.pdf",
+    "is_running": true,
     "pathways": [
       "Modelling, Computation and Finance"
     ],
@@ -801,8 +801,8 @@
     "code": "MATH0033",
     "year": 3.0,
     "term": 1,
-    "syllabusFilename": "math0033.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0033.pdf",
+    "is_running": true,
     "pathways": [
       "Modelling, Computation and Finance"
     ],
@@ -829,8 +829,8 @@
     "code": "MATH0035",
     "year": 3.0,
     "term": 2,
-    "syllabusFilename": "math0035.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0035.pdf",
+    "is_running": true,
     "pathways": [
       "Algebra"
     ],
@@ -857,8 +857,8 @@
     "code": "MATH0036",
     "year": 3.0,
     "term": 2,
-    "syllabusFilename": "math0036.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0036.pdf",
+    "is_running": true,
     "pathways": [
       "Algebra"
     ],
@@ -881,8 +881,8 @@
     "code": "MATH0037",
     "year": 3.0,
     "term": 2,
-    "syllabusFilename": "math0037.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0037.pdf",
+    "is_running": true,
     "pathways": [
       "Algebra"
     ],
@@ -901,8 +901,8 @@
     "code": "MATH0038",
     "year": 3.0,
     "term": 2,
-    "syllabusFilename": "math0038.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0038.pdf",
+    "is_running": true,
     "pathways": [
       "Algebra"
     ],
@@ -916,8 +916,8 @@
     "code": "MATH0092",
     "year": 3.5,
     "term": 2,
-    "syllabusFilename": "math0092.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0092.pdf",
+    "is_running": true,
     "pathways": [
       "Analysis"
     ],
@@ -936,8 +936,8 @@
     "code": "MATH0090",
     "year": 3.5,
     "term": 2,
-    "syllabusFilename": "math0090.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0090.pdf",
+    "is_running": true,
     "pathways": [
       "Analysis"
     ],
@@ -968,8 +968,8 @@
     "code": "MATH0102",
     "year": 3.5,
     "term": 2,
-    "syllabusFilename": "math0102.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0102.pdf",
+    "is_running": true,
     "pathways": [
       "Modelling, Computation and Finance"
     ],
@@ -1008,8 +1008,8 @@
     "code": "MATH0069",
     "year": 3.5,
     "term": 2,
-    "syllabusFilename": "math0069.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0069.pdf",
+    "is_running": true,
     "pathways": [
       "Analysis"
     ],
@@ -1028,8 +1028,8 @@
     "code": "MATH0070",
     "year": 3.5,
     "term": 1,
-    "syllabusFilename": "math0070.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0070.pdf",
+    "is_running": true,
     "pathways": [
       "Analysis"
     ],
@@ -1056,8 +1056,8 @@
     "code": "MATH0073",
     "year": 3.5,
     "term": 2,
-    "syllabusFilename": "math0073.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0073.pdf",
+    "is_running": true,
     "pathways": [
       "Algebra"
     ],
@@ -1080,8 +1080,8 @@
     "code": "MATH0077",
     "year": 3.5,
     "term": 1,
-    "syllabusFilename": "math0077.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0077.pdf",
+    "is_running": true,
     "pathways": [
       "Applied Mathematics"
     ],
@@ -1108,8 +1108,8 @@
     "code": "MATH0080",
     "year": 3.5,
     "term": 2,
-    "syllabusFilename": "math0080.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0080.pdf",
+    "is_running": true,
     "pathways": [
       "Applied Mathematics"
     ],
@@ -1128,8 +1128,8 @@
     "code": "MATH0083",
     "year": 3.5,
     "term": 1,
-    "syllabusFilename": "math0083.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0083.pdf",
+    "is_running": true,
     "pathways": [
       "Algebra"
     ],
@@ -1156,8 +1156,8 @@
     "code": "MATH0071",
     "year": 4.0,
     "term": 1,
-    "syllabusFilename": "math0071.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0071.pdf",
+    "is_running": true,
     "pathways": [
       "Analysis"
     ],
@@ -1184,8 +1184,8 @@
     "code": "MATH0072",
     "year": 4.0,
     "term": 1,
-    "syllabusFilename": "math0072_2.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0072_2.pdf",
+    "is_running": true,
     "pathways": [
       "Analysis"
     ],
@@ -1208,8 +1208,8 @@
     "code": "MATH0074",
     "year": 3.5,
     "term": 1,
-    "syllabusFilename": "math0074.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0074.pdf",
+    "is_running": true,
     "pathways": [
       "Analysis"
     ],
@@ -1236,8 +1236,8 @@
     "code": "MATH0075",
     "year": 3.5,
     "term": 1,
-    "syllabusFilename": "math0075_2.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0075_2.pdf",
+    "is_running": true,
     "pathways": [
       "Algebra"
     ],
@@ -1256,8 +1256,8 @@
     "code": "MATH0076",
     "year": 4.0,
     "term": 1,
-    "syllabusFilename": "math0076_3.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0076_3.pdf",
+    "is_running": true,
     "pathways": [
       "Algebra"
     ],
@@ -1280,8 +1280,8 @@
     "code": "MATH0078",
     "year": 4.0,
     "term": 2,
-    "syllabusFilename": "math0078.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0078.pdf",
+    "is_running": true,
     "pathways": [
       "Applied Mathematics"
     ],
@@ -1300,8 +1300,8 @@
     "code": "MATH0079",
     "year": 4.0,
     "term": 2,
-    "syllabusFilename": "math0079.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0079.pdf",
+    "is_running": true,
     "pathways": [
       "Applied Mathematics"
     ],
@@ -1320,8 +1320,8 @@
     "code": "MATH0082",
     "year": 4.0,
     "term": 2,
-    "syllabusFilename": "math0082.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0082.pdf",
+    "is_running": true,
     "pathways": [
       "Modelling, Computation and Finance"
     ],
@@ -1348,8 +1348,8 @@
     "code": "MATH0065",
     "year": 4.0,
     "term": 1,
-    "syllabusFilename": "math0065.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0065.pdf",
+    "is_running": true,
     "pathways": [
       "Modelling, Computation and Finance"
     ],
@@ -1376,8 +1376,8 @@
     "code": "MATH0086",
     "year": 4.0,
     "term": 1,
-    "syllabusFilename": "math0086.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0086.pdf",
+    "is_running": true,
     "pathways": [
       "Modelling, Computation and Finance"
     ],
@@ -1400,8 +1400,8 @@
     "code": "MATH0088",
     "year": 4.0,
     "term": 2,
-    "syllabusFilename": "math0088.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0088.pdf",
+    "is_running": true,
     "pathways": [
       "Modelling, Computation and Finance"
     ],
@@ -1424,8 +1424,8 @@
     "code": "MATH0104",
     "year": 3.5,
     "term": 1,
-    "syllabusFilename": "math0104_2.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0104_2.pdf",
+    "is_running": true,
     "pathways": [
       "Algebra"
     ],
@@ -1452,8 +1452,8 @@
     "code": "MATH0106",
     "year": 4.0,
     "term": 1,
-    "syllabusFilename": "math0106.pdf",
-    "isRunning": false,
+    "syllabus_filename": "math0106.pdf",
+    "is_running": false,
     "pathways": [
       "Applied Mathematics"
     ],
@@ -1476,8 +1476,8 @@
     "code": "MATH0107",
     "year": 3.5,
     "term": 2,
-    "syllabusFilename": "math0107_0.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0107_0.pdf",
+    "is_running": true,
     "pathways": [
       "Analysis"
     ],
@@ -1504,8 +1504,8 @@
     "code": "MATH0108",
     "year": 3,
     "term": 2,
-    "syllabusFilename": "0108_0.pdf",
-    "isRunning": false,
+    "syllabus_filename": "0108_0.pdf",
+    "is_running": false,
     "pathways": [
       "Algebra"
     ],
@@ -1524,8 +1524,8 @@
     "code": "MATH0109",
     "year": 3,
     "term": 2,
-    "syllabusFilename": "math0019_2_0.pdf",
-    "isRunning": false,
+    "syllabus_filename": "math0019_2_0.pdf",
+    "is_running": false,
     "pathways": [
       "Algebra"
     ],
@@ -1544,8 +1544,8 @@
     "code": "MATH0061",
     "year": 4,
     "term": 2,
-    "syllabusFilename": "math0061_syllabus_0.pdf",
-    "isRunning": true,
+    "syllabus_filename": "math0061_syllabus_0.pdf",
+    "is_running": true,
     "pathways": [
       "Algebra"
     ],
@@ -1566,18 +1566,18 @@
     "code": "MATH0110",
     "year": 1,
     "term": 1,
-    "syllabusFilename": "math0110_0.pdf",
+    "syllabus_filename": "math0110_0.pdf",
     "prereqs": [],
     "ancillary": false,
     "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0110_0.pdf",
-    "isRunning": true
+    "is_running": true
   },
   "STAT0001": {
     "name": "Economics 2 - Combined Studies",
     "code": "STAT0001",
     "year": 2,
     "term": 1.5,
-    "syllabusFilename": "stat0001.pdf",
+    "syllabus_filename": "stat0001.pdf",
     "prereqs": [
       [
         "MATH0002",
@@ -1586,14 +1586,14 @@
     ],
     "ancillary": false,
     "url": "https://www.ucl.ac.uk/maths/sites/maths/files/stat0001.pdf",
-    "isRunning": true
+    "is_running": true
   },
   "MATH0114": {
     "name": "Mathematics for Machine Learning and Artificial Intelligence",
     "code": "MATH0114",
     "year": 3,
     "term": 2,
-    "syllabusFilename": "math0114_0.pdf",
+    "syllabus_filename": "math0114_0.pdf",
     "prereqs": [
       [
         "MATH0003",
@@ -1626,14 +1626,14 @@
     ],
     "ancillary": false,
     "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0114_0.pdf",
-    "isRunning": true
+    "is_running": true
   },
   "MATH0115": {
     "name": "Solid Mechanics",
     "code": "MATH0115",
     "year": 3.5,
     "term": 2,
-    "syllabusFilename": "math0115_0.pdf",
+    "syllabus_filename": "math0115_0.pdf",
     "prereqs": [
       [
         "MATH0015",
@@ -1646,6 +1646,6 @@
     ],
     "ancillary": false,
     "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0115_0.pdf",
-    "isRunning": true
+    "is_running": true
   }
 }

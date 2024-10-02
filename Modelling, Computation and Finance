@@ -1,0 +1,126 @@
+digraph {
+	node [fillcolor=white penwidth=5 shape=box style="filled,bold"]
+	subgraph "1.0 1" {
+		rank=same
+		MATH0008 [label="MATH0008
+Applied Mathematics" color=orange href="https://www.ucl.ac.uk/maths/sites/maths/files/math0008.pdf"]
+		MATH0005 [label="MATH0005
+Algebra 1" color=orange href="https://www.ucl.ac.uk/maths/sites/maths/files/math0005.pdf"]
+		MATH0003 [label="MATH0003
+Analysis 1" color=orange href="https://www.ucl.ac.uk/maths/sites/maths/files/math0003.pdf"]
+		MATH0010 [label="MATH0010
+Mathematical Methods 1" color=orange href="https://www.ucl.ac.uk/maths/sites/maths/files/math0010.pdf"]
+	}
+	MATH0005 -> MATH0006
+	MATH0010 -> MATH0011
+	MATH0003 -> MATH0004
+	subgraph "1.0 2" {
+		rank=same
+		MATH0006 [label="MATH0006
+Algebra 2" color=orange href="https://www.ucl.ac.uk/maths/sites/maths/files/math0006.pdf"]
+		MATH0011 [label="MATH0011
+Mathematical Methods 2" color=orange href="https://www.ucl.ac.uk/maths/sites/maths/files/math0011_syllabus.pdf"]
+		MATH0004 [label="MATH0004
+Analysis 2" color=orange href="https://www.ucl.ac.uk/maths/sites/maths/files/math0004.pdf"]
+	}
+	MATH0003 -> MATH0013
+	MATH0004 -> MATH0013 [style=dashed]
+	MATH0006 -> MATH0014
+	subgraph "2.0 1" {
+		rank=same
+		MATH0013 [label="MATH0013
+Analysis 3 - Complex Analysis" color=green3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0013.pdf"]
+		MATH0014 [label="MATH0014
+Algebra 3: Further Linear Algebra" color=green3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0014.pdf"]
+	}
+	MATH0011 -> MATH0016
+	subgraph "2.5 1" {
+		rank=same
+		MATH0016 [label="MATH0016
+Mathematical Methods 3" color=cadetblue href="https://www.ucl.ac.uk/maths/sites/maths/files/math0016.pdf"]
+	}
+	MATH0013 -> MATH0056
+	MATH0016 -> MATH0056
+	MATH0010 -> MATH0058
+	MATH0006 -> MATH0058
+	MATH0011 -> MATH0057
+	subgraph "2.5 2" {
+		rank=same
+		MATH0056 [label="MATH0056
+Mathematical Methods 4" color=cadetblue href="https://www.ucl.ac.uk/maths/sites/maths/files/math0056.pdf"]
+		MATH0058 [label="MATH0058
+Computational Methods" color=cadetblue href="https://www.ucl.ac.uk/maths/sites/maths/files/math0058.pdf"]
+		MATH0057 [label="MATH0057
+Probability and Statistics" color=cadetblue href="https://www.ucl.ac.uk/maths/sites/maths/files/math0057.pdf"]
+	}
+	MATH0006 -> MATH0033
+	MATH0011 -> MATH0033
+	MATH0058 -> MATH0033
+	MATH0010 -> MATH0030
+	MATH0011 -> MATH0026
+	subgraph "3.0 1" {
+		rank=same
+		MATH0033 [label="MATH0033
+Numerical Methods" color=brown1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0033.pdf"]
+		MATH0030 [label="MATH0030
+Mathematical Ecology" color=brown1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0030.pdf"]
+		MATH0026 [label="MATH0026
+Biomathematics" color=brown1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0026.pdf"]
+		MATH0032 [label="MATH0032
+Introduction to Mathematica" color=brown1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0032.pdf"]
+	}
+	MATH0014 -> MATH0028
+	MATH0003 -> MATH0114
+	MATH0004 -> MATH0114
+	MATH0005 -> MATH0114
+	MATH0006 -> MATH0114
+	MATH0011 -> MATH0114
+	MATH0014 -> MATH0114
+	MATH0057 -> MATH0114 [style=dashed]
+	MATH0016 -> MATH0031
+	MATH0057 -> MATH0031
+	subgraph "3.0 2" {
+		rank=same
+		MATH0028 [label="MATH0028
+Combinatorial Optimisation" color=brown1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0028.pdf"]
+		MATH0114 [label="MATH0114
+Mathematics for Machine Learning and Artificial Intelligence" color=brown1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0114_0.pdf"]
+		MATH0031 [label="MATH0031
+Financial Mathematics" color=brown1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0031.pdf"]
+	}
+	MATH0010 -> MATH0102
+	MATH0011 -> MATH0102
+	MATH0056 -> MATH0102 [style=dashed]
+	MATH0031 -> MATH0102 [style=dashed]
+	MATH0065 -> MATH0102 [style=dashed]
+	MATH0057 -> MATH0102 [style=dashed]
+	subgraph "3.5 2" {
+		rank=same
+		MATH0102 [label="MATH0102
+Applied Stochastic Methods" color=deeppink href="https://www.ucl.ac.uk/maths/sites/maths/files/math0102.pdf"]
+	}
+	MATH0010 -> MATH0065
+	MATH0011 -> MATH0065
+	MATH0013 -> MATH0065
+	MATH0056 -> MATH0086
+	MATH0058 -> MATH0086 [style=dashed]
+	subgraph "4.0 1" {
+		rank=same
+		MATH0065 [label="MATH0065
+Advanced Modelling Techniques" color=midnightblue href="https://www.ucl.ac.uk/maths/sites/maths/files/math0065.pdf"]
+		MATH0086 [label="MATH0086
+Computational and Simulation Methods" color=midnightblue href="https://www.ucl.ac.uk/maths/sites/maths/files/math0086.pdf"]
+	}
+	MATH0016 -> MATH0088
+	MATH0031 -> MATH0088 [style=dashed]
+	MATH0008 -> MATH0082
+	MATH0010 -> MATH0082
+	MATH0003 -> MATH0082
+	subgraph "4.0 2" {
+		rank=same
+		MATH0088 [label="MATH0088
+Quantitative and Computational Finance" color=midnightblue href="https://www.ucl.ac.uk/maths/sites/maths/files/math0088.pdf"]
+		MATH0082 [label="MATH0082
+Evolutionary Games and Population Genetics" color=midnightblue href="https://www.ucl.ac.uk/maths/sites/maths/files/math0082.pdf"]
+	}
+}
