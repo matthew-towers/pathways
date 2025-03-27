@@ -1,11 +1,12 @@
 # Pathways.
 
 # TODO:
-# - [ ] make SCRAPE a command-line argument
 # - [ ] for each pathway build a d3js/pyvis fancy graph
 # - [ ] create fancy webpage with fancy graphs
-# - [ ] deal with non-running modules
+# - [ ] give modules a level attribute
+# - [ ] give year 4 modules a group attribute
 # - [ ] scrape the syllabus/query the user for prereq, year, term data when a new module is found. (Can't really do the prereqs because they can be written weirdly)
+# - [ ] deal with more complex prerequisites, e.g. 0119
 
 import json
 from bs4 import BeautifulSoup
@@ -132,16 +133,16 @@ if SCRAPE:
 
     try:
         page = requests.get(MODULE_INFO_URL)
-        page.raise_for_status()  # raise exception if an http error is returned
+        page.raise_for_status()  # raise exception if http error is returned
     except requests.exceptions.HTTPError as e:
         print(e)
-        sys.exit(1)  # just give up
+        sys.exit(1)
     except requests.exceptions.Timeout as e:
         print(e)
-        sys.exit(1)  # just give up
+        sys.exit(1)
     except requests.exceptions.RequestException as e:
         print(e)
-        sys.exit(1)  # just give up
+        sys.exit(1)
 
     print("Success!")
     print("Trying to parse the webpage with BS...")
@@ -205,9 +206,10 @@ if SCRAPE:
 
     for module_code in MODULES:
         if module_code not in modules_on_web:
-            print(f"{module_code} not on webpage, setting it to not running.")
-            MODULES[module_code].is_running = False
-            modules_from_json[module_code]["is_running"] = False
+            resp = input(f"{module_code} {module_name} not on webpage. Set to not running? Y/n")
+            if resp == "Y":
+                MODULES[module_code].is_running = False
+                modules_from_json[module_code]["is_running"] = False
 
 
 #####################################
@@ -230,11 +232,13 @@ if SCRAPE:
 PREREQ_GRAPH = nx.DiGraph()
 PREREQ_GRAPH.add_nodes_from(MODULES)
 # prereqGraph is a graph whose nodes are the module codes
+# Only running modules should be included
 
 for code, module in MODULES.items():
-    for prereq_code, prereq_type in module.prereqs:
-        if (prereq_type == "needed") or (prereq_type == "recommended"):
-            PREREQ_GRAPH.add_edge(prereq_code, code, object=prereq_type)
+    if module.is_running:
+        for prereq_code, prereq_type in module.prereqs:
+            if (prereq_type == "needed") or (prereq_type == "recommended"):
+                PREREQ_GRAPH.add_edge(prereq_code, code, object=prereq_type)
 
 assert nx.is_directed_acyclic_graph(PREREQ_GRAPH)
 
@@ -254,15 +258,17 @@ with open("pathways.json") as f:
 
 # Currently, some of the pathways aren't closed under taking
 # prerequisites. We want them to be prerequisite-closed when we
-# create our graphs.
+# create our graphs. We must also be sure that only running modules are
+# included in the pathways closures.
 
 PATHWAY_CLOSURES = {}
 
 for pathway_name, pathway in PATHWAYS.items():
     pathway_closure = set()
     for code in pathway:
-        pathway_closure.add(code)
-        pathway_closure.update(nx.ancestors(PREREQ_GRAPH, code))
+        if MODULES[code].is_running:
+            pathway_closure.add(code)
+            pathway_closure.update(nx.ancestors(PREREQ_GRAPH, code))
     PATHWAY_CLOSURES[pathway_name] = pathway_closure
 
 # When using graphviz, we want the pathway entries sorted by year then
@@ -282,10 +288,6 @@ for pathway_name, module_code_set in PATHWAY_CLOSURES.items():
 # Make graphviz graphs #
 ########################
 
-# Configure the colours we will use. The COLOURS dict maps (year, term)
-# to a graphviz colour name.
-
-
 def displayyear(y):
     if y in [1, 2, 3, 4]:
         return str(int(y))
@@ -301,20 +303,21 @@ def displayterm(t):
 
 
 COLOURS = {
+    # (year, term) : "colour"
     (1, 1): "darkgoldenrod1",
     (1, 2): "darkgoldenrod3",
     (1, 1.5): "darkgoldenrod2",
     (2, 1): "green1",
     (2, 2): "green2",
     (2, 1.5): "green3",
-    (2.5, 1): "cadetblue2",
-    (2.5, 2): "cadetblue",
+    (2.5, 1): "cadetblue1",
+    (2.5, 2): "cadetblue2",
     (3, 1): "brown1",
     (3, 2): "brown3",
     (3.5, 1): "deeppink1",
     (3.5, 2): "deeppink3",
     (4, 1): "dodgerblue2",
-    (4, 2): "dodgerblue4",
+    (4, 2): "dodgerblue3",
 }
 
 
@@ -323,7 +326,7 @@ def make_gv_graph(pathway_name, pathway_contents):
     and term. The function will make an svg of the pathway using graphviz
     and save it."""
     pathway_graph = gv.Digraph(
-        filename=pathway_name,
+        filename=pathway_name + ".dot",
         format="svg",
         node_attr={
             "shape": "box",
@@ -408,7 +411,7 @@ with open("pathways.html", "w") as html_file:
     # add the pathway svgs, one by one
     for pathway_name in PATHWAYS:
         html_file.write(f"<h1>{pathway_name}</h1>\n")
-        svg = open(pathway_name + ".svg").read()
+        svg = open(pathway_name + ".dot.svg").read()
         html_file.write(svg)
         html_file.write("\n")
     # close the html tag
@@ -423,10 +426,11 @@ with open("pathways.html", "w") as html_file:
 def tablify(module_list):
     """
     Return a string containing a markdown table of the prereqs of the
-    modules in the list moduleList.
+    running modules in the list module_list.
     """
     header = "| Module | Year | Term | Prerequisites\n|----|----|----|----\n"
-    rows = "".join(generate_table_row(MODULES[code]) for code in module_list)
+    rows = "".join(generate_table_row(MODULES[code]) for code in module_list if
+                   MODULES[code].is_running)
     return header + rows
 
 
