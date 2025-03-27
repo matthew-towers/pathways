@@ -4,11 +4,17 @@ title: UCL Pathways
 permalink: /pathways/
 ---
 
+<<<<<<< HEAD
 The official UCL Maths module information is [at this link](https://www.ucl.ac.uk/maths/current-students/current-undergraduates/module-information-undergraduates).
 There is a [graphical version of this pathways document](http://www.homepages.ucl.ac.uk/~ucahmto/pathways.html).
 
 Information on modules from other UCL departments can be found at the
 following links:
+=======
+The official UCL Maths module information is [at this link](https://www.ucl.ac.uk/maths/current-students/current-undergraduates/module-information-undergraduates). There is a [graphical version of this pathways document](http://www.homepages.ucl.ac.uk/~ucahmto/pathways.html).
+
+Information on modules from other UCL departments can be found at the following links:
+>>>>>>> refs/remotes/origin/master
 
  - [Computer science](https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/computer-science-bsc#tab1-year1) (click through to a module name and check "Restrictions" to see if it is available to students who are not taking CS degrees)
  - [Statistics](https://www.ucl.ac.uk/statistics/current-students/modules-statistical-science-students-other-departments)
@@ -19,11 +25,15 @@ following links:
  - [Management](https://www.mgmt.ucl.ac.uk/undergraduate-elective-modules)
  - [Information Studies](https://www.ucl.ac.uk/information-studies/study/undergraduate-study/other-undergraduate-modules)
 
+<<<<<<< HEAD
 Year information is for mathematics students only. Students on joint
 degrees may take modules in different years - check [the degree
 structure document for your
 course](https://www.ucl.ac.uk/maths/current-students/current-undergraduates/degree-structures-and-options/specific-degree-structures)
 for details.
+=======
+Year information is for BSc and MSCi Mathematics students only. Students on joint degrees may take modules in different years - check [the degree structure document for your course](https://www.ucl.ac.uk/maths/current-students/current-undergraduates/degree-structures-and-options/specific-degree-structures) for details.
+>>>>>>> refs/remotes/origin/master
 
 
 
@@ -45,8 +55,13 @@ for details.
 | <a id="MATH0013"></a>[MATH0013 Analysis 3 - Complex Analysis](https://www.ucl.ac.uk/maths/sites/maths/files/math0013.pdf) | 2 | 1 | <a href="#MATH0003">MATH0003 Analysis 1</a>, <a href="#MATH0004">MATH0004 Analysis 2</a> (recommended)
 | <a id="MATH0014"></a>[MATH0014 Algebra 3: Further Linear Algebra](https://www.ucl.ac.uk/maths/sites/maths/files/math0014.pdf) | 2 | 1 | <a href="#MATH0006">MATH0006 Algebra 2</a>
 | <a id="MATH0015"></a>[MATH0015 Fluid Mechanics](https://www.ucl.ac.uk/maths/sites/maths/files/math0015.pdf) | 2 | 1 | <a href="#MATH0011">MATH0011 Mathematical Methods 2</a>, <a href="#MATH0009">MATH0009 Newtonian Mechanics</a>
+<<<<<<< HEAD
 | <a id="MATH0016"></a>[MATH0016 Mathematical Methods 3](https://www.ucl.ac.uk/maths/sites/maths/files/math0016.pdf) | 2 | 1 | <a href="#MATH0011">MATH0011 Mathematical Methods 2</a>
 | <a id="STAT0001"></a>[STAT0001 Economics 2 - Combined Studies](https://www.ucl.ac.uk/maths/sites/maths/files/stat0001.pdf) | 2 | 1 and 2 | <a href="#MATH0002">MATH0002 Economics 1 - Combined Studies</a>
+=======
+| <a id="STAT0001"></a>[STAT0001 Economics 2 - Combined Studies](https://www.ucl.ac.uk/maths/sites/maths/files/stat0001.pdf) | 2 | 1 and 2 | <a href="#MATH0002">MATH0002 Economics 1 - Combined Studies</a>
+| <a id="MATH0016"></a>[MATH0016 Mathematical Methods 3](https://www.ucl.ac.uk/maths/sites/maths/files/math0016.pdf) | 2 or 3 | 1 | <a href="#MATH0011">MATH0011 Mathematical Methods 2</a>
+>>>>>>> refs/remotes/origin/master
 | <a id="MATH0051"></a>[MATH0051 Analysis 4](https://www.ucl.ac.uk/maths/sites/maths/files/math0051.pdf) | 2 or 3 | 2 | <a href="#MATH0004">MATH0004 Analysis 2</a>
 | <a id="MATH0052"></a>[MATH0052 Geometry and Groups](https://www.ucl.ac.uk/maths/sites/maths/files/math0052.pdf) | 2 or 3 | 2 | <a href="#MATH0013">MATH0013 Analysis 3 - Complex Analysis</a>, <a href="#MATH0006">MATH0006 Algebra 2</a>, <a href="#MATH0014">MATH0014 Algebra 3: Further Linear Algebra</a>
 | <a id="MATH0053"></a>[MATH0053 Algebra 4](https://www.ucl.ac.uk/maths/sites/maths/files/math0053.pdf) | 2 or 3 | 2 | <a href="#MATH0006">MATH0006 Algebra 2</a>
@@ -71,7 +86,11 @@ for details.
 | <a id="MATH0038"></a>[MATH0038 History of Mathematics](https://www.ucl.ac.uk/maths/sites/maths/files/math0038.pdf) | 3 | 2 | 
 | <a id="MATH0037"></a>[MATH0037 Logic](https://www.ucl.ac.uk/maths/sites/maths/files/math0037.pdf) | 3 | 2 | <a href="#MATH0006">MATH0006 Algebra 2</a>
 | <a id="MATH0108"></a>[MATH0108 Commutative Rings and Algebra](https://www.ucl.ac.uk/maths/sites/maths/files/0108_0.pdf) | 3 | 2 | <a href="#MATH0053">MATH0053 Algebra 4</a>
+<<<<<<< HEAD
 | <a id="MATH0109"></a>[MATH0109 Problem Solving in Lean](https://www.ucl.ac.uk/maths/sites/maths/files/math0019_2_0.pdf) | 3 | 2 | Familiarity with the notion of proving theorems (for example, at least one of MATH0034, MATH0051, MATH0052 or MATH0053)
+=======
+| <a id="MATH0109"></a>[MATH0109 Theorem Proving in Lean](https://www.ucl.ac.uk/maths/sites/maths/files/math0019_2_0.pdf) | 3 | 2 | Familiarity with the notion of proving theorems (for example, at least one of MATH0034, MATH0051, MATH0052 or MATH0053)
+>>>>>>> refs/remotes/origin/master
 | <a id="MATH0083"></a>[MATH0083 Prime Numbers and their Distribution](https://www.ucl.ac.uk/maths/sites/maths/files/math0083.pdf) | 3 or 4 | 1 | <a href="#MATH0013">MATH0013 Analysis 3 - Complex Analysis</a>, <a href="#MATH0051">MATH0051 Analysis 4</a>, <a href="#MATH0034">MATH0034 Number Theory</a>
 | <a id="MATH0075"></a>[MATH0075 Lie Groups and Lie Algebras](https://www.ucl.ac.uk/maths/sites/maths/files/math0075_2.pdf) | 3 or 4 | 1 | <a href="#MATH0014">MATH0014 Algebra 3: Further Linear Algebra</a>
 | <a id="MATH0104"></a>[MATH0104 Modular Forms](https://www.ucl.ac.uk/maths/sites/maths/files/math0104_2.pdf) | 3 or 4 | 1 | <a href="#MATH0013">MATH0013 Analysis 3 - Complex Analysis</a>, <a href="#MATH0014">MATH0014 Algebra 3: Further Linear Algebra</a>, <a href="#MATH0034">MATH0034 Number Theory</a> (recommended)

@@ -15,7 +15,18 @@ import networkx as nx
 import graphviz as gv
 import re
 
-SCRAPE = False
+args = sys.argv
+
+if len(args) > 2:
+    print("Too many arguments.")
+    sys.exit(1)
+elif len(args) == 2 and args[1] != "scrape":
+    print("Bad argument.")
+    sys.exit(1)
+elif len(args) == 2 and args[1] == "scrape":
+    SCRAPE = True
+else:
+    SCRAPE = False
 
 if not SCRAPE:
     print("Not scraping.")
@@ -47,13 +58,13 @@ ANCILLARY_MODULES = [
 
 class Module:
     def __init__(
-        self, name, code, year, term, syllabus_file, prereqs, ancillary, url, running
+        self, name, code, year, term, syllabus_filename, prereqs, ancillary, url, running
     ):
         self.name = name
         self.code = code
         self.year = year
         self.term = term
-        self.syllabus_file = syllabus_file
+        self.syllabus_filename = syllabus_filename
         self.prereqs = prereqs
         self.ancillary = ancillary
         self.url = url
@@ -65,11 +76,11 @@ class Module:
             "code": self.code,
             "year": self.year,
             "term": self.term,
-            "syllabusFilename": self.syllabus_file,
+            "syllabus_filename": self.syllabus_filename,
             "prereqs": self.prereqs,
             "ancillary": self.ancillary,
             "url": self.url,
-            "isRunning": self.is_running,
+            "is_running": self.is_running,
         }
 
     @classmethod
@@ -81,11 +92,11 @@ class Module:
             m["code"],
             m["year"],
             m["term"],
-            m["syllabusFilename"],
+            m["syllabus_filename"],
             m["prereqs"],
             m["ancillary"],
             m["url"],
-            m["isRunning"],
+            m["is_running"],
         )
 
 
@@ -117,7 +128,7 @@ for code, mod_dict in modules_from_json.items():
 ##################################################
 
 if SCRAPE:
-    print("trying to download ucl modules webpage...")
+    print("Trying to download UCL modules webpage...")
 
     try:
         page = requests.get(MODULE_INFO_URL)
@@ -132,8 +143,8 @@ if SCRAPE:
         print(e)
         sys.exit(1)  # just give up
 
-    print("success!")
-    print("trying to parse the webpage with BS...")
+    print("Success!")
+    print("Trying to parse the webpage with BS...")
 
     try:
         soup = BeautifulSoup(page.text, "lxml")
@@ -141,7 +152,7 @@ if SCRAPE:
         print(e)
         sys.exit(1)
 
-    print("success!")
+    print("Success!")
 
     # The UCL CMS puts every syllabus file link in a span
     spans = soup.find_all("span")
@@ -152,7 +163,7 @@ if SCRAPE:
             # ...then "a" is a hyperlink to a syllabus pdf
             # with the link text being the module code then the name
             code_and_name = a.contents[0]  # e.g. "MATH0005 Algebra 1"
-            # get rid of non-breaking space u00a0
+            # Get rid of non-breaking space u00a0
             code_and_name = code_and_name.replace(" ", " ")
             module_url = a["href"]
             filename = module_url.split("/")[-1]
@@ -166,18 +177,18 @@ if SCRAPE:
                 module_code = module_code_search[0].upper()
                 modules_on_web.add(module_code)
                 module_name = code_and_name.split(" ", 1)[1]
-                # split at first space, assume this is the name
+                # Split at first space, assume this is the name
             if module_code in MODULES:
                 MODULES[module_code].url = module_url
                 modules_from_json[module_code]["url"] = module_url
-                MODULES[module_code].syllabus_file = filename
-                modules_from_json[module_code]["syllabusFilename"] = filename
+                MODULES[module_code].syllabus_filename = filename
+                modules_from_json[module_code]["syllabus_filename"] = filename
             elif module_code not in ANCILLARY_MODULES:
                 print(
                     f"Non-ancillary module on web not in modules.json: {module_code}."
                 )
                 print("Creating a new record.")
-                # create a new entry for modules.json
+                # Create a new entry for modules.json
                 mod = Module(
                     module_name,
                     module_code,
@@ -188,15 +199,15 @@ if SCRAPE:
                     False,
                     module_url,
                     True,
-                )  # can't get the true term, year, prereq info from here so just use blank values. TODO: automatically scrape the pdf, or just dl and display and get values from kbd
+                )  # can't get the true term, year, prereq info from here so just use blank values.
                 MODULES[module_code] = mod
                 modules_from_json[module_code] = mod.to_dict()
 
     for module_code in MODULES:
         if module_code not in modules_on_web:
-            print(module_code + " not on webpage, setting it to not running.")
+            print(f"{module_code} not on webpage, setting it to not running.")
             MODULES[module_code].is_running = False
-            modules_from_json[module_code]["isRunning"] = False
+            modules_from_json[module_code]["is_running"] = False
 
 
 #####################################
@@ -271,7 +282,7 @@ for pathway_name, module_code_set in PATHWAY_CLOSURES.items():
 # Make graphviz graphs #
 ########################
 
-# Configure the colours we will use. The colours dict maps (year, term)
+# Configure the colours we will use. The COLOURS dict maps (year, term)
 # to a graphviz colour name.
 
 
@@ -308,8 +319,9 @@ COLOURS = {
 
 
 def make_gv_graph(pathway_name, pathway_contents):
-    # take a pathway, as a list of module codes sorted by year and term.
-    # Make an svg using graphviz and save it.
+    """pathway_contents should be a list of module codes sorted by year
+    and term. The function will make an svg of the pathway using graphviz
+    and save it."""
     pathway_graph = gv.Digraph(
         filename=pathway_name,
         format="svg",
@@ -318,7 +330,7 @@ def make_gv_graph(pathway_name, pathway_contents):
             "style": "filled,bold",
             "fillcolor": "white",
             "penwidth": "5",
-        },
+        }
     )
     first_mod = MODULES[pathway_contents[0]]
     old_year = first_mod.year
@@ -326,25 +338,27 @@ def make_gv_graph(pathway_name, pathway_contents):
     current_subgraph = gv.Digraph(str(old_year) + " " + str(old_term))
     current_subgraph_nodes = []
     current_subgraph.attr(rank="same")
-    # NB: using current_subgraph.graph_attr.update(rank="same") sets
+    # NB using current_subgraph.graph_attr.update(rank="same") sets
     # everything in the whole graph to the same rank.
     for code in pathway_contents:
         module = MODULES[code]
-        # are we starting a new year or term?  Then set everything to
+        # Are we starting a new year or term?  Then set everything to
         # the same rank.
         if (module.year != old_year) or (module.term != old_term):
-            # add the old subgraph to the big graph
+            # Add the old subgraph to the big graph
             pathway_graph.subgraph(current_subgraph)
-            # update oldYear and oldTerm
+            # Update old_year and old_term
             old_year = module.year
             old_term = module.term
-            # make a new subgraph
+            # Make a new subgraph
             current_subgraph = gv.Digraph(str(old_year) + " " + str(old_term))
             current_subgraph_nodes = []
             current_subgraph.attr(rank="same")
-        # build label for current node
+        # Build the label for the current node
         tooltip = f"Year {displayyear(module.year)}, term {displayterm(module.term)}"
-        # add a node to the current subgraph
+        label = module.code + "\n" + module.name
+        url = module.url
+        # Add a node to the current subgraph
         current_subgraph.node(
             code,
             module.code + "\n" + module.name,  # node label
@@ -418,7 +432,7 @@ def tablify(module_list):
 
 def generate_table_row(module):
     """
-    create and return the row of the prereqs table for the given module
+    Make the row of the prereqs table for the given module
     """
     module_col = (
         f'<a id="{module.code}"></a>[{module.code} {module.name}]({module.url})'
@@ -450,7 +464,6 @@ def generate_table_row(module):
 
 
 with open("pathways.md", "w") as md_file:
-    # add the preamble
     preamble = open("preamble.md").read()
     md_file.write(preamble)
     md_file.write("\n")
