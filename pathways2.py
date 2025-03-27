@@ -2,7 +2,7 @@
 
 # TODO:
 # - [ ] make SCRAPE a command-line argument
-# - [ ] for each pathway build a d3js fancy graph
+# - [ ] for each pathway build a d3js/pyvis fancy graph
 # - [ ] create fancy webpage with fancy graphs
 # - [ ] deal with non-running modules
 # - [ ] scrape the syllabus/query the user for prereq, year, term data when a new module is found. (Can't really do the prereqs because they can be written weirdly)
@@ -216,16 +216,16 @@ if SCRAPE:
 # Build networkX prerequisite graph #
 #####################################
 
-prereq_graph = nx.DiGraph()
-prereq_graph.add_nodes_from(MODULES)
+PREREQ_GRAPH = nx.DiGraph()
+PREREQ_GRAPH.add_nodes_from(MODULES)
 # prereqGraph is a graph whose nodes are the module codes
 
 for code, module in MODULES.items():
     for prereq_code, prereq_type in module.prereqs:
         if (prereq_type == "needed") or (prereq_type == "recommended"):
-            prereq_graph.add_edge(prereq_code, code, object=prereq_type)
+            PREREQ_GRAPH.add_edge(prereq_code, code, object=prereq_type)
 
-assert nx.is_directed_acyclic_graph(prereq_graph)
+assert nx.is_directed_acyclic_graph(PREREQ_GRAPH)
 
 
 #######################
@@ -233,7 +233,7 @@ assert nx.is_directed_acyclic_graph(prereq_graph)
 #######################
 
 with open("pathways.json") as f:
-    pathways = json.load(f)
+    PATHWAYS = json.load(f)
 
 # pathways is a {pathwayName: list of module codes} dictionary
 
@@ -245,28 +245,26 @@ with open("pathways.json") as f:
 # prerequisites. We want them to be prerequisite-closed when we
 # create our graphs.
 
-pathway_closures = {}
+PATHWAY_CLOSURES = {}
 
-for pathway_name, pathway in pathways.items():
+for pathway_name, pathway in PATHWAYS.items():
     pathway_closure = set()
     for code in pathway:
         pathway_closure.add(code)
-        pathway_closure.update(nx.ancestors(prereq_graph, code))
-    pathway_closures[pathway_name] = pathway_closure
+        pathway_closure.update(nx.ancestors(PREREQ_GRAPH, code))
+    PATHWAY_CLOSURES[pathway_name] = pathway_closure
 
 # When using graphviz, we want the pathway entries sorted by year then
 # by term. That means turning the pathway sets into lists.
 
-pathway_closures_lists = {}
-
-for pathway_name, module_code_set in pathway_closures.items():
+for pathway_name, module_code_set in PATHWAY_CLOSURES.items():
     module_code_list = list(module_code_set)
     module_code_list = sorted(module_code_list, key=lambda m: MODULES[m].term)
     module_code_list = sorted(module_code_list, key=lambda m: MODULES[m].year)
     # Python sorts are guaranteed to be "stable": they don't
     # change the order of things with the same key, see
     # https://docs.python.org/3/howto/sorting.html#sort-stability-and-complex-sorts
-    pathway_closures_lists[pathway_name] = module_code_list
+    PATHWAY_CLOSURES[pathway_name] = module_code_list
 
 
 ########################
@@ -276,21 +274,36 @@ for pathway_name, module_code_set in pathway_closures.items():
 # Configure the colours we will use. The colours dict maps (year, term)
 # to a graphviz colour name.
 
+
+def displayyear(y):
+    if y in [1, 2, 3, 4]:
+        return str(int(y))
+    else:
+        return f"{int(y-0.5)} or {int(y+0.5)}"
+
+
+def displayterm(t):
+    if t in [1, 2, 3]:
+        return str(int(t))
+    else:
+        return "1 and 2"
+
+
 COLOURS = {
-    (1, 1): "orange",
-    (1, 2): "orange",
-    (1, 1.5): "orange",
-    (2, 1): "green3",
-    (2, 2): "green3",
+    (1, 1): "darkgoldenrod1",
+    (1, 2): "darkgoldenrod3",
+    (1, 1.5): "darkgoldenrod2",
+    (2, 1): "green1",
+    (2, 2): "green2",
     (2, 1.5): "green3",
-    (2.5, 1): "cadetblue",
+    (2.5, 1): "cadetblue2",
     (2.5, 2): "cadetblue",
     (3, 1): "brown1",
-    (3, 2): "brown1",
-    (3.5, 1): "deeppink",
-    (3.5, 2): "deeppink",
-    (4, 1): "midnightblue",
-    (4, 2): "midnightblue",
+    (3, 2): "brown3",
+    (3.5, 1): "deeppink1",
+    (3.5, 2): "deeppink3",
+    (4, 1): "dodgerblue2",
+    (4, 2): "dodgerblue4",
 }
 
 
@@ -330,11 +343,14 @@ def make_gv_graph(pathway_name, pathway_contents):
             current_subgraph_nodes = []
             current_subgraph.attr(rank="same")
         # build label for current node
-        label = module.code + "\n" + module.name
-        url = module.url
+        tooltip = f"Year {displayyear(module.year)}, term {displayterm(module.term)}"
         # add a node to the current subgraph
         current_subgraph.node(
-            code, label, color=COLOURS[(module.year, module.term)], href=url
+            code,
+            module.code + "\n" + module.name,  # node label
+            tooltip=tooltip,
+            color=COLOURS[(module.year, module.term)],
+            href=module.url,
         )
         current_subgraph_nodes.append(module.code + " " + module.name)
         # build prereq edges
@@ -354,8 +370,8 @@ def make_gv_graph(pathway_name, pathway_contents):
 
 # Build a graph for each pathway
 
-for pathway_name, pathwayContents in pathway_closures_lists.items():
-    make_gv_graph(pathway_name, pathwayContents)
+for pathway_name, pathway_contents in PATHWAY_CLOSURES.items():
+    make_gv_graph(pathway_name, pathway_contents)
 
 #######################
 # Build pathways.html #
@@ -376,8 +392,8 @@ with open("pathways.html", "w") as html_file:
     html_file.write(preamble)
     html_file.write("\n")
     # add the pathway svgs, one by one
-    for pathway_name in pathways:
-        html_file.write("<h1>" + pathway_name + "</h1>\n")
+    for pathway_name in PATHWAYS:
+        html_file.write(f"<h1>{pathway_name}</h1>\n")
         svg = open(pathway_name + ".svg").read()
         html_file.write(svg)
         html_file.write("\n")
@@ -404,7 +420,6 @@ def generate_table_row(module):
     """
     create and return the row of the prereqs table for the given module
     """
-
     module_col = (
         f'<a id="{module.code}"></a>[{module.code} {module.name}]({module.url})'
     )
@@ -419,18 +434,18 @@ def generate_table_row(module):
     else:
         term_col = str(module.term)
     prereqs_col = ""
-    for prereq_code, prereq_types in module.prereqs:
+    for prereq_code, prereq_type in module.prereqs:
         # append prereq code, name, link to prereqsCol, whether it's optional
-        if prereq_types == "comment":
+        if prereq_type == "comment":
             prereqs_col += prereq_code + ", "
-        elif prereq_types == "needed":
-            prereq_module = MODULES[prereq_code]
+        elif prereq_type == "needed":
+            prereq_module_name = MODULES[prereq_code].name
             prereqs_col += (
-                f'<a href="#{prereq_code}">{prereq_code} {prereq_module.name}</a>, '
+                f'<a href="#{prereq_code}">{prereq_code} {prereq_module_name}</a>, '
             )
         else:
-            prereq_module = MODULES[prereq_code]
-            prereqs_col += f'<a href="#{prereq_code}">{prereq_code} {prereq_module.name}</a> (recommended), '
+            prereq_module_name = MODULES[prereq_code]
+            prereqs_col += f'<a href="#{prereq_code}">{prereq_code} {prereq_module_name.name}</a> (recommended), '
     return f"| {module_col} | {year_col} | {term_col} | {prereqs_col[:-2]}\n"
 
 
@@ -440,7 +455,7 @@ with open("pathways.md", "w") as md_file:
     md_file.write(preamble)
     md_file.write("\n")
     # add the pathway tables, one by one
-    for pathway_name, pathway_modules in pathways.items():
+    for pathway_name, pathway_modules in PATHWAYS.items():
         pathway_modules = sorted(pathway_modules, key=lambda m: MODULES[m].term)
         pathway_modules = sorted(pathway_modules, key=lambda m: MODULES[m].year)
         md_file.write("## " + pathway_name + "\n\n")

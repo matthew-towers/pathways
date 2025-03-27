@@ -247,7 +247,7 @@
     "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0016.pdf",
     "name": "Mathematical Methods 3",
     "code": "MATH0016",
-    "year": 2.5,
+    "year": 2,
     "term": 1,
     "syllabusFilename": "math0016.pdf",
     "isRunning": true,
@@ -1647,5 +1647,47 @@
     "ancillary": false,
     "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0115_0.pdf",
     "isRunning": true
+  },
+  "MATH0117" : {
+      "name": "Spatial Mathematical Biology",
+      "code": "MATH0117",
+      "year": 4,
+      "term": 2,
+      "syllabusFilename": "math0117.pdf",
+      "prereqs": [],
+      "ancillary": false,
+      "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0117.pdf",
+      "isRunning": true
+  },
+  "MATH0118" : {
+      "name": "Mathematics for Quantum Mechanics",
+      "code": "MATH0118",
+      "year": 3.5,
+      "term": 1,
+      "syllabusFilename": "math0117.pdf",
+      "prereqs": [
+          [
+              "MATH0056",
+              "needed"
+          ],
+          [
+              "MATH0014",
+              "needed"
+          ]
+      ],
+      "ancillary": false,
+      "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0118.pdf",
+      "isRunning": true
+  },
+  "MATH0119" : {
+      "name": "Dynamical Systems",
+      "code": "MATH0119",
+      "year": 4,
+      "term": 2,
+      "syllabusFilename": "math0119.pdf",
+      "prereqs": [],
+      "ancillary": false,
+      "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0119.pdf",
+      "isRunning": true
   }
 }
