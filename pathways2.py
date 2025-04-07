@@ -59,7 +59,8 @@ ANCILLARY_MODULES = [
 
 class Module:
     def __init__(
-        self, name, code, year, term, syllabus_filename, prereqs, ancillary, url, running
+        self, name, code, year, term, syllabus_filename, prereqs, ancillary,
+        url, running=True, group=""
     ):
         self.name = name
         self.code = code
@@ -70,6 +71,7 @@ class Module:
         self.ancillary = ancillary
         self.url = url
         self.is_running = running
+        self.group = group
 
     def to_dict(self):
         return {
@@ -82,6 +84,7 @@ class Module:
             "ancillary": self.ancillary,
             "url": self.url,
             "is_running": self.is_running,
+            "group": self.group
         }
 
     @classmethod
@@ -97,7 +100,8 @@ class Module:
             m["prereqs"],
             m["ancillary"],
             m["url"],
-            m["is_running"],
+            running=m["is_running"],
+            group=m["group"]
         )
 
 
