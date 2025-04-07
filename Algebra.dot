@@ -2,24 +2,24 @@ digraph {
 	node [fillcolor=white penwidth=5 shape=box style="filled,bold"]
 	subgraph "1.0 1" {
 		rank=same
-		MATH0005 [label="MATH0005
-Algebra 1" color=darkgoldenrod1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0005.pdf" tooltip="Year 1, term 1"]
 		MATH0003 [label="MATH0003
 Analysis 1" color=darkgoldenrod1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0003.pdf" tooltip="Year 1, term 1"]
 		MATH0010 [label="MATH0010
 Mathematical Methods 1" color=darkgoldenrod1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0010.pdf" tooltip="Year 1, term 1"]
+		MATH0005 [label="MATH0005
+Algebra 1" color=darkgoldenrod1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0005.pdf" tooltip="Year 1, term 1"]
 	}
-	MATH0005 -> MATH0006
 	MATH0010 -> MATH0011
 	MATH0003 -> MATH0004
+	MATH0005 -> MATH0006
 	subgraph "1.0 2" {
 		rank=same
-		MATH0006 [label="MATH0006
-Algebra 2" color=darkgoldenrod3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0006.pdf" tooltip="Year 1, term 2"]
 		MATH0011 [label="MATH0011
 Mathematical Methods 2" color=darkgoldenrod3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0011_2.pdf" tooltip="Year 1, term 2"]
 		MATH0004 [label="MATH0004
 Analysis 2" color=darkgoldenrod3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0004.pdf" tooltip="Year 1, term 2"]
+		MATH0006 [label="MATH0006
+Algebra 2" color=darkgoldenrod3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0006.pdf" tooltip="Year 1, term 2"]
 	}
 	MATH0006 -> MATH0014
 	MATH0003 -> MATH0013
@@ -31,69 +31,74 @@ Algebra 3: Further Linear Algebra" color=green1 href="https://www.ucl.ac.uk/math
 		MATH0013 [label="MATH0013
 Analysis 3 - Complex Analysis" color=green1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0013.pdf" tooltip="Year 2, term 1"]
 	}
-	MATH0006 -> MATH0053
-	MATH0011 -> MATH0057
 	MATH0006 -> MATH0034
 	MATH0004 -> MATH0051
+	MATH0006 -> MATH0053
+	MATH0011 -> MATH0057
 	subgraph "2.5 2" {
 		rank=same
-		MATH0053 [label="MATH0053
-Algebra 4" color=cadetblue2 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0053.pdf" tooltip="Year 2 or 3, term 2"]
-		MATH0057 [label="MATH0057
-Probability and Statistics" color=cadetblue2 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0057.pdf" tooltip="Year 2 or 3, term 2"]
 		MATH0034 [label="MATH0034
 Number Theory" color=cadetblue2 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0034.pdf" tooltip="Year 2 or 3, term 2"]
 		MATH0051 [label="MATH0051
 Analysis 4" color=cadetblue2 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0051.pdf" tooltip="Year 2 or 3, term 2"]
+		MATH0053 [label="MATH0053
+Algebra 4" color=cadetblue2 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0053.pdf" tooltip="Year 2 or 3, term 2"]
+		MATH0057 [label="MATH0057
+Probability and Statistics" color=cadetblue2 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0057.pdf" tooltip="Year 2 or 3, term 2"]
 	}
-	MATH0014 -> MATH0023
 	MATH0057 -> MATH0029 [style=dashed]
+	MATH0014 -> MATH0023
 	MATH0053 -> MATH0022
 	subgraph "3.0 1" {
 		rank=same
-		MATH0023 [label="MATH0023
-Algebraic Topology" color=brown1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0023_1.pdf" tooltip="Year 3, term 1"]
 		MATH0029 [label="MATH0029
 Graph Theory and Combinatorics" color=brown1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0029.pdf" tooltip="Year 3, term 1"]
+		MATH0023 [label="MATH0023
+Algebraic Topology" color=brown1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0023_1.pdf" tooltip="Year 3, term 1"]
 		MATH0022 [label="MATH0022
 Galois Theory" color=brown1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0022.pdf" tooltip="Year 3, term 1"]
 	}
-	MATH0006 -> MATH0037
-	MATH0034 -> MATH0036
-	MATH0053 -> MATH0036
 	MATH0053 -> MATH0021
+	MATH0053 -> MATH0108
+	MATH0006 -> MATH0037
 	MATH0034 -> MATH0035
 	MATH0053 -> MATH0035
 	MATH0022 -> MATH0035 [style=dashed]
+	MATH0034 -> MATH0036
+	MATH0053 -> MATH0036
 	subgraph "3.0 2" {
 		rank=same
-		MATH0038 [label="MATH0038
-History of Mathematics" color=brown3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0038.pdf" tooltip="Year 3, term 2"]
-		MATH0037 [label="MATH0037
-Logic" color=brown3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0037.pdf" tooltip="Year 3, term 2"]
-		MATH0036 [label="MATH0036
-Elliptic Curves" color=brown3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0036.pdf" tooltip="Year 3, term 2"]
 		MATH0021 [label="MATH0021
 Homological Algebra" color=brown3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0021.pdf" tooltip="Year 3, term 2"]
+		MATH0038 [label="MATH0038
+History of Mathematics" color=brown3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0038.pdf" tooltip="Year 3, term 2"]
+		MATH0108 [label="MATH0108
+Commutative Rings and Algebra" color=brown3 href="https://www.ucl.ac.uk/maths/sites/maths/files/0108_0.pdf" tooltip="Year 3, term 2"]
+		MATH0037 [label="MATH0037
+Logic" color=brown3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0037.pdf" tooltip="Year 3, term 2"]
 		MATH0035 [label="MATH0035
 Algebraic Number Theory" color=brown3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0035.pdf" tooltip="Year 3, term 2"]
+		MATH0109 [label="MATH0109
+Theorem Proving in Lean" color=brown3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0019_2.pdf" tooltip="Year 3, term 2"]
+		MATH0036 [label="MATH0036
+Elliptic Curves" color=brown3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0036.pdf" tooltip="Year 3, term 2"]
 	}
-	MATH0053 -> MATH0073
-	MATH0021 -> MATH0073 [style=dashed]
 	MATH0013 -> MATH0083
 	MATH0051 -> MATH0083
 	MATH0034 -> MATH0083
 	MATH0013 -> MATH0104
 	MATH0014 -> MATH0104
 	MATH0034 -> MATH0104 [style=dashed]
+	MATH0053 -> MATH0073
+	MATH0021 -> MATH0073 [style=dashed]
 	subgraph "3.5 1" {
 		rank=same
-		MATH0073 [label="MATH0073
-Representation Theory" color=deeppink1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0073.pdf" tooltip="Year 3 or 4, term 1"]
 		MATH0083 [label="MATH0083
 Prime Numbers and their Distribution" color=deeppink1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0083.pdf" tooltip="Year 3 or 4, term 1"]
 		MATH0104 [label="MATH0104
 Modular Forms" color=deeppink1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0104_2.pdf" tooltip="Year 3 or 4, term 1"]
+		MATH0073 [label="MATH0073
+Representation Theory" color=deeppink1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0073.pdf" tooltip="Year 3 or 4, term 1"]
 	}
 	MATH0014 -> MATH0075
 	subgraph "3.5 2" {
