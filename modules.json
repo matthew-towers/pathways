@@ -1515,19 +1515,19 @@
     },
     "MATH0109": {
         "id": "lean",
-        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0019_2.pdf",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0109.pdf",
         "name": "Theorem Proving in Lean",
         "code": "MATH0109",
         "year": 3,
-        "term": 2,
-        "syllabus_filename": "math0019_2.pdf",
+        "term": 1,
+        "syllabus_filename": "math0109.pdf",
         "is_running": true,
         "pathways": [
             "Algebra"
         ],
         "prereqs": [
             [
-                "Familiarity with the notion of proving theorems (for example, at least one of MATH0034, MATH0051, or MATH0053)",
+                "Familiarity with the notion of proving theorems (for example, at least one of MATH0034, MATH0051, or MATH0053). Good coding skills are also desirable.",
                 "comment"
             ]
         ],
