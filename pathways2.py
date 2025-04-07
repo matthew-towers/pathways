@@ -206,6 +206,7 @@ if SCRAPE:
 
     for module_code in MODULES:
         if module_code not in modules_on_web:
+            module_name = MODULES[module_code].module_name
             resp = input(f"{module_code} {module_name} not on webpage. Set to not running? Y/n")
             if resp == "Y":
                 MODULES[module_code].is_running = False
@@ -359,8 +360,8 @@ def make_gv_graph(pathway_name, pathway_contents):
             current_subgraph.attr(rank="same")
         # Build the label for the current node
         tooltip = f"Year {displayyear(module.year)}, term {displayterm(module.term)}"
-        label = module.code + "\n" + module.name
-        url = module.url
+        # label = module.code + "\n" + module.name
+        # url = module.url
         # Add a node to the current subgraph
         current_subgraph.node(
             code,
