@@ -117,3 +117,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# My upload script which contains usernames and server names
+build_and_upload.sh
+deploy.sh

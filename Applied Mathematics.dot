@@ -1,0 +1,132 @@
+digraph {
+	node [fillcolor=white penwidth=5 shape=box style="filled,bold"]
+	subgraph "1.0 1" {
+		rank=same
+		MATH0008 [label="MATH0008
+Applied Mathematics" color=darkgoldenrod1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0008.pdf" tooltip="Year 1, term 1"]
+		MATH0010 [label="MATH0010
+Mathematical Methods 1" color=darkgoldenrod1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0010.pdf" tooltip="Year 1, term 1"]
+		MATH0005 [label="MATH0005
+Algebra 1" color=darkgoldenrod1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0005.pdf" tooltip="Year 1, term 1"]
+		MATH0003 [label="MATH0003
+Analysis 1" color=darkgoldenrod1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0003.pdf" tooltip="Year 1, term 1"]
+	}
+	MATH0005 -> MATH0006
+	MATH0010 -> MATH0011
+	MATH0008 -> MATH0009
+	MATH0010 -> MATH0009
+	MATH0003 -> MATH0004
+	subgraph "1.0 2" {
+		rank=same
+		MATH0006 [label="MATH0006
+Algebra 2" color=darkgoldenrod3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0006.pdf" tooltip="Year 1, term 2"]
+		MATH0011 [label="MATH0011
+Mathematical Methods 2" color=darkgoldenrod3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0011_2.pdf" tooltip="Year 1, term 2"]
+		MATH0009 [label="MATH0009
+Newtonian Mechanics" color=darkgoldenrod3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0009.pdf" tooltip="Year 1, term 2"]
+		MATH0004 [label="MATH0004
+Analysis 2" color=darkgoldenrod3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0004.pdf" tooltip="Year 1, term 2"]
+	}
+	MATH0006 -> MATH0014
+	MATH0011 -> MATH0016
+	MATH0003 -> MATH0013
+	MATH0004 -> MATH0013 [style=dashed]
+	MATH0011 -> MATH0015
+	MATH0009 -> MATH0015
+	subgraph "2.0 1" {
+		rank=same
+		MATH0014 [label="MATH0014
+Algebra 3: Further Linear Algebra" color=green1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0014.pdf" tooltip="Year 2, term 1"]
+		MATH0016 [label="MATH0016
+Mathematical Methods 3" color=green1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0016.pdf" tooltip="Year 2, term 1"]
+		MATH0013 [label="MATH0013
+Analysis 3 - Complex Analysis" color=green1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0013.pdf" tooltip="Year 2, term 1"]
+		MATH0015 [label="MATH0015
+Fluid Mechanics" color=green1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0015.pdf" tooltip="Year 2, term 1"]
+	}
+	MATH0016 -> MATH0055
+	MATH0004 -> MATH0051
+	MATH0013 -> MATH0056
+	MATH0016 -> MATH0056
+	subgraph "2.5 2" {
+		rank=same
+		MATH0055 [label="MATH0055
+Mathematics of Electromagnetism and Special Relativity" color=cadetblue2 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0055_3.pdf" tooltip="Year 2 or 3, term 2"]
+		MATH0051 [label="MATH0051
+Analysis 4" color=cadetblue2 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0051.pdf" tooltip="Year 2 or 3, term 2"]
+		MATH0056 [label="MATH0056
+Mathematical Methods 4" color=cadetblue2 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0056.pdf" tooltip="Year 2 or 3, term 2"]
+	}
+	MATH0016 -> MATH0025
+	MATH0051 -> MATH0019
+	MATH0051 -> MATH0017
+	subgraph "3.0 1" {
+		rank=same
+		MATH0025 [label="MATH0025
+Mathematics for General Relativity" color=brown1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0025.pdf" tooltip="Year 3, term 1"]
+		MATH0019 [label="MATH0019
+Multivariable Analysis" color=brown1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0019.pdf" tooltip="Year 3, term 1"]
+		MATH0017 [label="MATH0017
+Measure Theory" color=brown1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0017.pdf" tooltip="Year 3, term 1"]
+	}
+	MATH0056 -> MATH0027
+	MATH0011 -> MATH0054
+	MATH0009 -> MATH0054
+	MATH0011 -> MATH0020
+	MATH0015 -> MATH0024
+	MATH0016 -> MATH0024
+	subgraph "3.0 2" {
+		rank=same
+		MATH0027 [label="MATH0027
+Methods 5" color=brown3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0027.pdf" tooltip="Year 3, term 2"]
+		MATH0054 [label="MATH0054
+Analytical Dynamics" color=brown3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0054.pdf" tooltip="Year 3, term 2"]
+		MATH0020 [label="MATH0020
+Differential Geometry" color=brown3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0020.pdf" tooltip="Year 3, term 2"]
+		MATH0024 [label="MATH0024
+Geophysical Fluids" color=brown3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0024.pdf" tooltip="Year 3, term 2"]
+	}
+	MATH0015 -> MATH0077
+	MATH0016 -> MATH0077
+	MATH0056 -> MATH0077
+	MATH0056 -> MATH0118
+	MATH0014 -> MATH0118
+	subgraph "3.5 1" {
+		rank=same
+		MATH0077 [label="MATH0077
+Real Fluids" color=deeppink1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0077.pdf" tooltip="Year 3 or 4, term 1"]
+		MATH0118 [label="MATH0118
+Mathematics for Quantum Mechanics" color=deeppink1 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0118.pdf" tooltip="Year 3 or 4, term 1"]
+	}
+	MATH0017 -> MATH0119
+	MATH0019 -> MATH0119 [style=dashed]
+	MATH0020 -> MATH0119 [style=dashed]
+	MATH0015 -> MATH0115
+	MATH0056 -> MATH0115
+	MATH0056 -> MATH0080
+	subgraph "3.5 2" {
+		rank=same
+		MATH0119 [label="MATH0119
+Dynamical Systems" color=deeppink3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0119.pdf" tooltip="Year 3 or 4, term 2"]
+		MATH0115 [label="MATH0115
+Solid Mechanics" color=deeppink3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0115_syllabus.pdf" tooltip="Year 3 or 4, term 2"]
+		MATH0080 [label="MATH0080
+Waves and Wave Scattering" color=deeppink3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0080.pdf" tooltip="Year 3 or 4, term 2"]
+	}
+	MATH0015 -> MATH0106
+	MATH0077 -> MATH0106 [style=dashed]
+	subgraph "4.0 1" {
+		rank=same
+		MATH0106 [label="MATH0106
+Industrial and Geological Fluids" color=dodgerblue2 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0106.pdf" tooltip="Year 4, term 1"]
+	}
+	MATH0077 -> MATH0078
+	MATH0025 -> MATH0079
+	subgraph "4.0 2" {
+		rank=same
+		MATH0078 [label="MATH0078
+Asymptotic Approximation Methods" color=dodgerblue3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0078.pdf" tooltip="Year 4, term 2"]
+		MATH0079 [label="MATH0079
+Cosmology" color=dodgerblue3 href="https://www.ucl.ac.uk/maths/sites/maths/files/math0079.pdf" tooltip="Year 4, term 2"]
+	}
+}

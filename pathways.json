@@ -73,7 +73,9 @@
     "MATH0078",
     "MATH0079",
     "MATH0106",
-    "MATH0115"
+    "MATH0115",
+    "MATH0118",
+    "MATH0119"
   ],
   "Modelling, Computation and Finance": [
     "MATH0028",
@@ -87,6 +89,7 @@
     "MATH0032",
     "MATH0033",
     "MATH0102",
-    "MATH0114"
+    "MATH0114",
+    "MATH0117"
   ]
 }

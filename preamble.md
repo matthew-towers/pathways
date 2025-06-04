@@ -17,6 +17,8 @@ Information on modules from other UCL departments can be found at the following 
  - [Management](https://www.mgmt.ucl.ac.uk/undergraduate-elective-modules)
  - [Information Studies](https://www.ucl.ac.uk/information-studies/study/undergraduate-study/other-undergraduate-modules)
 
+You may also find the [UCL Module Catalogue](https://www.ucl.ac.uk/module-catalogue/) useful.
+
 Year information is for BSc and MSci Mathematics students only. Students on joint degrees may take modules in different years - check [the degree structure document for your course](https://www.ucl.ac.uk/maths/current-students/current-undergraduates/degree-structures-and-options/specific-degree-structures) for details.
 
-
+Please note that the year column in the table below is for BSc and MSci Mathematics degrees only. Students on other degrees may take modules in different years. Check [the degree structure document for your course](https://www.ucl.ac.uk/maths/current-students/current-undergraduates/degree-structures-and-options/specific-degree-structures) for details.
