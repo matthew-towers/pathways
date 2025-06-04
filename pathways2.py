@@ -309,7 +309,7 @@ def make_gv_graph(pathway_name, pathway_contents):
     and term. The function will make an svg of the pathway using graphviz
     and save it."""
     pathway_graph = gv.Digraph(
-        filename=pathway_name,
+        filename=pathway_name+".dot",
         format="svg",
         node_attr={
             "shape": "box",
