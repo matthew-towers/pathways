@@ -2,7 +2,7 @@
 
 # TODO:
 # - [ ] for each pathway build a d3js/pyvis fancy graph
-# - [ ] create fancy webpage with fancy graphs
+# - [x] tooltips for arrows with recommended/required
 # - [ ] give modules a level attribute
 # - [ ] give year 4 modules a group attribute
 # - [ ] scrape the syllabus/query the user for prereq, year, term data when a new module is found. (Can't really do the prereqs because they can be written weirdly)
@@ -87,7 +87,6 @@ class Module:
     @classmethod
     def dict_to_module(cls, m):
         # convert a module dict, as parsed from json, to a Module
-        # receives Module class as a first argument
         return cls(
             m["name"],
             m["code"],
@@ -206,8 +205,8 @@ if SCRAPE:
 
     for module_code in MODULES:
         if module_code not in modules_on_web:
-            resp = input(f"{module_code} {module_name} not on webpage. Set to not running? Y/n")
-            if resp == "Y":
+            resp = input(f"{module_code} {module_name} not on webpage. Set to not running? y/N")
+            if resp == "y":
                 MODULES[module_code].is_running = False
                 modules_from_json[module_code]["is_running"] = False
 
@@ -237,7 +236,7 @@ PREREQ_GRAPH.add_nodes_from(MODULES)
 for code, module in MODULES.items():
     if module.is_running:
         for prereq_code, prereq_type in module.prereqs:
-            if (prereq_type == "needed") or (prereq_type == "recommended"):
+            if prereq_type in ["needed", "recommended"]:
                 PREREQ_GRAPH.add_edge(prereq_code, code, object=prereq_type)
 
 assert nx.is_directed_acyclic_graph(PREREQ_GRAPH)
@@ -373,9 +372,11 @@ def make_gv_graph(pathway_name, pathway_contents):
         # build prereq edges
         for prereq_code, prereq_type in module.prereqs:
             if prereq_type == "needed":
-                pathway_graph.edge(prereq_code, code)
+                pathway_graph.edge(prereq_code, code,
+                                   tooltip="required prerequisite")
             elif prereq_type == "recommended":
-                pathway_graph.edge(prereq_code, code, style="dashed")
+                pathway_graph.edge(prereq_code, code, style="dashed",
+                                   tooltip="recommended prerequisite")
             elif prereq_type == "comment":
                 pass
             else:

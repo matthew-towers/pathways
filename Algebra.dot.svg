@@ -9,36 +9,10 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 412)">
 <title>%3</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-412 1844,-412 1844,4 -4,4"/>
-<!-- MATH0005 -->
-<g id="node1" class="node">
-<title>MATH0005</title>
-<g id="a_node1"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0005.pdf" xlink:title="Year 1, term 1">
-<polygon fill="white" stroke="#ffb90f" stroke-width="5" points="861,-408 763,-408 763,-370 861,-370 861,-408"/>
-<text text-anchor="middle" x="812" y="-392.8" font-family="Times,serif" font-size="14.00">MATH0005</text>
-<text text-anchor="middle" x="812" y="-377.8" font-family="Times,serif" font-size="14.00">Algebra 1</text>
-</a>
-</g>
-</g>
-<!-- MATH0006 -->
-<g id="node4" class="node">
-<title>MATH0006</title>
-<g id="a_node4"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0006.pdf" xlink:title="Year 1, term 2">
-<polygon fill="white" stroke="#cd950c" stroke-width="5" points="861,-334 763,-334 763,-296 861,-296 861,-334"/>
-<text text-anchor="middle" x="812" y="-318.8" font-family="Times,serif" font-size="14.00">MATH0006</text>
-<text text-anchor="middle" x="812" y="-303.8" font-family="Times,serif" font-size="14.00">Algebra 2</text>
-</a>
-</g>
-</g>
-<!-- MATH0005&#45;&gt;MATH0006 -->
-<g id="edge1" class="edge">
-<title>MATH0005&#45;&gt;MATH0006</title>
-<path fill="none" stroke="black" d="M812,-369.83C812,-362.13 812,-352.97 812,-344.42"/>
-<polygon fill="black" stroke="black" points="815.5,-344.41 812,-334.41 808.5,-344.41 815.5,-344.41"/>
-</g>
 <!-- MATH0003 -->
-<g id="node2" class="node">
+<g id="node1" class="node">
 <title>MATH0003</title>
-<g id="a_node2"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0003.pdf" xlink:title="Year 1, term 1">
+<g id="a_node1"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0003.pdf" xlink:title="Year 1, term 1">
 <polygon fill="white" stroke="#ffb90f" stroke-width="5" points="242,-408 144,-408 144,-370 242,-370 242,-408"/>
 <text text-anchor="middle" x="193" y="-392.8" font-family="Times,serif" font-size="14.00">MATH0003</text>
 <text text-anchor="middle" x="193" y="-377.8" font-family="Times,serif" font-size="14.00">Analysis 1</text>
@@ -58,8 +32,11 @@
 <!-- MATH0003&#45;&gt;MATH0004 -->
 <g id="edge3" class="edge">
 <title>MATH0003&#45;&gt;MATH0004</title>
+<g id="a_edge3"><a xlink:title="required prerequisite">
 <path fill="none" stroke="black" d="M183.16,-369.83C178.8,-361.79 173.59,-352.17 168.78,-343.29"/>
 <polygon fill="black" stroke="black" points="171.81,-341.54 163.97,-334.41 165.66,-344.87 171.81,-341.54"/>
+</a>
+</g>
 </g>
 <!-- MATH0013 -->
 <g id="node8" class="node">
@@ -74,13 +51,16 @@
 <!-- MATH0003&#45;&gt;MATH0013 -->
 <g id="edge5" class="edge">
 <title>MATH0003&#45;&gt;MATH0013</title>
+<g id="a_edge5"><a xlink:title="required prerequisite">
 <path fill="none" stroke="black" d="M200.13,-369.7C203.99,-359.34 208.65,-346.07 212,-334 217.88,-312.85 222.82,-288.51 226.2,-270.18"/>
 <polygon fill="black" stroke="black" points="229.68,-270.61 228,-260.15 222.79,-269.38 229.68,-270.61"/>
+</a>
+</g>
 </g>
 <!-- MATH0010 -->
-<g id="node3" class="node">
+<g id="node2" class="node">
 <title>MATH0010</title>
-<g id="a_node3"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0010.pdf" xlink:title="Year 1, term 1">
+<g id="a_node2"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0010.pdf" xlink:title="Year 1, term 1">
 <polygon fill="white" stroke="#ffb90f" stroke-width="5" points="1810.5,-408 1615.5,-408 1615.5,-370 1810.5,-370 1810.5,-408"/>
 <text text-anchor="middle" x="1713" y="-392.8" font-family="Times,serif" font-size="14.00">MATH0010</text>
 <text text-anchor="middle" x="1713" y="-377.8" font-family="Times,serif" font-size="14.00">Mathematical Methods 1</text>
@@ -88,9 +68,9 @@
 </g>
 </g>
 <!-- MATH0011 -->
-<g id="node5" class="node">
+<g id="node4" class="node">
 <title>MATH0011</title>
-<g id="a_node5"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0011_2.pdf" xlink:title="Year 1, term 2">
+<g id="a_node4"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0011_2.pdf" xlink:title="Year 1, term 2">
 <polygon fill="white" stroke="#cd950c" stroke-width="5" points="1810.5,-334 1615.5,-334 1615.5,-296 1810.5,-296 1810.5,-334"/>
 <text text-anchor="middle" x="1713" y="-318.8" font-family="Times,serif" font-size="14.00">MATH0011</text>
 <text text-anchor="middle" x="1713" y="-303.8" font-family="Times,serif" font-size="14.00">Mathematical Methods 2</text>
@@ -98,79 +78,47 @@
 </g>
 </g>
 <!-- MATH0010&#45;&gt;MATH0011 -->
-<g id="edge2" class="edge">
+<g id="edge1" class="edge">
 <title>MATH0010&#45;&gt;MATH0011</title>
+<g id="a_edge1"><a xlink:title="required prerequisite">
 <path fill="none" stroke="black" d="M1713,-369.83C1713,-362.13 1713,-352.97 1713,-344.42"/>
 <polygon fill="black" stroke="black" points="1716.5,-344.41 1713,-334.41 1709.5,-344.41 1716.5,-344.41"/>
-</g>
-<!-- MATH0014 -->
-<g id="node7" class="node">
-<title>MATH0014</title>
-<g id="a_node7"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0014.pdf" xlink:title="Year 2, term 1">
-<polygon fill="white" stroke="#00ff00" stroke-width="5" points="699,-260 439,-260 439,-222 699,-222 699,-260"/>
-<text text-anchor="middle" x="569" y="-244.8" font-family="Times,serif" font-size="14.00">MATH0014</text>
-<text text-anchor="middle" x="569" y="-229.8" font-family="Times,serif" font-size="14.00">Algebra 3: Further Linear Algebra</text>
 </a>
 </g>
 </g>
-<!-- MATH0006&#45;&gt;MATH0014 -->
-<g id="edge4" class="edge">
-<title>MATH0006&#45;&gt;MATH0014</title>
-<path fill="none" stroke="black" d="M762.83,-299.43C727.54,-288.97 679.46,-274.73 640.01,-263.04"/>
-<polygon fill="black" stroke="black" points="640.76,-259.61 630.18,-260.13 638.78,-266.32 640.76,-259.61"/>
-</g>
-<!-- MATH0053 -->
-<g id="node9" class="node">
-<title>MATH0053</title>
-<g id="a_node9"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0053.pdf" xlink:title="Year 2 or 3, term 2">
-<polygon fill="white" stroke="#8ee5ee" stroke-width="5" points="1242,-260 1144,-260 1144,-222 1242,-222 1242,-260"/>
-<text text-anchor="middle" x="1193" y="-244.8" font-family="Times,serif" font-size="14.00">MATH0053</text>
-<text text-anchor="middle" x="1193" y="-229.8" font-family="Times,serif" font-size="14.00">Algebra 4</text>
+<!-- MATH0005 -->
+<g id="node3" class="node">
+<title>MATH0005</title>
+<g id="a_node3"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0005.pdf" xlink:title="Year 1, term 1">
+<polygon fill="white" stroke="#ffb90f" stroke-width="5" points="861,-408 763,-408 763,-370 861,-370 861,-408"/>
+<text text-anchor="middle" x="812" y="-392.8" font-family="Times,serif" font-size="14.00">MATH0005</text>
+<text text-anchor="middle" x="812" y="-377.8" font-family="Times,serif" font-size="14.00">Algebra 1</text>
 </a>
 </g>
 </g>
-<!-- MATH0006&#45;&gt;MATH0053 -->
-<g id="edge7" class="edge">
-<title>MATH0006&#45;&gt;MATH0053</title>
-<path fill="none" stroke="black" d="M861.03,-304.73C930.8,-291.55 1058.59,-267.4 1133.63,-253.22"/>
-<polygon fill="black" stroke="black" points="1134.68,-256.58 1143.86,-251.29 1133.38,-249.7 1134.68,-256.58"/>
-</g>
-<!-- MATH0034 -->
-<g id="node11" class="node">
-<title>MATH0034</title>
-<g id="a_node11"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0034.pdf" xlink:title="Year 2 or 3, term 2">
-<polygon fill="white" stroke="#8ee5ee" stroke-width="5" points="934.5,-260 805.5,-260 805.5,-222 934.5,-222 934.5,-260"/>
-<text text-anchor="middle" x="870" y="-244.8" font-family="Times,serif" font-size="14.00">MATH0034</text>
-<text text-anchor="middle" x="870" y="-229.8" font-family="Times,serif" font-size="14.00">Number Theory</text>
+<!-- MATH0006 -->
+<g id="node5" class="node">
+<title>MATH0006</title>
+<g id="a_node5"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0006.pdf" xlink:title="Year 1, term 2">
+<polygon fill="white" stroke="#cd950c" stroke-width="5" points="861,-334 763,-334 763,-296 861,-296 861,-334"/>
+<text text-anchor="middle" x="812" y="-318.8" font-family="Times,serif" font-size="14.00">MATH0006</text>
+<text text-anchor="middle" x="812" y="-303.8" font-family="Times,serif" font-size="14.00">Algebra 2</text>
 </a>
 </g>
 </g>
-<!-- MATH0006&#45;&gt;MATH0034 -->
-<g id="edge9" class="edge">
-<title>MATH0006&#45;&gt;MATH0034</title>
-<path fill="none" stroke="black" d="M826.64,-295.83C833.32,-287.54 841.36,-277.56 848.69,-268.45"/>
-<polygon fill="black" stroke="black" points="851.62,-270.4 855.17,-260.41 846.17,-266.01 851.62,-270.4"/>
-</g>
-<!-- MATH0037 -->
-<g id="node16" class="node">
-<title>MATH0037</title>
-<g id="a_node16"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0037.pdf" xlink:title="Year 3, term 2">
-<polygon fill="white" stroke="#cd3333" stroke-width="5" points="804,-112 706,-112 706,-74 804,-74 804,-112"/>
-<text text-anchor="middle" x="755" y="-96.8" font-family="Times,serif" font-size="14.00">MATH0037</text>
-<text text-anchor="middle" x="755" y="-81.8" font-family="Times,serif" font-size="14.00">Logic</text>
+<!-- MATH0005&#45;&gt;MATH0006 -->
+<g id="edge2" class="edge">
+<title>MATH0005&#45;&gt;MATH0006</title>
+<g id="a_edge2"><a xlink:title="required prerequisite">
+<path fill="none" stroke="black" d="M812,-369.83C812,-362.13 812,-352.97 812,-344.42"/>
+<polygon fill="black" stroke="black" points="815.5,-344.41 812,-334.41 808.5,-344.41 815.5,-344.41"/>
 </a>
 </g>
-</g>
-<!-- MATH0006&#45;&gt;MATH0037 -->
-<g id="edge14" class="edge">
-<title>MATH0006&#45;&gt;MATH0037</title>
-<path fill="none" stroke="black" d="M806.31,-295.57C803.15,-285.16 799.23,-271.89 796,-260 782.88,-211.66 769.24,-154.92 761.47,-121.86"/>
-<polygon fill="black" stroke="black" points="764.85,-120.94 759.16,-112 758.03,-122.54 764.85,-120.94"/>
 </g>
 <!-- MATH0057 -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>MATH0057</title>
-<g id="a_node10"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0057.pdf" xlink:title="Year 2 or 3, term 2">
+<g id="a_node9"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0057.pdf" xlink:title="Year 2 or 3, term 2">
 <polygon fill="white" stroke="#8ee5ee" stroke-width="5" points="1812,-260 1614,-260 1614,-222 1812,-222 1812,-260"/>
 <text text-anchor="middle" x="1713" y="-244.8" font-family="Times,serif" font-size="14.00">MATH0057</text>
 <text text-anchor="middle" x="1713" y="-229.8" font-family="Times,serif" font-size="14.00">Probability and Statistics</text>
@@ -178,16 +126,98 @@
 </g>
 </g>
 <!-- MATH0011&#45;&gt;MATH0057 -->
-<g id="edge8" class="edge">
+<g id="edge7" class="edge">
 <title>MATH0011&#45;&gt;MATH0057</title>
+<g id="a_edge7"><a xlink:title="required prerequisite">
 <path fill="none" stroke="black" d="M1713,-295.83C1713,-288.13 1713,-278.97 1713,-270.42"/>
 <polygon fill="black" stroke="black" points="1716.5,-270.41 1713,-260.41 1709.5,-270.41 1716.5,-270.41"/>
+</a>
+</g>
+</g>
+<!-- MATH0014 -->
+<g id="node7" class="node">
+<title>MATH0014</title>
+<g id="a_node7"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0014.pdf" xlink:title="Year 2, term 1">
+<polygon fill="white" stroke="#00ff00" stroke-width="5" points="715,-260 455,-260 455,-222 715,-222 715,-260"/>
+<text text-anchor="middle" x="585" y="-244.8" font-family="Times,serif" font-size="14.00">MATH0014</text>
+<text text-anchor="middle" x="585" y="-229.8" font-family="Times,serif" font-size="14.00">Algebra 3: Further Linear Algebra</text>
+</a>
+</g>
+</g>
+<!-- MATH0006&#45;&gt;MATH0014 -->
+<g id="edge4" class="edge">
+<title>MATH0006&#45;&gt;MATH0014</title>
+<g id="a_edge4"><a xlink:title="required prerequisite">
+<path fill="none" stroke="black" d="M762.74,-298.38C730.21,-288.06 687.16,-274.4 651.58,-263.12"/>
+<polygon fill="black" stroke="black" points="652.35,-259.69 641.76,-260 650.24,-266.36 652.35,-259.69"/>
+</a>
+</g>
+</g>
+<!-- MATH0034 -->
+<g id="node10" class="node">
+<title>MATH0034</title>
+<g id="a_node10"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0034.pdf" xlink:title="Year 2 or 3, term 2">
+<polygon fill="white" stroke="#8ee5ee" stroke-width="5" points="934.5,-260 805.5,-260 805.5,-222 934.5,-222 934.5,-260"/>
+<text text-anchor="middle" x="870" y="-244.8" font-family="Times,serif" font-size="14.00">MATH0034</text>
+<text text-anchor="middle" x="870" y="-229.8" font-family="Times,serif" font-size="14.00">Number Theory</text>
+</a>
+</g>
+</g>
+<!-- MATH0006&#45;&gt;MATH0034 -->
+<g id="edge8" class="edge">
+<title>MATH0006&#45;&gt;MATH0034</title>
+<g id="a_edge8"><a xlink:title="required prerequisite">
+<path fill="none" stroke="black" d="M826.64,-295.83C833.32,-287.54 841.36,-277.56 848.69,-268.45"/>
+<polygon fill="black" stroke="black" points="851.62,-270.4 855.17,-260.41 846.17,-266.01 851.62,-270.4"/>
+</a>
+</g>
+</g>
+<!-- MATH0053 -->
+<g id="node11" class="node">
+<title>MATH0053</title>
+<g id="a_node11"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0053.pdf" xlink:title="Year 2 or 3, term 2">
+<polygon fill="white" stroke="#8ee5ee" stroke-width="5" points="1246,-260 1148,-260 1148,-222 1246,-222 1246,-260"/>
+<text text-anchor="middle" x="1197" y="-244.8" font-family="Times,serif" font-size="14.00">MATH0053</text>
+<text text-anchor="middle" x="1197" y="-229.8" font-family="Times,serif" font-size="14.00">Algebra 4</text>
+</a>
+</g>
+</g>
+<!-- MATH0006&#45;&gt;MATH0053 -->
+<g id="edge9" class="edge">
+<title>MATH0006&#45;&gt;MATH0053</title>
+<g id="a_edge9"><a xlink:title="required prerequisite">
+<path fill="none" stroke="black" d="M861.15,-304.81C931.87,-291.58 1062.12,-267.22 1137.96,-253.04"/>
+<polygon fill="black" stroke="black" points="1138.65,-256.47 1147.84,-251.19 1137.36,-249.59 1138.65,-256.47"/>
+</a>
+</g>
+</g>
+<!-- MATH0037 -->
+<g id="node18" class="node">
+<title>MATH0037</title>
+<g id="a_node18"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0037.pdf" xlink:title="Year 3, term 2">
+<polygon fill="white" stroke="#cd3333" stroke-width="5" points="804,-112 706,-112 706,-74 804,-74 804,-112"/>
+<text text-anchor="middle" x="755" y="-96.8" font-family="Times,serif" font-size="14.00">MATH0037</text>
+<text text-anchor="middle" x="755" y="-81.8" font-family="Times,serif" font-size="14.00">Logic</text>
+</a>
+</g>
+</g>
+<!-- MATH0006&#45;&gt;MATH0037 -->
+<g id="edge17" class="edge">
+<title>MATH0006&#45;&gt;MATH0037</title>
+<g id="a_edge17"><a xlink:title="required prerequisite">
+<path fill="none" stroke="black" d="M806.31,-295.57C803.15,-285.16 799.23,-271.89 796,-260 782.88,-211.66 769.24,-154.92 761.47,-121.86"/>
+<polygon fill="black" stroke="black" points="764.85,-120.94 759.16,-112 758.03,-122.54 764.85,-120.94"/>
+</a>
+</g>
 </g>
 <!-- MATH0004&#45;&gt;MATH0013 -->
 <g id="edge6" class="edge">
 <title>MATH0004&#45;&gt;MATH0013</title>
+<g id="a_edge6"><a xlink:title="recommended prerequisite">
 <path fill="none" stroke="black" stroke-dasharray="5,2" d="M173.43,-295.83C182.73,-287.13 194.02,-276.58 204.13,-267.13"/>
 <polygon fill="black" stroke="black" points="206.66,-269.55 211.58,-260.16 201.88,-264.44 206.66,-269.55"/>
+</a>
+</g>
 </g>
 <!-- MATH0051 -->
 <g id="node12" class="node">
@@ -202,24 +232,30 @@
 <!-- MATH0004&#45;&gt;MATH0051 -->
 <g id="edge10" class="edge">
 <title>MATH0004&#45;&gt;MATH0051</title>
+<g id="a_edge10"><a xlink:title="required prerequisite">
 <path fill="none" stroke="black" d="M127.5,-295.83C114.32,-286.79 98.22,-275.75 84.03,-266.02"/>
 <polygon fill="black" stroke="black" points="85.71,-262.93 75.49,-260.16 81.76,-268.7 85.71,-262.93"/>
+</a>
+</g>
 </g>
 <!-- MATH0023 -->
-<g id="node13" class="node">
+<g id="node15" class="node">
 <title>MATH0023</title>
-<g id="a_node13"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0023_1.pdf" xlink:title="Year 3, term 1">
-<polygon fill="white" stroke="#ff4040" stroke-width="5" points="412.5,-186 259.5,-186 259.5,-148 412.5,-148 412.5,-186"/>
-<text text-anchor="middle" x="336" y="-170.8" font-family="Times,serif" font-size="14.00">MATH0023</text>
-<text text-anchor="middle" x="336" y="-155.8" font-family="Times,serif" font-size="14.00">Algebraic Topology</text>
+<g id="a_node15"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0023_1.pdf" xlink:title="Year 3, term 1">
+<polygon fill="white" stroke="#ff4040" stroke-width="5" points="649.5,-186 496.5,-186 496.5,-148 649.5,-148 649.5,-186"/>
+<text text-anchor="middle" x="573" y="-170.8" font-family="Times,serif" font-size="14.00">MATH0023</text>
+<text text-anchor="middle" x="573" y="-155.8" font-family="Times,serif" font-size="14.00">Algebraic Topology</text>
 </a>
 </g>
 </g>
 <!-- MATH0014&#45;&gt;MATH0023 -->
-<g id="edge11" class="edge">
+<g id="edge13" class="edge">
 <title>MATH0014&#45;&gt;MATH0023</title>
-<path fill="none" stroke="black" d="M510.51,-221.92C478.24,-211.95 438,-199.52 404.29,-189.1"/>
-<polygon fill="black" stroke="black" points="405.11,-185.69 394.52,-186.08 403.04,-192.38 405.11,-185.69"/>
+<g id="a_edge13"><a xlink:title="required prerequisite">
+<path fill="none" stroke="black" d="M581.97,-221.83C580.69,-214.13 579.16,-204.97 577.74,-196.42"/>
+<polygon fill="black" stroke="black" points="581.17,-195.7 576.07,-186.41 574.26,-196.85 581.17,-195.7"/>
+</a>
+</g>
 </g>
 <!-- MATH0104 -->
 <g id="node23" class="node">
@@ -234,29 +270,35 @@
 <!-- MATH0014&#45;&gt;MATH0104 -->
 <g id="edge27" class="edge">
 <title>MATH0014&#45;&gt;MATH0104</title>
-<path fill="none" stroke="black" d="M615.56,-221.96C631.54,-213.44 647.91,-201.65 658,-186 685.08,-143.99 684.78,-83.4 681.68,-48.22"/>
-<polygon fill="black" stroke="black" points="685.15,-47.76 680.66,-38.17 678.19,-48.47 685.15,-47.76"/>
+<g id="a_edge27"><a xlink:title="required prerequisite">
+<path fill="none" stroke="black" d="M620.64,-221.97C634.58,-213.07 649.28,-200.99 658,-186 682.96,-143.1 683.5,-83.45 681.11,-48.56"/>
+<polygon fill="black" stroke="black" points="684.56,-47.84 680.25,-38.16 677.58,-48.41 684.56,-47.84"/>
+</a>
+</g>
 </g>
 <!-- MATH0075 -->
 <g id="node24" class="node">
 <title>MATH0075</title>
 <g id="a_node24"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0075_3.pdf" xlink:title="Year 3 or 4, term 2">
-<polygon fill="white" stroke="#cd1076" stroke-width="5" points="649.5,-186 430.5,-186 430.5,-148 649.5,-148 649.5,-186"/>
-<text text-anchor="middle" x="540" y="-170.8" font-family="Times,serif" font-size="14.00">MATH0075</text>
-<text text-anchor="middle" x="540" y="-155.8" font-family="Times,serif" font-size="14.00">Lie Groups and Lie Algebras</text>
+<polygon fill="white" stroke="#cd1076" stroke-width="5" points="478.5,-186 259.5,-186 259.5,-148 478.5,-148 478.5,-186"/>
+<text text-anchor="middle" x="369" y="-170.8" font-family="Times,serif" font-size="14.00">MATH0075</text>
+<text text-anchor="middle" x="369" y="-155.8" font-family="Times,serif" font-size="14.00">Lie Groups and Lie Algebras</text>
 </a>
 </g>
 </g>
 <!-- MATH0014&#45;&gt;MATH0075 -->
 <g id="edge29" class="edge">
 <title>MATH0014&#45;&gt;MATH0075</title>
-<path fill="none" stroke="black" d="M561.68,-221.83C558.51,-213.96 554.73,-204.57 551.22,-195.85"/>
-<polygon fill="black" stroke="black" points="554.4,-194.38 547.42,-186.41 547.91,-197 554.4,-194.38"/>
+<g id="a_edge29"><a xlink:title="required prerequisite">
+<path fill="none" stroke="black" d="M530.77,-221.92C501.12,-212.04 464.2,-199.73 433.12,-189.37"/>
+<polygon fill="black" stroke="black" points="433.84,-185.93 423.25,-186.08 431.63,-192.57 433.84,-185.93"/>
+</a>
+</g>
 </g>
 <!-- MATH0083 -->
-<g id="node22" class="node">
+<g id="node21" class="node">
 <title>MATH0083</title>
-<g id="a_node22"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0083.pdf" xlink:title="Year 3 or 4, term 1">
+<g id="a_node21"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0083.pdf" xlink:title="Year 3 or 4, term 1">
 <polygon fill="white" stroke="#ff1493" stroke-width="5" points="338,-38 48,-38 48,0 338,0 338,-38"/>
 <text text-anchor="middle" x="193" y="-22.8" font-family="Times,serif" font-size="14.00">MATH0083</text>
 <text text-anchor="middle" x="193" y="-7.8" font-family="Times,serif" font-size="14.00">Prime Numbers and their Distribution</text>
@@ -264,64 +306,60 @@
 </g>
 </g>
 <!-- MATH0013&#45;&gt;MATH0083 -->
-<g id="edge23" class="edge">
+<g id="edge21" class="edge">
 <title>MATH0013&#45;&gt;MATH0083</title>
+<g id="a_edge21"><a xlink:title="required prerequisite">
 <path fill="none" stroke="black" d="M225.7,-221.62C222.84,-211.23 219.41,-197.96 217,-186 207.35,-138.04 200.03,-81.53 196.14,-48.35"/>
 <polygon fill="black" stroke="black" points="199.57,-47.58 194.95,-38.04 192.62,-48.38 199.57,-47.58"/>
+</a>
+</g>
 </g>
 <!-- MATH0013&#45;&gt;MATH0104 -->
 <g id="edge26" class="edge">
 <title>MATH0013&#45;&gt;MATH0104</title>
+<g id="a_edge26"><a xlink:title="required prerequisite">
 <path fill="none" stroke="black" d="M229.62,-221.65C229.12,-201.11 231.6,-168.08 250,-148 341.9,-47.74 508.73,-24.78 604.71,-20.26"/>
 <polygon fill="black" stroke="black" points="605.06,-23.74 614.91,-19.83 604.77,-16.75 605.06,-23.74"/>
-</g>
-<!-- MATH0022 -->
-<g id="node15" class="node">
-<title>MATH0022</title>
-<g id="a_node15"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0022.pdf" xlink:title="Year 3, term 1">
-<polygon fill="white" stroke="#ff4040" stroke-width="5" points="1314.5,-186 1199.5,-186 1199.5,-148 1314.5,-148 1314.5,-186"/>
-<text text-anchor="middle" x="1257" y="-170.8" font-family="Times,serif" font-size="14.00">MATH0022</text>
-<text text-anchor="middle" x="1257" y="-155.8" font-family="Times,serif" font-size="14.00">Galois Theory</text>
 </a>
 </g>
 </g>
-<!-- MATH0053&#45;&gt;MATH0022 -->
-<g id="edge13" class="edge">
-<title>MATH0053&#45;&gt;MATH0022</title>
-<path fill="none" stroke="black" d="M1209.15,-221.83C1216.67,-213.37 1225.76,-203.15 1233.98,-193.9"/>
-<polygon fill="black" stroke="black" points="1236.6,-196.21 1240.63,-186.41 1231.37,-191.56 1236.6,-196.21"/>
+<!-- MATH0029 -->
+<g id="node13" class="node">
+<title>MATH0029</title>
+<g id="a_node13"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0029.pdf" xlink:title="Year 3, term 1">
+<polygon fill="white" stroke="#ff4040" stroke-width="5" points="1840,-186 1586,-186 1586,-148 1840,-148 1840,-186"/>
+<text text-anchor="middle" x="1713" y="-170.8" font-family="Times,serif" font-size="14.00">MATH0029</text>
+<text text-anchor="middle" x="1713" y="-155.8" font-family="Times,serif" font-size="14.00">Graph Theory and Combinatorics</text>
+</a>
+</g>
+</g>
+<!-- MATH0057&#45;&gt;MATH0029 -->
+<g id="edge11" class="edge">
+<title>MATH0057&#45;&gt;MATH0029</title>
+<g id="a_edge11"><a xlink:title="recommended prerequisite">
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M1713,-221.83C1713,-214.13 1713,-204.97 1713,-196.42"/>
+<polygon fill="black" stroke="black" points="1716.5,-196.41 1713,-186.41 1709.5,-196.41 1716.5,-196.41"/>
+</a>
+</g>
 </g>
 <!-- MATH0036 -->
-<g id="node17" class="node">
+<g id="node16" class="node">
 <title>MATH0036</title>
-<g id="a_node17"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0036.pdf" xlink:title="Year 3, term 2">
+<g id="a_node16"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0036.pdf" xlink:title="Year 3, term 2">
 <polygon fill="white" stroke="#cd3333" stroke-width="5" points="1020,-112 898,-112 898,-74 1020,-74 1020,-112"/>
 <text text-anchor="middle" x="959" y="-96.8" font-family="Times,serif" font-size="14.00">MATH0036</text>
 <text text-anchor="middle" x="959" y="-81.8" font-family="Times,serif" font-size="14.00">Elliptic Curves</text>
 </a>
 </g>
 </g>
-<!-- MATH0053&#45;&gt;MATH0036 -->
-<g id="edge16" class="edge">
-<title>MATH0053&#45;&gt;MATH0036</title>
-<path fill="none" stroke="black" d="M1163.84,-221.8C1121.6,-195.45 1043.36,-146.63 996.76,-117.56"/>
-<polygon fill="black" stroke="black" points="998.5,-114.52 988.16,-112.2 994.79,-120.46 998.5,-114.52"/>
-</g>
-<!-- MATH0021 -->
-<g id="node18" class="node">
-<title>MATH0021</title>
-<g id="a_node18"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0021.pdf" xlink:title="Year 3, term 2">
-<polygon fill="white" stroke="#cd3333" stroke-width="5" points="1499.5,-112 1334.5,-112 1334.5,-74 1499.5,-74 1499.5,-112"/>
-<text text-anchor="middle" x="1417" y="-96.8" font-family="Times,serif" font-size="14.00">MATH0021</text>
-<text text-anchor="middle" x="1417" y="-81.8" font-family="Times,serif" font-size="14.00">Homological Algebra</text>
+<!-- MATH0034&#45;&gt;MATH0036 -->
+<g id="edge14" class="edge">
+<title>MATH0034&#45;&gt;MATH0036</title>
+<g id="a_edge14"><a xlink:title="required prerequisite">
+<path fill="none" stroke="black" d="M881.09,-221.8C896.48,-196.56 924.43,-150.71 942.34,-121.34"/>
+<polygon fill="black" stroke="black" points="945.55,-122.79 947.77,-112.43 939.57,-119.14 945.55,-122.79"/>
 </a>
 </g>
-</g>
-<!-- MATH0053&#45;&gt;MATH0021 -->
-<g id="edge17" class="edge">
-<title>MATH0053&#45;&gt;MATH0021</title>
-<path fill="none" stroke="black" d="M1242.23,-224.85C1267.81,-215.73 1298.88,-202.65 1324,-186 1351.78,-167.58 1378.28,-140.04 1395.83,-119.89"/>
-<polygon fill="black" stroke="black" points="1398.72,-121.9 1402.56,-112.03 1393.4,-117.35 1398.72,-121.9"/>
 </g>
 <!-- MATH0035 -->
 <g id="node19" class="node">
@@ -333,16 +371,93 @@
 </a>
 </g>
 </g>
+<!-- MATH0034&#45;&gt;MATH0035 -->
+<g id="edge18" class="edge">
+<title>MATH0034&#45;&gt;MATH0035</title>
+<g id="a_edge18"><a xlink:title="required prerequisite">
+<path fill="none" stroke="black" d="M903.25,-221.95C952.15,-195.41 1043.44,-145.87 1096.93,-116.83"/>
+<polygon fill="black" stroke="black" points="1098.7,-119.85 1105.82,-112.01 1095.36,-113.7 1098.7,-119.85"/>
+</a>
+</g>
+</g>
+<!-- MATH0034&#45;&gt;MATH0083 -->
+<g id="edge23" class="edge">
+<title>MATH0034&#45;&gt;MATH0083</title>
+<g id="a_edge23"><a xlink:title="required prerequisite">
+<path fill="none" stroke="black" d="M869.78,-221.91C868.29,-186.96 859.57,-110.4 813,-74 777.14,-45.97 519.83,-31.44 348.16,-24.79"/>
+<polygon fill="black" stroke="black" points="348.13,-21.28 338,-24.4 347.86,-28.28 348.13,-21.28"/>
+</a>
+</g>
+</g>
+<!-- MATH0034&#45;&gt;MATH0104 -->
+<g id="edge28" class="edge">
+<title>MATH0034&#45;&gt;MATH0104</title>
+<g id="a_edge28"><a xlink:title="recommended prerequisite">
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M873.05,-221.81C877.57,-188.35 882,-116.59 846,-74 822.6,-46.31 784.94,-32.69 751.21,-26.03"/>
+<polygon fill="black" stroke="black" points="751.81,-22.59 741.35,-24.26 750.57,-29.48 751.81,-22.59"/>
+</a>
+</g>
+</g>
+<!-- MATH0022 -->
+<g id="node14" class="node">
+<title>MATH0022</title>
+<g id="a_node14"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0022.pdf" xlink:title="Year 3, term 1">
+<polygon fill="white" stroke="#ff4040" stroke-width="5" points="1311.5,-186 1196.5,-186 1196.5,-148 1311.5,-148 1311.5,-186"/>
+<text text-anchor="middle" x="1254" y="-170.8" font-family="Times,serif" font-size="14.00">MATH0022</text>
+<text text-anchor="middle" x="1254" y="-155.8" font-family="Times,serif" font-size="14.00">Galois Theory</text>
+</a>
+</g>
+</g>
+<!-- MATH0053&#45;&gt;MATH0022 -->
+<g id="edge12" class="edge">
+<title>MATH0053&#45;&gt;MATH0022</title>
+<g id="a_edge12"><a xlink:title="required prerequisite">
+<path fill="none" stroke="black" d="M1211.38,-221.83C1217.95,-213.54 1225.85,-203.56 1233.06,-194.45"/>
+<polygon fill="black" stroke="black" points="1235.96,-196.43 1239.42,-186.41 1230.47,-192.08 1235.96,-196.43"/>
+</a>
+</g>
+</g>
+<!-- MATH0053&#45;&gt;MATH0036 -->
+<g id="edge15" class="edge">
+<title>MATH0053&#45;&gt;MATH0036</title>
+<g id="a_edge15"><a xlink:title="required prerequisite">
+<path fill="none" stroke="black" d="M1167.34,-221.8C1124.38,-195.45 1044.8,-146.63 997.41,-117.56"/>
+<polygon fill="black" stroke="black" points="999.01,-114.44 988.66,-112.2 995.35,-120.41 999.01,-114.44"/>
+</a>
+</g>
+</g>
+<!-- MATH0021 -->
+<g id="node17" class="node">
+<title>MATH0021</title>
+<g id="a_node17"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0021.pdf" xlink:title="Year 3, term 2">
+<polygon fill="white" stroke="#cd3333" stroke-width="5" points="1499.5,-112 1334.5,-112 1334.5,-74 1499.5,-74 1499.5,-112"/>
+<text text-anchor="middle" x="1417" y="-96.8" font-family="Times,serif" font-size="14.00">MATH0021</text>
+<text text-anchor="middle" x="1417" y="-81.8" font-family="Times,serif" font-size="14.00">Homological Algebra</text>
+</a>
+</g>
+</g>
+<!-- MATH0053&#45;&gt;MATH0021 -->
+<g id="edge16" class="edge">
+<title>MATH0053&#45;&gt;MATH0021</title>
+<g id="a_edge16"><a xlink:title="required prerequisite">
+<path fill="none" stroke="black" d="M1246.15,-223.23C1269.79,-214.03 1297.94,-201.36 1321,-186 1349.16,-167.25 1376.54,-139.82 1394.8,-119.79"/>
+<polygon fill="black" stroke="black" points="1397.5,-122.02 1401.57,-112.24 1392.29,-117.35 1397.5,-122.02"/>
+</a>
+</g>
+</g>
 <!-- MATH0053&#45;&gt;MATH0035 -->
 <g id="edge19" class="edge">
 <title>MATH0053&#45;&gt;MATH0035</title>
-<path fill="none" stroke="black" d="M1186.27,-221.8C1177.01,-196.78 1160.27,-151.5 1149.39,-122.1"/>
-<polygon fill="black" stroke="black" points="1152.57,-120.59 1145.81,-112.43 1146,-123.02 1152.57,-120.59"/>
+<g id="a_edge19"><a xlink:title="required prerequisite">
+<path fill="none" stroke="black" d="M1189.77,-221.8C1179.83,-196.78 1161.84,-151.5 1150.16,-122.1"/>
+<polygon fill="black" stroke="black" points="1153.26,-120.43 1146.32,-112.43 1146.76,-123.01 1153.26,-120.43"/>
+</a>
+</g>
 </g>
 <!-- MATH0073 -->
-<g id="node21" class="node">
+<g id="node22" class="node">
 <title>MATH0073</title>
-<g id="a_node21"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0073.pdf" xlink:title="Year 3 or 4, term 1">
+<g id="a_node22"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0073.pdf" xlink:title="Year 3 or 4, term 1">
 <polygon fill="white" stroke="#ff1493" stroke-width="5" points="1663,-38 1483,-38 1483,0 1663,0 1663,-38"/>
 <text text-anchor="middle" x="1573" y="-22.8" font-family="Times,serif" font-size="14.00">MATH0073</text>
 <text text-anchor="middle" x="1573" y="-7.8" font-family="Times,serif" font-size="14.00">Representation Theory</text>
@@ -350,62 +465,31 @@
 </g>
 </g>
 <!-- MATH0053&#45;&gt;MATH0073 -->
-<g id="edge21" class="edge">
+<g id="edge24" class="edge">
 <title>MATH0053&#45;&gt;MATH0073</title>
-<path fill="none" stroke="black" d="M1242.02,-230.48C1308.93,-215.37 1429.59,-180.34 1509,-112 1530.13,-93.81 1547.66,-67.16 1559,-47.21"/>
-<polygon fill="black" stroke="black" points="1562.15,-48.75 1563.91,-38.31 1556.02,-45.37 1562.15,-48.75"/>
-</g>
-<!-- MATH0029 -->
-<g id="node14" class="node">
-<title>MATH0029</title>
-<g id="a_node14"><a xlink:href="https://www.ucl.ac.uk/maths/sites/maths/files/math0029.pdf" xlink:title="Year 3, term 1">
-<polygon fill="white" stroke="#ff4040" stroke-width="5" points="1840,-186 1586,-186 1586,-148 1840,-148 1840,-186"/>
-<text text-anchor="middle" x="1713" y="-170.8" font-family="Times,serif" font-size="14.00">MATH0029</text>
-<text text-anchor="middle" x="1713" y="-155.8" font-family="Times,serif" font-size="14.00">Graph Theory and Combinatorics</text>
+<g id="a_edge24"><a xlink:title="required prerequisite">
+<path fill="none" stroke="black" d="M1246.15,-230.01C1312.27,-214.48 1430.61,-179.11 1509,-112 1530.18,-93.87 1547.7,-67.21 1559.03,-47.25"/>
+<polygon fill="black" stroke="black" points="1562.18,-48.78 1563.93,-38.33 1556.04,-45.41 1562.18,-48.78"/>
 </a>
 </g>
 </g>
-<!-- MATH0057&#45;&gt;MATH0029 -->
-<g id="edge12" class="edge">
-<title>MATH0057&#45;&gt;MATH0029</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M1713,-221.83C1713,-214.13 1713,-204.97 1713,-196.42"/>
-<polygon fill="black" stroke="black" points="1716.5,-196.41 1713,-186.41 1709.5,-196.41 1716.5,-196.41"/>
-</g>
-<!-- MATH0034&#45;&gt;MATH0036 -->
-<g id="edge15" class="edge">
-<title>MATH0034&#45;&gt;MATH0036</title>
-<path fill="none" stroke="black" d="M881.09,-221.8C896.48,-196.56 924.43,-150.71 942.34,-121.34"/>
-<polygon fill="black" stroke="black" points="945.55,-122.79 947.77,-112.43 939.57,-119.14 945.55,-122.79"/>
-</g>
-<!-- MATH0034&#45;&gt;MATH0035 -->
-<g id="edge18" class="edge">
-<title>MATH0034&#45;&gt;MATH0035</title>
-<path fill="none" stroke="black" d="M903.25,-221.95C952.15,-195.41 1043.44,-145.87 1096.93,-116.83"/>
-<polygon fill="black" stroke="black" points="1098.7,-119.85 1105.82,-112.01 1095.36,-113.7 1098.7,-119.85"/>
-</g>
-<!-- MATH0034&#45;&gt;MATH0083 -->
-<g id="edge25" class="edge">
-<title>MATH0034&#45;&gt;MATH0083</title>
-<path fill="none" stroke="black" d="M869.78,-221.91C868.29,-186.96 859.57,-110.4 813,-74 777.14,-45.97 519.83,-31.44 348.16,-24.79"/>
-<polygon fill="black" stroke="black" points="348.13,-21.28 338,-24.4 347.86,-28.28 348.13,-21.28"/>
-</g>
-<!-- MATH0034&#45;&gt;MATH0104 -->
-<g id="edge28" class="edge">
-<title>MATH0034&#45;&gt;MATH0104</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M873.05,-221.81C877.57,-188.35 882,-116.59 846,-74 822.6,-46.31 784.94,-32.69 751.21,-26.03"/>
-<polygon fill="black" stroke="black" points="751.81,-22.59 741.35,-24.26 750.57,-29.48 751.81,-22.59"/>
-</g>
 <!-- MATH0051&#45;&gt;MATH0083 -->
-<g id="edge24" class="edge">
+<g id="edge22" class="edge">
 <title>MATH0051&#45;&gt;MATH0083</title>
+<g id="a_edge22"><a xlink:title="required prerequisite">
 <path fill="none" stroke="black" d="M60.78,-222C86.1,-183.32 145.78,-92.14 175.52,-46.7"/>
 <polygon fill="black" stroke="black" points="178.5,-48.54 181.05,-38.25 172.65,-44.7 178.5,-48.54"/>
+</a>
+</g>
 </g>
 <!-- MATH0022&#45;&gt;MATH0035 -->
 <g id="edge20" class="edge">
 <title>MATH0022&#45;&gt;MATH0035</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M1227.22,-147.83C1212.13,-138.62 1193.62,-127.33 1177.47,-117.47"/>
-<polygon fill="black" stroke="black" points="1179.13,-114.38 1168.77,-112.16 1175.48,-120.36 1179.13,-114.38"/>
+<g id="a_edge20"><a xlink:title="recommended prerequisite">
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M1224.98,-147.83C1210.27,-138.62 1192.24,-127.33 1176.49,-117.47"/>
+<polygon fill="black" stroke="black" points="1178.34,-114.5 1168.01,-112.16 1174.63,-120.44 1178.34,-114.5"/>
+</a>
+</g>
 </g>
 <!-- MATH0076 -->
 <g id="node25" class="node">
@@ -420,8 +504,11 @@
 <!-- MATH0022&#45;&gt;MATH0076 -->
 <g id="edge31" class="edge">
 <title>MATH0022&#45;&gt;MATH0076</title>
-<path fill="none" stroke="black" d="M1269.05,-147.94C1282.14,-128.81 1304.14,-98.11 1326,-74 1335.13,-63.94 1345.9,-53.68 1355.72,-44.84"/>
-<polygon fill="black" stroke="black" points="1358.17,-47.34 1363.34,-38.09 1353.54,-42.1 1358.17,-47.34"/>
+<g id="a_edge31"><a xlink:title="required prerequisite">
+<path fill="none" stroke="black" d="M1266.97,-147.65C1280.78,-128.55 1303.68,-98.11 1326,-74 1335.23,-64.03 1346.02,-53.79 1355.84,-44.95"/>
+<polygon fill="black" stroke="black" points="1358.3,-47.45 1363.45,-38.19 1353.65,-42.21 1358.3,-47.45"/>
+</a>
+</g>
 </g>
 <!-- MATH0061 -->
 <g id="node26" class="node">
@@ -436,26 +523,38 @@
 <!-- MATH0022&#45;&gt;MATH0061 -->
 <g id="edge33" class="edge">
 <title>MATH0022&#45;&gt;MATH0061</title>
-<path fill="none" stroke="black" d="M1260.51,-147.88C1263.33,-127.84 1264.6,-95.56 1249,-74 1239.03,-60.22 1224.8,-49.92 1209.48,-42.24"/>
-<polygon fill="black" stroke="black" points="1210.9,-39.04 1200.35,-38.01 1207.95,-45.39 1210.9,-39.04"/>
+<g id="a_edge33"><a xlink:title="required prerequisite">
+<path fill="none" stroke="black" d="M1258.22,-147.95C1261.8,-127.99 1264.21,-95.76 1249,-74 1239.46,-60.35 1225.72,-50.13 1210.79,-42.48"/>
+<polygon fill="black" stroke="black" points="1211.9,-39.14 1201.37,-38.04 1208.92,-45.47 1211.9,-39.14"/>
+</a>
+</g>
 </g>
 <!-- MATH0021&#45;&gt;MATH0073 -->
-<g id="edge22" class="edge">
+<g id="edge25" class="edge">
 <title>MATH0021&#45;&gt;MATH0073</title>
+<g id="a_edge25"><a xlink:title="recommended prerequisite">
 <path fill="none" stroke="black" stroke-dasharray="5,2" d="M1456.37,-73.83C1477.14,-64.24 1502.8,-52.4 1524.76,-42.27"/>
 <polygon fill="black" stroke="black" points="1526.3,-45.41 1533.92,-38.04 1523.37,-39.05 1526.3,-45.41"/>
+</a>
+</g>
 </g>
 <!-- MATH0021&#45;&gt;MATH0076 -->
 <g id="edge30" class="edge">
 <title>MATH0021&#45;&gt;MATH0076</title>
+<g id="a_edge30"><a xlink:title="required prerequisite">
 <path fill="none" stroke="black" d="M1408.93,-73.83C1405.39,-65.88 1401.16,-56.37 1397.25,-47.57"/>
 <polygon fill="black" stroke="black" points="1400.44,-46.13 1393.18,-38.41 1394.05,-48.97 1400.44,-46.13"/>
+</a>
+</g>
 </g>
 <!-- MATH0035&#45;&gt;MATH0061 -->
 <g id="edge32" class="edge">
 <title>MATH0035&#45;&gt;MATH0061</title>
+<g id="a_edge32"><a xlink:title="required prerequisite">
 <path fill="none" stroke="black" d="M1134.96,-73.83C1133.25,-66.13 1131.22,-56.97 1129.31,-48.42"/>
 <polygon fill="black" stroke="black" points="1132.68,-47.42 1127.09,-38.41 1125.84,-48.93 1132.68,-47.42"/>
+</a>
+</g>
 </g>
 <!-- MATH0038 -->
 <g id="node20" class="node">
