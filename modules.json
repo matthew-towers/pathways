@@ -12,7 +12,8 @@
             "y1y2"
         ],
         "prereqs": [],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0003": {
         "id": "analysis1",
@@ -27,7 +28,8 @@
             "y1y2"
         ],
         "prereqs": [],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0004": {
         "id": "analysis2",
@@ -47,7 +49,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0005": {
         "id": "algebra1",
@@ -62,7 +65,8 @@
             "y1y2"
         ],
         "prereqs": [],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0006": {
         "id": "algebra2",
@@ -82,7 +86,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0007": {
         "id": "algebraforjointhonours",
@@ -97,7 +102,8 @@
             "y1y2"
         ],
         "prereqs": [],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0008": {
         "id": "applied1",
@@ -112,7 +118,8 @@
             "y1y2"
         ],
         "prereqs": [],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0009": {
         "id": "applied2",
@@ -136,7 +143,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0010": {
         "id": "methods1",
@@ -151,7 +159,8 @@
             "y1y2"
         ],
         "prereqs": [],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0011": {
         "id": "methods2",
@@ -171,7 +180,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0013": {
         "id": "analysis3",
@@ -195,7 +205,8 @@
                 "recommended"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0014": {
         "id": "algebra3",
@@ -216,7 +227,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0015": {
         "id": "applied3",
@@ -240,7 +252,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0016": {
         "id": "methods3",
@@ -260,7 +273,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0051": {
         "id": "analysis4",
@@ -281,7 +295,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0052": {
         "id": "geometryandgroups",
@@ -310,7 +325,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0053": {
         "id": "algebra4",
@@ -331,7 +347,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0054": {
         "id": "analyticaldynamics",
@@ -355,7 +372,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0055": {
         "id": "electromagnetism",
@@ -376,7 +394,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0056": {
         "id": "methods4",
@@ -401,7 +420,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "2"
     },
     "MATH0057": {
         "id": "probabilityandstatistics",
@@ -421,7 +441,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0058": {
         "id": "computationalmethods",
@@ -449,7 +470,8 @@
                 "comment"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0034": {
         "id": "numbertheory",
@@ -469,7 +491,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0017": {
         "id": "measuretheory",
@@ -489,7 +512,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "1A"
     },
     "MATH0018": {
         "id": "functionalanalysis",
@@ -509,7 +533,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "1A"
     },
     "MATH0019": {
         "id": "multivariableanalysis",
@@ -529,7 +554,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "1A"
     },
     "MATH0020": {
         "id": "differentialgeometry",
@@ -549,7 +575,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "1A"
     },
     "MATH0021": {
         "id": "commutativealgebra",
@@ -569,7 +596,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "1B"
     },
     "MATH0022": {
         "id": "galoistheory",
@@ -589,7 +617,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "1B"
     },
     "MATH0023": {
         "id": "algebraictopology",
@@ -609,7 +638,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "1B"
     },
     "MATH0024": {
         "id": "geophysicalfluiddynamics",
@@ -633,7 +663,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "2"
     },
     "MATH0025": {
         "id": "mathematicsforgeneralrelativity",
@@ -653,7 +684,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "2"
     },
     "MATH0026": {
         "id": "biomathematics",
@@ -673,7 +705,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "2"
     },
     "MATH0027": {
         "id": "methods5",
@@ -693,7 +726,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "2"
     },
     "MATH0028": {
         "id": "combinatorialoptimisation",
@@ -713,7 +747,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "2"
     },
     "MATH0029": {
         "id": "graphtheory",
@@ -733,7 +768,8 @@
                 "recommended"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "1A 1B"
     },
     "MATH0030": {
         "id": "mathematicalecology",
@@ -753,7 +789,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "2"
     },
     "MATH0031": {
         "id": "financialmathematics",
@@ -777,7 +814,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0032": {
         "id": "mathematica",
@@ -792,7 +830,8 @@
             "Modelling, Computation and Finance"
         ],
         "prereqs": [],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0033": {
         "id": "numericalmethods",
@@ -820,7 +859,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "2"
     },
     "MATH0035": {
         "id": "algebraicnumbertheory",
@@ -848,7 +888,8 @@
                 "recommended"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "1B"
     },
     "MATH0036": {
         "id": "ellipticcurves",
@@ -872,7 +913,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "1B"
     },
     "MATH0037": {
         "id": "logic",
@@ -892,7 +934,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0038": {
         "id": "historyofmathematics",
@@ -907,7 +950,8 @@
             "Algebra"
         ],
         "prereqs": [],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0092": {
         "id": "variationalmethods",
@@ -927,7 +971,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "1A 2"
     },
     "MATH0090": {
         "id": "ellipticpdes",
@@ -959,7 +1004,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0102": {
         "id": "appliedstochasticmethods",
@@ -999,7 +1045,8 @@
                 "recommended"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "2"
     },
     "MATH0069": {
         "id": "probability",
@@ -1019,7 +1066,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "1A"
     },
     "MATH0070": {
         "id": "lpde",
@@ -1047,7 +1095,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "1A"
     },
     "MATH0073": {
         "id": "representationtheory",
@@ -1071,7 +1120,8 @@
                 "recommended"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "1B"
     },
     "MATH0077": {
         "id": "realfluids",
@@ -1099,7 +1149,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "2"
     },
     "MATH0080": {
         "id": "wavesandwavescattering",
@@ -1119,7 +1170,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0083": {
         "id": "primenumbersandtheirdistribution",
@@ -1147,7 +1199,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "1A 1B"
     },
     "MATH0071": {
         "id": "spectraltheory",
@@ -1175,7 +1228,8 @@
                 "recommended"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0072": {
         "id": "riemanniangeometry",
@@ -1199,7 +1253,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0074": {
         "id": "topologyandgroups",
@@ -1223,7 +1278,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0075": {
         "id": "liegroupsandliealgebras",
@@ -1243,7 +1299,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0076": {
         "id": "algebraicgeometry",
@@ -1267,7 +1324,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0078": {
         "id": "asymptoticmethods",
@@ -1287,7 +1345,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0079": {
         "id": "cosmology",
@@ -1307,7 +1366,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0082": {
         "id": "evolutionarygames",
@@ -1335,7 +1395,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0065": {
         "id": "advancedmodelling",
@@ -1363,7 +1424,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0086": {
         "id": "computationalandsimulationmethods",
@@ -1387,7 +1449,8 @@
                 "recommended"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0088": {
         "id": "quantitativeandcomputationalfinance",
@@ -1411,7 +1474,8 @@
                 "recommended"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0104": {
         "id": "modularforms",
@@ -1439,7 +1503,8 @@
                 "recommended"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "1B"
     },
     "MATH0106": {
         "id": "industrialgeologicalfluids",
@@ -1449,7 +1514,7 @@
         "year": 4.0,
         "term": 1,
         "syllabus_filename": "math0106.pdf",
-        "is_running": false,
+        "is_running": true,
         "pathways": [
             "Applied Mathematics"
         ],
@@ -1463,7 +1528,8 @@
                 "recommended"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0107": {
         "id": "probabilisticmethod",
@@ -1491,7 +1557,8 @@
                 "recommended"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0108": {
         "id": "commringsandalg",
@@ -1501,7 +1568,7 @@
         "year": 3,
         "term": 2,
         "syllabus_filename": "0108_0.pdf",
-        "is_running": false,
+        "is_running": true,
         "pathways": [
             "Algebra"
         ],
@@ -1511,27 +1578,29 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": "1B"
     },
     "MATH0109": {
         "id": "lean",
-        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0019_2.pdf",
+        "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0109.pdf",
         "name": "Theorem Proving in Lean",
         "code": "MATH0109",
         "year": 3,
-        "term": 2,
-        "syllabus_filename": "math0019_2.pdf",
-        "is_running": false,
+        "term": 1,
+        "syllabus_filename": "math0109.pdf",
+        "is_running": true,
         "pathways": [
             "Algebra"
         ],
         "prereqs": [
             [
-                "Familiarity with the notion of proving theorems (for example, at least one of MATH0034, MATH0051, or MATH0053)",
+                "Familiarity with the notion of proving theorems (for example, at least one of MATH0034, MATH0051, or MATH0053). Good coding skills are also desirable.",
                 "comment"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0061": {
         "id": "furtherant",
@@ -1555,7 +1624,8 @@
                 "needed"
             ]
         ],
-        "ancillary": false
+        "ancillary": false,
+        "group": ""
     },
     "MATH0110": {
         "name": "Analysis for Joint Honours",
@@ -1566,7 +1636,8 @@
         "prereqs": [],
         "ancillary": false,
         "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0110_1.pdf",
-        "is_running": true
+        "is_running": true,
+        "group": ""
     },
     "STAT0001": {
         "name": "Economics 2 - Combined Studies",
@@ -1582,7 +1653,8 @@
         ],
         "ancillary": false,
         "url": "https://www.ucl.ac.uk/maths/sites/maths/files/stat0001.pdf",
-        "is_running": true
+        "is_running": true,
+        "group": ""
     },
     "MATH0114": {
         "name": "Mathematics for Machine Learning and Artificial Intelligence",
@@ -1622,7 +1694,8 @@
         ],
         "ancillary": false,
         "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0114_0.pdf",
-        "is_running": true
+        "is_running": true,
+        "group": ""
     },
     "MATH0115": {
         "name": "Solid Mechanics",
@@ -1642,7 +1715,8 @@
         ],
         "ancillary": false,
         "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0115_syllabus.pdf",
-        "is_running": true
+        "is_running": true,
+        "group": ""
     },
     "MATH0117": {
         "name": "Spatial Mathematical Biology",
@@ -1662,7 +1736,8 @@
         ],
         "ancillary": false,
         "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0117.pdf",
-        "is_running": true
+        "is_running": true,
+        "group": ""
     },
     "MATH0118": {
         "name": "Mathematics for Quantum Mechanics",
@@ -1682,7 +1757,8 @@
         ],
         "ancillary": false,
         "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0118.pdf",
-        "is_running": true
+        "is_running": true,
+        "group": ""
     },
     "MATH0119": {
         "name": "Dynamical Systems",
@@ -1706,6 +1782,7 @@
         ],
         "ancillary": false,
         "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0119.pdf",
-        "is_running": true
+        "is_running": true,
+        "group": ""
     }
 }

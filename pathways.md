@@ -8,15 +8,18 @@ The official UCL Maths module information is [at this link](https://www.ucl.ac.u
 
 Information on modules from other UCL departments can be found at the following links:
 
- - [Computer science](https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/computer-science-bsc#tab1-year1) (click through to a module name and check "Restrictions" to see if it is available to students who are not taking CS degrees)
+ - [Computer Science](https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/computer-science-bsc#tab1-year1) (click through to a module name and check "Restrictions" to see if it is available to students who are not taking CS degrees)
  - [Statistics](https://www.ucl.ac.uk/statistics/current-students/modules-statistical-science-students-other-departments)
  - [Philosophy](https://www.ucl.ac.uk/philosophy/current-students/ba-programmes/ba-modules)
- - [Centre for languages and international education](https://www.ucl.ac.uk/languages-international-education/ucl-centre-languages-international-education)
- - [Physics and Astronomy](https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/physics-msci#tab1-year1) (click through to a module name and check "Restrictions" to see if it is available to students who are not taking physics degrees) [Economics](https://www.ucl.ac.uk/economics/study/undergraduate/module-list)
+ - [Centre for Languages and International Education](https://www.ucl.ac.uk/languages-international-education/ucl-centre-languages-international-education)
+ - [Physics and Astronomy](https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/physics-msci#tab1-year1) (click through to a module name and check "Restrictions" to see if it is available to students who are not taking physics degrees)
+ - [Economics](https://www.ucl.ac.uk/economics/study/undergraduate/module-list)
  - [Management](https://www.mgmt.ucl.ac.uk/undergraduate-elective-modules)
  - [Information Studies](https://www.ucl.ac.uk/information-studies/study/undergraduate-study/other-undergraduate-modules)
 
 You may also find the [UCL Module Catalogue](https://www.ucl.ac.uk/module-catalogue/) useful.
+
+Year information is for BSc and MSci Mathematics students only. Students on joint degrees may take modules in different years - check [the degree structure document for your course](https://www.ucl.ac.uk/maths/current-students/current-undergraduates/degree-structures-and-options/specific-degree-structures) for details.
 
 Please note that the year column in the table below is for BSc and MSci Mathematics degrees only. Students on other degrees may take modules in different years. Check [the degree structure document for your course](https://www.ucl.ac.uk/maths/current-students/current-undergraduates/degree-structures-and-options/specific-degree-structures) for details.
 
@@ -57,11 +60,13 @@ Please note that the year column in the table below is for BSc and MSci Mathemat
 | <a id="MATH0022"></a>[MATH0022 Galois Theory](https://www.ucl.ac.uk/maths/sites/maths/files/math0022.pdf) | 3 | 1 | <a href="#MATH0053">MATH0053 Algebra 4</a>
 | <a id="MATH0023"></a>[MATH0023 Algebraic Topology](https://www.ucl.ac.uk/maths/sites/maths/files/math0023_1.pdf) | 3 | 1 | <a href="#MATH0014">MATH0014 Algebra 3: Further Linear Algebra</a>
 | <a id="MATH0029"></a>[MATH0029 Graph Theory and Combinatorics](https://www.ucl.ac.uk/maths/sites/maths/files/math0029.pdf) | 3 | 1 | <a href="#MATH0057">MATH0057 Probability and Statistics</a> (recommended)
+| <a id="MATH0109"></a>[MATH0109 Theorem Proving in Lean](https://www.ucl.ac.uk/maths/sites/maths/files/math0109.pdf) | 3 | 1 | Familiarity with the notion of proving theorems (for example, at least one of MATH0034, MATH0051, or MATH0053). Good coding skills are also desirable.
 | <a id="MATH0021"></a>[MATH0021 Homological Algebra](https://www.ucl.ac.uk/maths/sites/maths/files/math0021.pdf) | 3 | 2 | <a href="#MATH0053">MATH0053 Algebra 4</a>
 | <a id="MATH0036"></a>[MATH0036 Elliptic Curves](https://www.ucl.ac.uk/maths/sites/maths/files/math0036.pdf) | 3 | 2 | <a href="#MATH0034">MATH0034 Number Theory</a>, <a href="#MATH0053">MATH0053 Algebra 4</a>
 | <a id="MATH0035"></a>[MATH0035 Algebraic Number Theory](https://www.ucl.ac.uk/maths/sites/maths/files/math0035.pdf) | 3 | 2 | <a href="#MATH0034">MATH0034 Number Theory</a>, <a href="#MATH0053">MATH0053 Algebra 4</a>, <a href="#MATH0022">MATH0022 Galois Theory</a> (recommended)
 | <a id="MATH0038"></a>[MATH0038 History of Mathematics](https://www.ucl.ac.uk/maths/sites/maths/files/math0038.pdf) | 3 | 2 | 
 | <a id="MATH0037"></a>[MATH0037 Logic](https://www.ucl.ac.uk/maths/sites/maths/files/math0037.pdf) | 3 | 2 | <a href="#MATH0006">MATH0006 Algebra 2</a>
+| <a id="MATH0108"></a>[MATH0108 Commutative Rings and Algebra](https://www.ucl.ac.uk/maths/sites/maths/files/0108_0.pdf) | 3 | 2 | <a href="#MATH0053">MATH0053 Algebra 4</a>
 | <a id="MATH0073"></a>[MATH0073 Representation Theory](https://www.ucl.ac.uk/maths/sites/maths/files/math0073.pdf) | 3 or 4 | 1 | <a href="#MATH0053">MATH0053 Algebra 4</a>, <a href="#MATH0021">MATH0021 Homological Algebra</a> (recommended)
 | <a id="MATH0083"></a>[MATH0083 Prime Numbers and their Distribution](https://www.ucl.ac.uk/maths/sites/maths/files/math0083.pdf) | 3 or 4 | 1 | <a href="#MATH0013">MATH0013 Analysis 3 - Complex Analysis</a>, <a href="#MATH0051">MATH0051 Analysis 4</a>, <a href="#MATH0034">MATH0034 Number Theory</a>
 | <a id="MATH0104"></a>[MATH0104 Modular Forms](https://www.ucl.ac.uk/maths/sites/maths/files/math0104_2.pdf) | 3 or 4 | 1 | <a href="#MATH0013">MATH0013 Analysis 3 - Complex Analysis</a>, <a href="#MATH0014">MATH0014 Algebra 3: Further Linear Algebra</a>, <a href="#MATH0034">MATH0034 Number Theory</a> (recommended)
@@ -101,6 +106,7 @@ Please note that the year column in the table below is for BSc and MSci Mathemat
 | <a id="MATH0080"></a>[MATH0080 Waves and Wave Scattering](https://www.ucl.ac.uk/maths/sites/maths/files/math0080.pdf) | 3 or 4 | 2 | <a href="#MATH0056">MATH0056 Mathematical Methods 4</a>
 | <a id="MATH0115"></a>[MATH0115 Solid Mechanics](https://www.ucl.ac.uk/maths/sites/maths/files/math0115_syllabus.pdf) | 3 or 4 | 2 | <a href="#MATH0015">MATH0015 Fluid Mechanics</a>, <a href="#MATH0056">MATH0056 Mathematical Methods 4</a>
 | <a id="MATH0119"></a>[MATH0119 Dynamical Systems](https://www.ucl.ac.uk/maths/sites/maths/files/math0119.pdf) | 3 or 4 | 2 | <a href="#MATH0017">MATH0017 Measure Theory</a>, <a href="#MATH0019">MATH0019 Multivariable Analysis</a> (recommended), <a href="#MATH0020">MATH0020 Differential Geometry</a> (recommended)
+| <a id="MATH0106"></a>[MATH0106 Industrial and Geological Fluids](https://www.ucl.ac.uk/maths/sites/maths/files/math0106.pdf) | 4 | 1 | <a href="#MATH0015">MATH0015 Fluid Mechanics</a>, <a href="#MATH0077">MATH0077 Real Fluids</a> (recommended)
 | <a id="MATH0078"></a>[MATH0078 Asymptotic Approximation Methods](https://www.ucl.ac.uk/maths/sites/maths/files/math0078.pdf) | 4 | 2 | <a href="#MATH0077">MATH0077 Real Fluids</a>
 | <a id="MATH0079"></a>[MATH0079 Cosmology](https://www.ucl.ac.uk/maths/sites/maths/files/math0079.pdf) | 4 | 2 | <a href="#MATH0025">MATH0025 Mathematics for General Relativity</a>
 

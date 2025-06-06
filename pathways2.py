@@ -59,7 +59,8 @@ ANCILLARY_MODULES = [
 
 class Module:
     def __init__(
-        self, name, code, year, term, syllabus_filename, prereqs, ancillary, url, running
+        self, name, code, year, term, syllabus_filename, prereqs, ancillary,
+        url, running=True, group=""
     ):
         self.name = name
         self.code = code
@@ -70,6 +71,7 @@ class Module:
         self.ancillary = ancillary
         self.url = url
         self.is_running = running
+        self.group = group
 
     def to_dict(self):
         return {
@@ -82,6 +84,7 @@ class Module:
             "ancillary": self.ancillary,
             "url": self.url,
             "is_running": self.is_running,
+            "group": self.group
         }
 
     @classmethod
@@ -96,7 +99,8 @@ class Module:
             m["prereqs"],
             m["ancillary"],
             m["url"],
-            m["is_running"],
+            running=m["is_running"],
+            group=m["group"]
         )
 
 
@@ -205,6 +209,7 @@ if SCRAPE:
 
     for module_code in MODULES:
         if module_code not in modules_on_web:
+            module_name = MODULES[module_code].module_name
             resp = input(f"{module_code} {module_name} not on webpage. Set to not running? y/N")
             if resp == "y":
                 MODULES[module_code].is_running = False
@@ -358,8 +363,8 @@ def make_gv_graph(pathway_name, pathway_contents):
             current_subgraph.attr(rank="same")
         # Build the label for the current node
         tooltip = f"Year {displayyear(module.year)}, term {displayterm(module.term)}"
-        label = module.code + "\n" + module.name
-        url = module.url
+        # label = module.code + "\n" + module.name
+        # url = module.url
         # Add a node to the current subgraph
         current_subgraph.node(
             code,
