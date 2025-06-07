@@ -3,9 +3,11 @@
 # Update modules.json with any changes.
 
 import json
+import math
 import requests
 from PyPDF2 import PdfReader
 from time import sleep
+import os
 
 SYLLABUS_PATH = "/home/mjt/Downloads/syllabuses/"
 
@@ -118,6 +120,72 @@ def updateYearInfo():
         json.dump(modules, f, indent=4)
 
 
+def create_new_module_from_pdf(pdffile):
+    # take a pdf file, return a module dict
+    # module dict keys: name code year term syllabus_filename
+    # prereqs ancillary url is_running group=""
+    module = {}
+    module["code"] = pdffile.name[:8].upper()
+    reader = PdfReader(pdffile)
+    first_page = reader.pages[0]
+    text = first_page.extract_text().splitlines()
+    module["name"] = text[0].split(maxsplit=1)[-1]
+    module["term"] = 0
+    module["level"] = 0
+    syllabus_filename = pdffile.name
+    module["prereqs"] = []
+    module["ancillary"] = True
+    module["group"] = ""
+    module["is_running"] = True
+    module["url"] = "https://www.ucl.ac.uk/maths/sites/maths/files/" + syllabus_filename
+    for i in range(1, 12):
+        line = text[i]
+        if "Term:" in line:
+            if "1" in line:
+                module["term"] = 1
+            elif "2" in line:
+                module["term"] = 2
+        if "Level:" in line:
+            if "4" in line:
+                module["level"] = 4
+            elif "5" in line:
+                module["level"] = 5
+            elif "6" in line:
+                module["level"] = 6
+        if "Normal P" in line:
+            prereqs = line.split(": ")[-1]
+            module["prereqs"].append([prereqs, "needed"])
+    module["year"] = module["level"] - 3
+    return module
+
+def scan_files_and_update_modules_json():
+    with open("modules.json") as f:
+        modules = json.load(f)  # keyed by code
+    for file in os.scandir():
+        filename = file.name
+        # continue
+        if filename.endswith(".pdf"):
+            print(f"scanning {filename}...")
+            with open(filename, 'rb') as f:
+                mod = create_new_module_from_pdf(f)
+                modules[mod["code"]] = mod
+
+    with open("modules.json", "w") as f:
+        json.dump(modules, f, indent=4)
+
+
+def add_level_info():
+    with open("modules.json") as f:
+        modules = json.load(f)
+    for mod in modules.values():
+        mod["level"] = math.ceil(mod["year"]) + 3
+    with open("modules.json", "w") as f:
+        json.dump(modules, f, indent=2)
+
+    
+
+
+# must open pdf files with (filename, 'rb')
 # typical text_extract output
 #   MATH0038 ...
 #   Year: 2022–2023
