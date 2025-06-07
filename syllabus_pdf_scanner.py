@@ -1,5 +1,5 @@
 # Download all syllabus pdf files from the UCL website.
-# Scrape year and term data out of them using PyPDF2
+# Scrape year and term data out of them using PyPDF2 (now badly out of date)
 # Update modules.json with any changes.
 
 import json
@@ -12,28 +12,28 @@ import os
 SYLLABUS_PATH = "/home/mjt/Downloads/syllabuses/"
 
 
-def downloadSyllabus(module):
+def download_syllabus(module):
     url = module["url"]
-    filename = module["syllabusFilename"]
+    filename = module["syllabus_filename"]
     r = requests.get(url, allow_redirects=True)
     with open(SYLLABUS_PATH + filename, "wb") as pdfFile:
         pdfFile.write(r.content)
 
 
-def getAllSyllabuses():
+def get_all_syllabuses():
     with open("modules.json") as f:
         modules = json.load(f)
     n = len(modules)
     for i, module in enumerate(modules.values()):
         print(
-            "Fetching " + modules["syllabusFilename"] +
+            "Fetching " + modules["syllabus_filename"] +
             "\t" + str(i) + " of " + str(n)
         )
-        downloadSyllabus(module)
+        download_syllabus(module)
         sleep(10)  # don't get rate-limited
 
 
-def getTermFromSyllabus(filename):
+def get_term_from_syllabus(filename):
     # input is the filename of a pdf syllabus
     reader = PdfReader(filename)
     firstPage = reader.pages[0]
@@ -53,7 +53,7 @@ def getTermFromSyllabus(filename):
     return term
 
 
-def getYearFromSyllabus(filename):
+def get_year_from_syllabus(filename):
     reader = PdfReader(filename)
     firstPage = reader.pages[0]
     text = firstPage.extract_text().splitlines()
@@ -79,11 +79,11 @@ def getYearFromSyllabus(filename):
     return year
 
 
-def updateTermInfo():
+def update_term_info():
     with open("modules.json") as f:
         modules = json.load(f)
     for module in modules.values():
-        t = getTermFromSyllabus(SYLLABUS_PATH + module["syllabusFilename"])
+        t = get_term_from_syllabus(SYLLABUS_PATH + module["syllabus_filename"])
         if t != module["term"]:
             print(
                 "Changing "
@@ -96,15 +96,15 @@ def updateTermInfo():
             module["term"] = t
     print("Writing out modules.json.")
     with open("modules.json", "w") as f:
-        json.dump(modules, f, indent=4)
+        json.dump(modules, f, indent=2)
         # indent makes the file human-readable
 
 
-def updateYearInfo():
+def update_year_info():
     with open("modules.json") as f:
         modules = json.load(f)
     for module in modules.values():
-        y = getYearFromSyllabus(SYLLABUS_PATH + module["syllabusFilename"])
+        y = get_year_from_syllabus(SYLLABUS_PATH + module["syllabus_filename"])
         if (y != -1) and (y != module["year"]):
             print(
                 "Changing "
@@ -117,7 +117,7 @@ def updateYearInfo():
             module["year"] = y
     print("Writing out modules.json")
     with open("modules.json", "w") as f:
-        json.dump(modules, f, indent=4)
+        json.dump(modules, f, indent=2)
 
 
 def create_new_module_from_pdf(pdffile):
@@ -171,7 +171,7 @@ def scan_files_and_update_modules_json():
                 modules[mod["code"]] = mod
 
     with open("modules.json", "w") as f:
-        json.dump(modules, f, indent=4)
+        json.dump(modules, f, indent=2)
 
 
 def add_level_info():
@@ -194,6 +194,7 @@ def add_syllabus_filename():
 
 
 # must open pdf files with (filename, 'rb')
+#
 # typical text_extract output
 #   MATH0038 ...
 #   Year: 2022–2023
