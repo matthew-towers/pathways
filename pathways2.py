@@ -2,10 +2,9 @@
 
 # TODO:
 # - [ ] for each pathway build a d3js/pyvis fancy graph
-# - [x] tooltips for arrows with recommended/required
-# - [ ] give modules a level attribute
-# - [ ] give year 4 modules a group attribute
-# - [ ] scrape the syllabus/query the user for prereq, year, term data when a new module is found. (Can't really do the prereqs because they can be written weirdly)
+# - [ ] scrape the syllabus/query the user for prereq, year, term data when a
+# new module is found. (Can't really do the prereqs because they can be written
+# weirdly)
 # - [ ] deal with more complex prerequisites, e.g. 0119
 
 import json
