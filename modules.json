@@ -1877,7 +1877,8 @@
     "group": "",
     "is_running": true,
     "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0101_syllabus.pdf",
-    "year": 2
+    "year": 2,
+    "syllabus_filename": "math0101_syllabus.pdf"
   },
   "MATH0040": {
     "code": "MATH0040",
@@ -1894,7 +1895,8 @@
     "group": "",
     "is_running": true,
     "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0040.pdf",
-    "year": 1
+    "year": 1,
+    "syllabus_filename": "math0040.pdf"
   },
   "MATH0039": {
     "code": "MATH0039",
@@ -1911,7 +1913,8 @@
     "group": "",
     "is_running": true,
     "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0039.pdf",
-    "year": 1
+    "year": 1,
+    "syllabus_filename": "math0039.pdf"
   },
   "MATH0041": {
     "code": "MATH0041",
@@ -1928,7 +1931,8 @@
     "group": "",
     "is_running": true,
     "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0041_5.pdf",
-    "year": 1
+    "year": 1,
+    "syllabus_filename": "math0041_5.pdf"
   },
   "MATH0048": {
     "code": "MATH0048",
@@ -1945,7 +1949,8 @@
     "group": "",
     "is_running": true,
     "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0048.pdf",
-    "year": 2
+    "year": 2,
+    "syllabus_filename": "math0048.pdf"
   },
   "MATH0045": {
     "code": "MATH0045",
@@ -1962,7 +1967,8 @@
     "group": "",
     "is_running": true,
     "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0045.pdf",
-    "year": 1
+    "year": 1,
+    "syllabus_filename": "math0045.pdf"
   },
   "MATH0046": {
     "code": "MATH0046",
@@ -1979,7 +1985,8 @@
     "group": "",
     "is_running": true,
     "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0046.pdf",
-    "year": 1
+    "year": 1,
+    "syllabus_filename": "math0046.pdf"
   },
   "MATH0042": {
     "code": "MATH0042",
@@ -2000,7 +2007,8 @@
     "group": "",
     "is_running": true,
     "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0042.pdf",
-    "year": 2
+    "year": 2,
+    "syllabus_filename": "math0042.pdf"
   },
   "MATH0047": {
     "code": "MATH0047",
@@ -2017,7 +2025,8 @@
     "group": "",
     "is_running": true,
     "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0047_2.pdf",
-    "year": 2
+    "year": 2,
+    "syllabus_filename": "math0047_2.pdf"
   },
   "MATH0043": {
     "code": "MATH0043",
@@ -2034,7 +2043,8 @@
     "group": "",
     "is_running": true,
     "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0043.pdf",
-    "year": 2
+    "year": 2,
+    "syllabus_filename": "math0043.pdf"
   },
   "MATH0050": {
     "code": "MATH0050",
@@ -2051,7 +2061,8 @@
     "group": "",
     "is_running": true,
     "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0050.pdf",
-    "year": 3
+    "year": 3,
+    "syllabus_filename": "math0050.pdf"
   },
   "MATH0012": {
     "code": "MATH0012",
@@ -2068,7 +2079,8 @@
     "group": "",
     "is_running": true,
     "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0012.pdf",
-    "year": 1
+    "year": 1,
+    "syllabus_filename": "math0012.pdf"
   },
   "MATH0103": {
     "code": "MATH0103",
@@ -2085,6 +2097,7 @@
     "group": "",
     "is_running": true,
     "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0103.pdf",
-    "year": 2
+    "year": 2,
+    "syllabus_filename": "math0103.pdf"
   }
 }

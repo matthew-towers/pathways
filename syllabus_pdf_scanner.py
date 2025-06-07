@@ -132,12 +132,12 @@ def create_new_module_from_pdf(pdffile):
     module["name"] = text[0].split(maxsplit=1)[-1]
     module["term"] = 0
     module["level"] = 0
-    syllabus_filename = pdffile.name
+    module["syllabus_filename"] = pdffile.name
     module["prereqs"] = []
     module["ancillary"] = True
     module["group"] = ""
     module["is_running"] = True
-    module["url"] = "https://www.ucl.ac.uk/maths/sites/maths/files/" + syllabus_filename
+    module["url"] = "https://www.ucl.ac.uk/maths/sites/maths/files/" + module["syllabus_filename"]
     for i in range(1, 12):
         line = text[i]
         if "Term:" in line:
@@ -182,6 +182,14 @@ def add_level_info():
     with open("modules.json", "w") as f:
         json.dump(modules, f, indent=2)
 
+def add_syllabus_filename():
+    with open("modules.json") as f:
+        modules = json.load(f)
+    for mod in modules.values():
+        if "syllabus_filename" not in mod:
+            mod["syllabus_filename"] = mod["url"].split('/')[-1]
+    with open("modules.json", "w") as f:
+        json.dump(modules, f, indent=2)
     
 
 
