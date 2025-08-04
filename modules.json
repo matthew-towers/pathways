@@ -1361,12 +1361,12 @@
   },
   "MATH0076": {
     "id": "algebraicgeometry",
-    "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0076_3.pdf",
+    "url": "https://www.ucl.ac.uk/maths/sites/maths/files/math0076_2.pdf",
     "name": "Algebraic Geometry",
     "code": "MATH0076",
     "year": 4.0,
     "term": 1,
-    "syllabus_filename": "math0076_3.pdf",
+    "syllabus_filename": "math0076_2.pdf",
     "is_running": true,
     "pathways": [
       "Algebra"
