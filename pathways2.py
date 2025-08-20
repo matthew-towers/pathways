@@ -428,18 +428,23 @@ with open("pathways.html", "w") as html_file:
 #####################
 
 
-def tablify(module_list):
+def tablify(module_list, include_group=True):
     """
     Return a string containing a markdown table of the prereqs of the
     running modules in the list module_list.
     """
-    header = "| Module | Year | Term | Prerequisites\n|----|----|----|----\n"
-    rows = "".join(generate_table_row(MODULES[code]) for code in module_list if
+    if include_group:
+        header = "| Module | Year | Term | Group | Prerequisites\n|----|----|----|----|----\n"
+        header = "| Module | Year | Term | Prerequisites\n|----|----|----|----\n"
+    else:
+        header = "| Module | Year | Term | Prerequisites\n|----|----|----|----\n"
+
+    rows = "".join(generate_table_row(MODULES[code], include_group) for code in module_list if
                    MODULES[code].is_running)
     return header + rows
 
 
-def generate_table_row(module):
+def generate_table_row(module, include_group):
     """
     Make the row of the prereqs table for the given module
     """
@@ -456,6 +461,8 @@ def generate_table_row(module):
         term_col = "1 and 2"
     else:
         term_col = str(module.term)
+    if include_group:
+        group_col = module.group
     prereqs_col = ""
     for prereq_code, prereq_type in module.prereqs:
         # append prereq code, name, link to prereqsCol, whether it's optional
@@ -469,6 +476,8 @@ def generate_table_row(module):
         else:
             prereq_module_name = MODULES[prereq_code]
             prereqs_col += f'<a href="#{prereq_code}">{prereq_code} {prereq_module_name.name}</a> (recommended), '
+    if include_group:
+        return f"| {module_col} | {year_col} | {term_col} | {group_col} | {prereqs_col[:-2]}\n"
     return f"| {module_col} | {year_col} | {term_col} | {prereqs_col[:-2]}\n"
 
 
@@ -481,5 +490,8 @@ with open("pathways.md", "w") as md_file:
         pathway_modules = sorted(pathway_modules, key=lambda m: MODULES[m].term)
         pathway_modules = sorted(pathway_modules, key=lambda m: MODULES[m].year)
         md_file.write("## " + pathway_name + "\n\n")
-        md_file.write(tablify(pathway_modules))
+        if pathway_name == "First and Second Year":
+            md_file.write(tablify(pathway_modules, include_group=False))
+        else:
+            md_file.write(tablify(pathway_modules))
         md_file.write("\n")
