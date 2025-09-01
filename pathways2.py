@@ -31,7 +31,7 @@ else:
 if not SCRAPE:
     print("Not scraping.")
 
-MODULE_INFO_URL = "https://www.ucl.ac.uk/maths/current-students/current-undergraduates/module-information-undergraduates"
+MODULE_INFO_URL = "https://www.ucl.ac.uk/mathematical-physical-sciences/maths/current-students/current-undergraduates/module-information-undergraduates"
 
 ANCILLARY_MODULES = [
     "MATH0012",
@@ -208,7 +208,7 @@ if SCRAPE:
 
     for module_code in MODULES:
         if module_code not in modules_on_web:
-            module_name = MODULES[module_code].module_name
+            module_name = MODULES[module_code].name
             resp = input(f"{module_code} {module_name} not on webpage. Set to not running? y/N")
             if resp == "y":
                 MODULES[module_code].is_running = False
