@@ -435,7 +435,6 @@ def tablify(module_list, include_group=True):
     """
     if include_group:
         header = "| Module | Year | Term | Group | Prerequisites\n|----|----|----|----|----\n"
-        header = "| Module | Year | Term | Prerequisites\n|----|----|----|----\n"
     else:
         header = "| Module | Year | Term | Prerequisites\n|----|----|----|----\n"
 
