@@ -214,7 +214,7 @@ if SCRAPE:
     for module_code in MODULES:
         if module_code not in modules_on_web:
             module_name = MODULES[module_code].name
-            resp = input(f"{module_code} {module_name} not on webpage. Set to not running? y/N")
+            resp = input(f"{module_code} {module_name} not on webpage. Set to not running? y/N: ")
             if resp == "y":
                 MODULES[module_code].is_running = False
                 modules_from_json[module_code]["is_running"] = False
