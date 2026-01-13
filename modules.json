@@ -173,12 +173,12 @@
     },
     "MATH0011": {
         "id": "methods2",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/math0011_3.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/math0011.pdf",
         "name": "Mathematical Methods 2",
         "code": "MATH0011",
         "year": 1.0,
         "term": 2,
-        "syllabus_filename": "math0011_3.pdf",
+        "syllabus_filename": "math0011.pdf",
         "is_running": true,
         "pathways": [
             "y1y2"
@@ -1339,12 +1339,12 @@
     },
     "MATH0075": {
         "id": "liegroupsandliealgebras",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/math0075_2.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/math0075.pdf",
         "name": "Lie Groups and Lie Algebras",
         "code": "MATH0075",
         "year": 3.5,
         "term": 2,
-        "syllabus_filename": "math0075_2.pdf",
+        "syllabus_filename": "math0075.pdf",
         "is_running": true,
         "pathways": [
             "Algebra"
