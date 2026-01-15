@@ -124,3 +124,7 @@ deploy.sh
 
 # pdfs
 *.pdf
+
+# dot and svg files
+*.dot
+*.svg
