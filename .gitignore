@@ -128,3 +128,6 @@ deploy.sh
 # dot and svg files
 *.dot
 *.svg
+
+# the generated html file
+pathways.html
