@@ -88,6 +88,20 @@ class Module:
             "group": self.group
         }
 
+    def display_year(self):
+        if self.year in [1, 2, 3, 4]:
+            return str(int(self.year))
+        else:
+            return f"{int(self.year-0.5)} or {int(self.year+0.5)}"
+
+
+    def display_term(self):
+        if self.term in [1, 2, 3]:
+            return str(int(self.term))
+        else:
+            return "1 and 2"
+
+
     @classmethod
     def dict_to_module(cls, m):
         # convert a module dict, as parsed from json, to a Module
@@ -299,20 +313,6 @@ for pathway_name, module_code_set in PATHWAY_CLOSURES.items():
 # Make graphviz graphs #
 ########################
 
-def displayyear(y):
-    if y in [1, 2, 3, 4]:
-        return str(int(y))
-    else:
-        return f"{int(y-0.5)} or {int(y+0.5)}"
-
-
-def displayterm(t):
-    if t in [1, 2, 3]:
-        return str(int(t))
-    else:
-        return "1 and 2"
-
-
 COLOURS = {
     # (year, term) : "colour"
     (1, 1): "darkgoldenrod1",
@@ -331,19 +331,37 @@ COLOURS = {
     (4, 2): "dodgerblue3",
 }
 
+def group_colour(s):
+    """Return a colour or colour list for the given group or group list.
+
+    Args:
+        s: a string which is "1A", "1B", "2", or two of these separated by a
+          space.
+    Returns:
+        A graphviz colour name, or if s contains a space, a "colourlist"
+          consisting of the colour for the part before the space, then a colon,
+          then the colour for the part after the space.
+    """
+    if s == "":
+        return "white"
+    colours = {"1A": "lightgrey", "1B": "honeydew", "2": "azure"}
+    return ":".join(colours[groupname] for groupname in s.split())
+
 
 def make_gv_graph(pathway_name, pathway_contents):
-    """pathway_contents should be a list of module codes sorted by year
-    and term. The function will make an svg of the pathway using graphviz
-    and save it."""
+    """Writes an svg file visualising pathway_contents using graphviz.
+
+    Args:
+        pathway_name: the name of the pathway being graphed, as a string.
+        pathway_contents: a list of Modules in the pathway, sorted by year then
+          by term.
+    """
     pathway_graph = gv.Digraph(
         filename=pathway_name + ".dot",
         format="svg",
         node_attr={
             "shape": "box",
-            "style": "filled,bold",
-            "fillcolor": "white",
-            "penwidth": "5",
+            "penwidth": "4",
         }
     )
     first_mod = MODULES[pathway_contents[0]]
@@ -352,12 +370,12 @@ def make_gv_graph(pathway_name, pathway_contents):
     current_subgraph = gv.Digraph(str(old_year) + " " + str(old_term))
     current_subgraph_nodes = []
     current_subgraph.attr(rank="same")
-    # NB using current_subgraph.graph_attr.update(rank="same") sets
-    # everything in the whole graph to the same rank.
+    # current_subgraph.graph_attr.update(rank="same") sets *all* nodes to the
+    # same rank.
     for code in pathway_contents:
         module = MODULES[code]
-        # Are we starting a new year or term?  Then set everything to
-        # the same rank.
+        # Are we starting a new year or term?  Then add the old subgraph and
+        # start a new one.
         if (module.year != old_year) or (module.term != old_term):
             # Add the old subgraph to the big graph
             pathway_graph.subgraph(current_subgraph)
@@ -369,11 +387,9 @@ def make_gv_graph(pathway_name, pathway_contents):
             current_subgraph_nodes = []
             current_subgraph.attr(rank="same")
         # Build the label for the current node
-        tooltip = f"Year {displayyear(module.year)} (level {module.level}), term {displayterm(module.term)}"
+        tooltip = f"Year {module.display_year()} (level {module.level}), term {module.display_term()}"
         if module.group:
             tooltip += f", group {module.group}"
-        # label = module.code + "\n" + module.name
-        # url = module.url
         # Add a node to the current subgraph
         current_subgraph.node(
             code,
@@ -381,6 +397,8 @@ def make_gv_graph(pathway_name, pathway_contents):
             tooltip=tooltip,
             color=COLOURS[(module.year, module.term)],
             href=module.url,
+            style="filled,bold",
+            fillcolor=group_colour(module.group)
         )
         current_subgraph_nodes.append(module.code + " " + module.name)
         # build prereq edges
