@@ -59,7 +59,7 @@ ANCILLARY_MODULES = [
 class Module:
     def __init__(
         self, name, code, year, term, syllabus_filename, prereqs, ancillary,
-        url, running=True, group=""
+        url, level, running=True, group=""
     ):
         self.name = name
         self.code = code
@@ -69,6 +69,7 @@ class Module:
         self.prereqs = prereqs
         self.ancillary = ancillary
         self.url = url
+        self.level = level
         self.is_running = running
         self.group = group
 
@@ -82,6 +83,7 @@ class Module:
             "prereqs": self.prereqs,
             "ancillary": self.ancillary,
             "url": self.url,
+            "level": self.level,
             "is_running": self.is_running,
             "group": self.group
         }
@@ -98,6 +100,7 @@ class Module:
             m["prereqs"],
             m["ancillary"],
             m["url"],
+            m["level"],
             running=m["is_running"],
             group=m["group"]
         )
@@ -366,7 +369,9 @@ def make_gv_graph(pathway_name, pathway_contents):
             current_subgraph_nodes = []
             current_subgraph.attr(rank="same")
         # Build the label for the current node
-        tooltip = f"Year {displayyear(module.year)}, term {displayterm(module.term)}"
+        tooltip = f"Year {displayyear(module.year)} (level {module.level}), term {displayterm(module.term)}"
+        if module.group:
+            tooltip += f", group {module.group}"
         # label = module.code + "\n" + module.name
         # url = module.url
         # Add a node to the current subgraph
