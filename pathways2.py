@@ -327,7 +327,7 @@ COLOURS = {
     (3, 2): "brown3",
     (3.5, 1): "deeppink1",
     (3.5, 2): "deeppink3",
-    (4, 1): "dodgerblue2",
+    (4, 1): "dodgerblue1",
     (4, 2): "dodgerblue3",
 }
 
