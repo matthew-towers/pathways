@@ -417,6 +417,28 @@ def make_gv_graph(pathway_name, pathway_contents):
     pathway_graph.subgraph(current_subgraph)
     pathway_graph.render()
 
+    # Here's what a module node with a gradient looks like:
+    # <!-- MATH0083 -->
+    # <g id="node24" class="node">
+    # <title>MATH0083</title>
+    # <g id="a_node24"><a xlink:href="https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/math0083.pdf" xlink:title="Year 3 or 4 (level 7), term 1, group 1A 1B">
+    # <defs>
+    # <linearGradient id="l_0" gradientUnits="userSpaceOnUse" x1="46.5" y1="-19" x2="336.5" y2="-19" >
+    # <stop offset="0" style="stop-color:lightgrey;stop-opacity:1.;"/>
+    # <stop offset="1" style="stop-color:honeydew;stop-opacity:1.;"/>
+    # </linearGradient>
+    # </defs>
+    # <polygon fill="url(#l_0)" stroke="#ff1493" stroke-width="4" points="336.5,-38 46.5,-38 46.5,0 336.5,0 336.5,-38"/>
+    # <text text-anchor="middle" x="191.5" y="-22.8" font-family="Times,serif" font-size="14.00">MATH0083</text>
+    # <text text-anchor="middle" x="191.5" y="-7.8" font-family="Times,serif" font-size="14.00">Prime Numbers and their Distribution</text>
+    # </a>
+    # </g>
+    # </g>
+    # The id on the linearGradient, and the reference to it in the polygon, must
+    # be made globally unique in the sense that they must not be repeated in
+    # different pathways. Otherwise the fills will fail. I don't see how to set
+    # ids using graphviz, so we must hack it.
+
 
 # Build a graph for each pathway
 
