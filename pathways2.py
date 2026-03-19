@@ -58,8 +58,18 @@ ANCILLARY_MODULES = [
 
 class Module:
     def __init__(
-        self, name, code, year, term, syllabus_filename, prereqs, ancillary,
-        url, level, running=True, group=""
+        self,
+        name,
+        code,
+        year,
+        term,
+        syllabus_filename,
+        prereqs,
+        ancillary,
+        url,
+        level,
+        running=True,
+        group="",
     ):
         self.name = name
         self.code = code
@@ -85,7 +95,7 @@ class Module:
             "url": self.url,
             "level": self.level,
             "is_running": self.is_running,
-            "group": self.group
+            "group": self.group,
         }
 
     def display_year(self):
@@ -94,13 +104,11 @@ class Module:
         else:
             return f"{int(self.year-0.5)} or {int(self.year+0.5)}"
 
-
     def display_term(self):
         if self.term in [1, 2, 3]:
             return str(int(self.term))
         else:
             return "1 and 2"
-
 
     @classmethod
     def dict_to_module(cls, m):
@@ -116,7 +124,7 @@ class Module:
             m["url"],
             m["level"],
             running=m["is_running"],
-            group=m["group"]
+            group=m["group"],
         )
 
 
@@ -227,11 +235,12 @@ if SCRAPE:
                     MODULES[module_code] = mod
                     modules_from_json[module_code] = mod.to_dict()
 
-
     for module_code in MODULES:
         if module_code not in modules_on_web:
             module_name = MODULES[module_code].name
-            resp = input(f"{module_code} {module_name} not on webpage. Set to not running? y/N: ")
+            resp = input(
+                f"{module_code} {module_name} not on webpage. Set to not running? y/N: "
+            )
             if resp == "y":
                 MODULES[module_code].is_running = False
                 modules_from_json[module_code]["is_running"] = False
@@ -331,6 +340,7 @@ COLOURS = {
     (4, 2): "dodgerblue3",
 }
 
+
 def group_colour(s):
     """Return a colour or colour list for the given group or group list.
 
@@ -353,8 +363,11 @@ def make_gv_graph(pathway_name, pathway_contents):
 
     Args:
         pathway_name: the name of the pathway being graphed, as a string.
+          Assumed safe for use as a file name.
         pathway_contents: a list of Modules in the pathway, sorted by year then
           by term.
+    Returns:
+        the name of the created svg file.
     """
     pathway_graph = gv.Digraph(
         filename=pathway_name + ".dot",
@@ -362,7 +375,7 @@ def make_gv_graph(pathway_name, pathway_contents):
         node_attr={
             "shape": "box",
             "penwidth": "4",
-        }
+        },
     )
     first_mod = MODULES[pathway_contents[0]]
     old_year = first_mod.year
@@ -398,52 +411,68 @@ def make_gv_graph(pathway_name, pathway_contents):
             color=COLOURS[(module.year, module.term)],
             href=module.url,
             style="filled,bold",
-            fillcolor=group_colour(module.group)
+            fillcolor=group_colour(module.group),
         )
         current_subgraph_nodes.append(module.code + " " + module.name)
         # build prereq edges
         for prereq_code, prereq_type in module.prereqs:
             if prereq_type == "needed":
-                pathway_graph.edge(prereq_code, code,
-                                   tooltip="required prerequisite")
+                pathway_graph.edge(prereq_code, code, tooltip="required prerequisite")
             elif prereq_type == "recommended":
-                pathway_graph.edge(prereq_code, code, style="dashed",
-                                   tooltip="recommended prerequisite")
+                pathway_graph.edge(
+                    prereq_code,
+                    code,
+                    style="dashed",
+                    tooltip="recommended prerequisite",
+                )
             elif prereq_type == "comment":
                 pass
             else:
                 print(f"Invalid prereq type: {module.code}")
     # deal with last subgraph
     pathway_graph.subgraph(current_subgraph)
-    pathway_graph.render()
+    # Save the graph to a svg. cleanup=True rids us of the temporary dot file.
+    pathway_graph.render(pathway_name, cleanup=True)
+    return pathway_name + ".svg"
 
-    # Here's what a module node with a gradient looks like:
-    # <!-- MATH0083 -->
-    # <g id="node24" class="node">
-    # <title>MATH0083</title>
-    # <g id="a_node24"><a xlink:href="https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/math0083.pdf" xlink:title="Year 3 or 4 (level 7), term 1, group 1A 1B">
-    # <defs>
-    # <linearGradient id="l_0" gradientUnits="userSpaceOnUse" x1="46.5" y1="-19" x2="336.5" y2="-19" >
-    # <stop offset="0" style="stop-color:lightgrey;stop-opacity:1.;"/>
-    # <stop offset="1" style="stop-color:honeydew;stop-opacity:1.;"/>
-    # </linearGradient>
-    # </defs>
-    # <polygon fill="url(#l_0)" stroke="#ff1493" stroke-width="4" points="336.5,-38 46.5,-38 46.5,0 336.5,0 336.5,-38"/>
-    # <text text-anchor="middle" x="191.5" y="-22.8" font-family="Times,serif" font-size="14.00">MATH0083</text>
-    # <text text-anchor="middle" x="191.5" y="-7.8" font-family="Times,serif" font-size="14.00">Prime Numbers and their Distribution</text>
-    # </a>
-    # </g>
-    # </g>
-    # The id on the linearGradient, and the reference to it in the polygon, must
-    # be made globally unique in the sense that they must not be repeated in
-    # different pathways. Otherwise the fills will fail. I don't see how to set
-    # ids using graphviz, so we must hack it.
+
+def make_gradient_ids_unique(pathway_name, svg_filename):
+    """Prepend pathway_name to ids of linearGradients in svg_filename.
+
+    If two linearGradient elements in an html file have the same id attribute,
+    the second won't render properly. This function ensures the required
+    uniqueness in our pathways.html file by prepending the pathway name (spaces
+    replaced with underscores) to the ids of any linearGradients, and fixing the
+    reference to this id in the subsequent polygon element.  The file called
+    svg_filename is modified.
+
+    Args:
+        pathway_name: name of the pathway used to generate svg_filename, a
+          string.
+        svg_filename: name of an svg file in this directory.
+    """
+    pathway_name = pathway_name.replace(" ", "_")
+    with open(svg_filename) as f:
+        soup = BeautifulSoup(f, features="xml")
+        # Each module graph node is in a g element with class="node"
+        node_elements = soup.find_all("g", {"class": "node"})
+        for node_element in node_elements:
+            node_gradient = node_element.find("linearGradient")
+            if node_gradient:
+                old_gradient_id = node_gradient["id"]
+                new_gradient_id = pathway_name + "_" + str(old_gradient_id)
+                node_gradient["id"] = new_gradient_id
+                polygon = node_element.find("polygon")
+                polygon["fill"] = f"url(#{new_gradient_id})"
+
+    with open(svg_filename, "w") as f:
+        f.write(str(soup))
 
 
 # Build a graph for each pathway
-
 for pathway_name, pathway_contents in PATHWAY_CLOSURES.items():
-    make_gv_graph(pathway_name, pathway_contents)
+    svg_filename = make_gv_graph(pathway_name, pathway_contents)
+    make_gradient_ids_unique(pathway_name, svg_filename)
 
 #######################
 # Build pathways.html #
@@ -463,10 +492,10 @@ with open("pathways.html", "w") as html_file:
     preamble = open("preamble.html").read()
     html_file.write(preamble)
     html_file.write("\n")
-    # add the pathway svgs, one by one
+    # add the pathway svgs
     for pathway_name in PATHWAYS:
         html_file.write(f"<h1>{pathway_name}</h1>\n")
-        svg = open(pathway_name + ".dot.svg").read()
+        svg = open(pathway_name + ".svg").read()
         html_file.write(svg)
         html_file.write("\n")
     # close the html tag
@@ -488,8 +517,11 @@ def tablify(module_list, include_group=True):
     else:
         header = "| Module | Year | Term | Prerequisites\n|----|----|----|----\n"
 
-    rows = "".join(generate_table_row(MODULES[code], include_group) for code in module_list if
-                   MODULES[code].is_running)
+    rows = "".join(
+        generate_table_row(MODULES[code], include_group)
+        for code in module_list
+        if MODULES[code].is_running
+    )
     return header + rows
 
 
