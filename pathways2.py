@@ -1,5 +1,3 @@
-# Pathways.
-
 # TODO:
 # - [ ] for each pathway build a d3js/pyvis fancy graph
 # - [ ] scrape the syllabus/query the user for prereq, year, term data when a
@@ -220,7 +218,7 @@ if SCRAPE:
                         f"Non-ancillary module on web not in modules.json: {module_code}."
                     )
                     print("Creating a new record.")
-                    # Create a new entry for modules.json
+                    # Create a new entry for use in modules.json
                     mod = Module(
                         module_name,
                         module_code,
@@ -231,7 +229,7 @@ if SCRAPE:
                         False,
                         module_url,
                         True,
-                    )  # can't get the true term, year, prereq info from here so just use blank values.
+                    )
                     MODULES[module_code] = mod
                     modules_from_json[module_code] = mod.to_dict()
 
@@ -265,6 +263,7 @@ if SCRAPE:
 
 PREREQ_GRAPH = nx.DiGraph()
 PREREQ_GRAPH.add_nodes_from(MODULES)
+
 # prereqGraph is a graph whose nodes are the module codes
 # Only running modules should be included
 
@@ -290,10 +289,9 @@ with open("pathways.json") as f:
 # Compute pathway closures #
 ############################
 
-# Currently, some of the pathways aren't closed under taking
-# prerequisites. We want them to be prerequisite-closed when we
-# create our graphs. We must also be sure that only running modules are
-# included in the pathways closures.
+# Some of the pathways aren't closed under taking prerequisites. We want them to
+# be prerequisite-closed when we create our graphs. We must also be sure that
+# only running modules are included in the pathways closures.
 
 PATHWAY_CLOSURES = {}
 
@@ -323,7 +321,7 @@ for pathway_name, module_code_set in PATHWAY_CLOSURES.items():
 ########################
 
 COLOURS = {
-    # (year, term) : "colour"
+    # (year, term) : "colour name"
     (1, 1): "darkgoldenrod1",
     (1, 2): "darkgoldenrod3",
     (1, 1.5): "darkgoldenrod2",
@@ -383,23 +381,17 @@ def make_gv_graph(pathway_name, pathway_contents):
     current_subgraph = gv.Digraph(str(old_year) + " " + str(old_term))
     current_subgraph_nodes = []
     current_subgraph.attr(rank="same")
-    # current_subgraph.graph_attr.update(rank="same") sets *all* nodes to the
-    # same rank.
     for code in pathway_contents:
         module = MODULES[code]
         # Are we starting a new year or term?  Then add the old subgraph and
         # start a new one.
         if (module.year != old_year) or (module.term != old_term):
-            # Add the old subgraph to the big graph
             pathway_graph.subgraph(current_subgraph)
-            # Update old_year and old_term
             old_year = module.year
             old_term = module.term
-            # Make a new subgraph
             current_subgraph = gv.Digraph(str(old_year) + " " + str(old_term))
             current_subgraph_nodes = []
             current_subgraph.attr(rank="same")
-        # Build the label for the current node
         tooltip = f"Year {module.display_year()} (level {module.level}), term {module.display_term()}"
         if module.group:
             tooltip += f", group {module.group}"
@@ -414,7 +406,7 @@ def make_gv_graph(pathway_name, pathway_contents):
             fillcolor=group_colour(module.group),
         )
         current_subgraph_nodes.append(module.code + " " + module.name)
-        # build prereq edges
+        # Build prereq edges
         for prereq_code, prereq_type in module.prereqs:
             if prereq_type == "needed":
                 pathway_graph.edge(prereq_code, code, tooltip="required prerequisite")
@@ -429,9 +421,10 @@ def make_gv_graph(pathway_name, pathway_contents):
                 pass
             else:
                 print(f"Invalid prereq type: {module.code}")
-    # deal with last subgraph
+    # Add the last subgraph
     pathway_graph.subgraph(current_subgraph)
-    # Save the graph to a svg. cleanup=True rids us of the temporary dot file.
+    # Save the graph to a svg.
+    # Using cleanup=True rids us of the temporary dot file.
     pathway_graph.render(pathway_name, cleanup=True)
     return pathway_name + ".svg"
 
@@ -459,8 +452,7 @@ def make_gradient_ids_unique(pathway_name, svg_filename):
         for node_element in node_elements:
             node_gradient = node_element.find("linearGradient")
             if node_gradient:
-                old_gradient_id = node_gradient["id"]
-                new_gradient_id = pathway_name + "_" + str(old_gradient_id)
+                new_gradient_id = pathway_name + "_" + str(node_gradient["id"])
                 node_gradient["id"] = new_gradient_id
                 polygon = node_element.find("polygon")
                 polygon["fill"] = f"url(#{new_gradient_id})"
@@ -488,17 +480,14 @@ for pathway_name, pathway_contents in PATHWAY_CLOSURES.items():
 #  - modelling... pathway
 
 with open("pathways.html", "w") as html_file:
-    # add the preamble
     preamble = open("preamble.html").read()
     html_file.write(preamble)
     html_file.write("\n")
-    # add the pathway svgs
     for pathway_name in PATHWAYS:
         html_file.write(f"<h1>{pathway_name}</h1>\n")
         svg = open(pathway_name + ".svg").read()
         html_file.write(svg)
         html_file.write("\n")
-    # close the html tag
     html_file.write("</html>")
 
 
@@ -538,7 +527,7 @@ def generate_table_row(module, include_group):
         year_col = "3 or 4"
     else:
         year_col = str(int(module.year))
-    if module.term == 1.5:  # mod runs in both terms
+    if module.term == 1.5:  # then this module runs in both terms
         term_col = "1 and 2"
     else:
         term_col = str(module.term)
@@ -546,7 +535,7 @@ def generate_table_row(module, include_group):
         group_col = module.group
     prereqs_col = ""
     for prereq_code, prereq_type in module.prereqs:
-        # append prereq code, name, link to prereqsCol, whether it's optional
+        # Append prereq code, name, link to the prereq, whether it's optional
         if prereq_type == "comment":
             prereqs_col += prereq_code + ", "
         elif prereq_type == "needed":
@@ -566,7 +555,7 @@ with open("pathways.md", "w") as md_file:
     preamble = open("preamble.md").read()
     md_file.write(preamble)
     md_file.write("\n")
-    # add the pathway tables, one by one
+    # Add the pathway tables.
     for pathway_name, pathway_modules in PATHWAYS.items():
         pathway_modules = sorted(pathway_modules, key=lambda m: MODULES[m].term)
         pathway_modules = sorted(pathway_modules, key=lambda m: MODULES[m].year)
