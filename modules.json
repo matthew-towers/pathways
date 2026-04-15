@@ -1083,10 +1083,6 @@
                 "recommended"
             ],
             [
-                "MATH0065",
-                "recommended"
-            ],
-            [
                 "MATH0057",
                 "recommended"
             ]
@@ -1467,7 +1463,7 @@
         "year": 4.0,
         "term": 1,
         "syllabus_filename": "math0065.pdf",
-        "is_running": true,
+        "is_running": false,
         "pathways": [
             "Modelling, Computation and Finance"
         ],
