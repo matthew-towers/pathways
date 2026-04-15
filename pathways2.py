@@ -4,6 +4,8 @@
 # new module is found. (Can't really do the prereqs because they can be written
 # weirdly)
 # - [ ] deal with more complex prerequisites, e.g. 0119
+# - [ ] get rid of the ancillary list here, just store in modules.json
+# - [ ] get rid of pathways.json, use info from modules.json
 
 import json
 from bs4 import BeautifulSoup
@@ -194,14 +196,12 @@ if SCRAPE:
             a = li.find("a")
             if a is not None:
                 code_and_name = a.contents[0]  # e.g. "MATH0005 Algebra 1"
-                print(code_and_name)
                 # fix typos in module codes on web
                 if code_and_name[:8] in ["MATH006 ", "MATH009 "]:
                     code_and_name = code_and_name[:6] + "0" + code_and_name[6:]
                 if code_and_name == "MATH0118MathematicsforQuantumMechanics":
                     code_and_name = "MATH0118 Mathematics for Quantum Mechanics"
                 module_url = a["href"]
-                print(module_url)
                 filename = module_url.split("/")[-1]
                 module_code_search = re.search(
                     "(MATH|STAT)\\d{4}", code_and_name, re.IGNORECASE
