@@ -29,7 +29,7 @@ else:
 if not SCRAPE:
     print("Not scraping.")
 
-MODULE_INFO_URL = "https://www.ucl.ac.uk/mathematical-physical-sciences/maths/current-students/current-undergraduates/module-information-undergraduates"
+MODULE_INFO_URL = "https://www.ucl.ac.uk/mathematical-physical-sciences/maths/current-students/current-undergraduates/module-information-undergraduates-2026-27"
 
 ANCILLARY_MODULES = [
     "MATH0012",
@@ -68,6 +68,7 @@ class Module:
         level,
         running=True,
         group="",
+        pathways=None
     ):
         self.name = name
         self.code = code
@@ -80,6 +81,7 @@ class Module:
         self.level = level
         self.is_running = running
         self.group = group
+        self.pathways = pathways
 
     def to_dict(self):
         return {
@@ -94,6 +96,7 @@ class Module:
             "level": self.level,
             "is_running": self.is_running,
             "group": self.group,
+            "pathways": self.pathways
         }
 
     def display_year(self):
@@ -123,6 +126,7 @@ class Module:
             m["level"],
             running=m["is_running"],
             group=m["group"],
+            pathways=m["pathways"]
         )
 
 
@@ -190,12 +194,14 @@ if SCRAPE:
             a = li.find("a")
             if a is not None:
                 code_and_name = a.contents[0]  # e.g. "MATH0005 Algebra 1"
+                print(code_and_name)
                 # fix typos in module codes on web
                 if code_and_name[:8] in ["MATH006 ", "MATH009 "]:
                     code_and_name = code_and_name[:6] + "0" + code_and_name[6:]
                 if code_and_name == "MATH0118MathematicsforQuantumMechanics":
                     code_and_name = "MATH0118 Mathematics for Quantum Mechanics"
                 module_url = a["href"]
+                print(module_url)
                 filename = module_url.split("/")[-1]
                 module_code_search = re.search(
                     "(MATH|STAT)\\d{4}", code_and_name, re.IGNORECASE
