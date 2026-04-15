@@ -229,8 +229,7 @@
         "syllabus_filename": "math0014_0.pdf",
         "is_running": true,
         "pathways": [
-            "y1y2",
-            "Algebra"
+            "y1y2"
         ],
         "prereqs": [
             [
@@ -453,7 +452,8 @@
         "syllabus_filename": "math0057.pdf",
         "is_running": true,
         "pathways": [
-            "y1y2"
+            "y1y2",
+            "Modelling, Computation and Finance"
         ],
         "prereqs": [
             [
@@ -475,7 +475,8 @@
         "syllabus_filename": "math0058.pdf",
         "is_running": true,
         "pathways": [
-            "y1y2"
+            "y1y2",
+            "Modelling, Computation and Finance"
         ],
         "prereqs": [
             [
@@ -505,7 +506,8 @@
         "syllabus_filename": "math0034.pdf",
         "is_running": true,
         "pathways": [
-            "y1y2"
+            "y1y2",
+            "Algebra"
         ],
         "prereqs": [
             [
@@ -1704,7 +1706,8 @@
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/math0110_1.pdf",
         "is_running": true,
         "group": "",
-        "level": 4
+        "level": 4,
+        "pathways": ["y1y2"]
     },
     "STAT0001": {
         "name": "Economics 2 - Combined Studies",
@@ -1722,7 +1725,8 @@
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/stat0001.pdf",
         "is_running": true,
         "group": "",
-        "level": 5
+        "level": 5,
+        "pathways": ["y1y2"]
     },
     "MATH0114": {
         "name": "Mathematics for Machine Learning and Artificial Intelligence",
@@ -1764,7 +1768,10 @@
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/math0114_1.pdf",
         "is_running": true,
         "group": "",
-        "level": 6
+        "level": 6,
+        "pathways": [
+          "Modelling, Computation and Finance"
+        ]
     },
     "MATH0115": {
         "name": "Solid Mechanics",
@@ -1786,7 +1793,10 @@
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/math0115_0.pdf",
         "is_running": true,
         "group": "",
-        "level": 7
+        "level": 7,
+        "pathways": [
+          "Applied Mathematics"
+        ]
     },
     "MATH0117": {
         "name": "Spatial Mathematical Biology",
@@ -1808,7 +1818,10 @@
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/math0117.pdf",
         "is_running": true,
         "group": "",
-        "level": 7
+        "level": 7,
+        "pathways": [
+          "Modelling, Computation and Finance"
+        ]
     },
     "MATH0118": {
         "name": "Mathematics for Quantum Mechanics",
@@ -1830,7 +1843,10 @@
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/math0118.pdf",
         "is_running": true,
         "group": "",
-        "level": 7
+        "level": 7,
+        "pathways": [
+            "Applied Mathematics"
+        ]
     },
     "MATH0119": {
         "name": "Dynamical Systems",
@@ -1856,9 +1872,13 @@
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/math0119.pdf",
         "is_running": true,
         "group": "",
-        "level": 7
+        "level": 7,
+        "pathways": [
+            "Applied Mathematics"
+        ]
     },
     "MATH0101": {
+        "pathways": [],
         "code": "MATH0101",
         "name": "Linear Algebra for Data Science",
         "term": 2,
@@ -1877,6 +1897,7 @@
         "syllabus_filename": "math0101_syllabus.pdf"
     },
     "MATH0040": {
+        "pathways": [],
         "code": "MATH0040",
         "name": "Mathematics for Science 1",
         "term": 1,
@@ -1895,6 +1916,7 @@
         "syllabus_filename": "math0040.pdf"
     },
     "MATH0039": {
+        "pathways": [],
         "code": "MATH0039",
         "name": "Differential and Integral Calculus",
         "term": 1,
@@ -1913,6 +1935,7 @@
         "syllabus_filename": "math0039.pdf"
     },
     "MATH0041": {
+        "pathways": [],
         "code": "MATH0041",
         "name": "Mathematics for Science 2",
         "term": 2,
@@ -1931,6 +1954,7 @@
         "syllabus_filename": "math0041_5.pdf"
     },
     "MATH0048": {
+        "pathways": [],
         "code": "MATH0048",
         "name": "Mathematical Analysis",
         "term": 2,
@@ -1949,6 +1973,7 @@
         "syllabus_filename": "math0048.pdf"
     },
     "MATH0045": {
+        "pathways": [],
         "code": "MATH0045",
         "name": "Calculus and Linear Algebra",
         "term": 1,
@@ -1967,6 +1992,7 @@
         "syllabus_filename": "math0045.pdf"
     },
     "MATH0046": {
+        "pathways": [],
         "code": "MATH0046",
         "name": "Calculus in Several Dimensions",
         "term": 2,
@@ -1985,6 +2011,7 @@
         "syllabus_filename": "math0046.pdf"
     },
     "MATH0042": {
+        "pathways": [],
         "code": "MATH0042",
         "name": "Mathematical Methods in Chemistry",
         "term": 1,
@@ -2007,6 +2034,7 @@
         "syllabus_filename": "math0042.pdf"
     },
     "MATH0047": {
+        "pathways": [],
         "code": "MATH0047",
         "name": "Advanced Linear Algebra",
         "term": 1,
@@ -2040,7 +2068,8 @@
         "is_running": true,
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/math0043.pdf",
         "year": 2,
-        "syllabus_filename": "math0043.pdf"
+        "syllabus_filename": "math0043.pdf",
+        "pathways": []
     },
     "MATH0050": {
         "code": "MATH0050",
@@ -2058,7 +2087,8 @@
         "is_running": true,
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/math0050.pdf",
         "year": 3,
-        "syllabus_filename": "math0050.pdf"
+        "syllabus_filename": "math0050.pdf",
+        "pathways": []
     },
     "MATH0012": {
         "code": "MATH0012",
@@ -2076,7 +2106,8 @@
         "is_running": true,
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/math0012.pdf",
         "year": 1,
-        "syllabus_filename": "math0012.pdf"
+        "syllabus_filename": "math0012.pdf",
+        "pathways": []
     },
     "MATH0103": {
         "code": "MATH0103",
@@ -2094,7 +2125,8 @@
         "is_running": true,
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/math0103.pdf",
         "year": 2,
-        "syllabus_filename": "math0103.pdf"
+        "syllabus_filename": "math0103.pdf",
+        "pathways": []
     },
     "MATH0084": {
         "name": "Project in Mathematics",
@@ -2107,6 +2139,118 @@
         "url": "https://www.ucl.ac.uk/maths/current-students/current-undergraduates/degree-structures-and-options/year-4-project",
         "is_running": true,
         "group": "",
-        "level": 7
+        "level": 7,
+        "pathways": []
+    },
+    "MATH0128": {
+      "name": "Harmonic Analysis",
+      "code": "MATH0128",
+      "year": 4,
+      "term": 2,
+      "level": 7,
+      "syllabus_filename": "MATH0128.pdf",
+      "url": "https://www.homepages.ucl.ac.uk/~ucahbw0/module_catalogue/pdfs/latest/MATH0128.pdf",
+      "prereqs": [
+        ["MATH0017",
+        "needed"]
+      ],
+      "is_running": true,
+      "group": "",
+      "ancillary": false,
+      "pathways": ["Analysis"]
+    },
+    "MATH0111": {
+      "name": "Frontiers in Computational Mathematics",
+      "code": "MATH0111",
+      "year": 4,
+      "term": 2,
+      "level": 7,
+      "syllabus_filename": "MATH0111_2026-27.pdf",
+      "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/MATH0111_2026-27.pdf",
+      "prereqs": [
+        [
+          "MATH0058",
+          "recommended"
+        ],
+        [
+          "MATH0033",
+          "recommended"
+        ]
+      ],
+      "is_running": true,
+      "group": "",
+      "ancillary": false,
+      "pathways": [
+        "Modelling, Computation and Finance"
+      ]
+    },
+    "MATH0112": {
+      "name": "Manifolds",
+      "code": "MATH0112",
+      "year": 4,
+      "term": 1,
+      "level": 7,
+      "syllabus_filename": "MATH0112_2026-27.pdf",
+      "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/MATH0112_2026-27.pdf",
+      "prereqs": [
+        [
+          "MATH0020",
+          "needed"
+        ],
+        [
+          "MATH0019",
+          "recommended"
+        ]
+      ],
+      "is_running": true,
+      "group": "",
+      "ancillary": false,
+      "pathways": ["Analysis"]
+    },
+    "MATH0116": {
+      "name": "Riemann Surfaces",
+      "code": "MATH0116",
+      "year": 4,
+      "term": 2,
+      "level": 7,
+      "syllabus_filename": "MATH0116_2026-27.pdf",
+      "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/MATH0116_2026-27.pdf",
+      "prereqs": [
+        [
+          "MATH0013",
+          "needed"
+        ],
+        [
+          "MATH0051",
+          "needed"
+        ],
+        [
+          "MATH0019",
+          "recommended"
+        ]
+      ],
+      "is_running": true,
+      "group": "",
+      "ancillary": false,
+      "pathways": ["Analysis"]
+    },
+    "MATH0120": {
+      "name": "Complex Function Theory",
+      "code": "MATH0120"
+      "year": 4,
+      "term": 2,
+      "level": 7,
+      "syllabus_filename": "MATH0120_2026-27.pdf",
+      "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/MATH0120_2026-27.pdf",
+      "prereqs": [
+        [
+          "MATH0013",
+          "needed"
+        ]
+      ],
+      "is_running": true,
+      "group": "",
+      "ancillary": false,
+      "pathways": ["Analysis"]
     }
 }

@@ -26,7 +26,6 @@
     "MATH0110"
   ],
   "Algebra": [
-    "MATH0014",
     "MATH0034",
     "MATH0053",
     "MATH0021",
@@ -60,7 +59,11 @@
     "MATH0072",
     "MATH0092",
     "MATH0090",
-    "MATH0107"
+    "MATH0107",
+    "MATH0120",
+    "MATH0116",
+    "MATH0112",
+    "MATH0128"
   ],
   "Applied Mathematics": [
     "MATH0056",
@@ -79,6 +82,8 @@
     "MATH0119"
   ],
   "Modelling, Computation and Finance": [
+    "MATH0058",
+    "MATH0057",
     "MATH0028",
     "MATH0082",
     "MATH0031",
@@ -91,6 +96,7 @@
     "MATH0033",
     "MATH0102",
     "MATH0114",
-    "MATH0117"
+    "MATH0117",
+    "MATH0111"
   ]
 }
