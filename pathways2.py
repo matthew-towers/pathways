@@ -68,9 +68,10 @@ class Module:
         ancillary,
         url,
         level,
+        credits=15,
         running=True,
         group="",
-        pathways=None
+        pathways=None,
     ):
         self.name = name
         self.code = code
@@ -81,6 +82,7 @@ class Module:
         self.ancillary = ancillary
         self.url = url
         self.level = level
+        self.credits = credits
         self.is_running = running
         self.group = group
         self.pathways = pathways
@@ -91,6 +93,7 @@ class Module:
             "code": self.code,
             "year": self.year,
             "term": self.term,
+            "credits": self.credits,
             "syllabus_filename": self.syllabus_filename,
             "prereqs": self.prereqs,
             "ancillary": self.ancillary,
@@ -126,6 +129,7 @@ class Module:
             m["ancillary"],
             m["url"],
             m["level"],
+            credits=m["credits"],
             running=m["is_running"],
             group=m["group"],
             pathways=m["pathways"]

@@ -14,7 +14,8 @@
         "prereqs": [],
         "ancillary": false,
         "group": "",
-        "level": 4
+        "level": 4,
+        "credits": 30
     },
     "MATH0003": {
         "id": "analysis1",
@@ -31,7 +32,8 @@
         "prereqs": [],
         "ancillary": false,
         "group": "",
-        "level": 4
+        "level": 4,
+        "credits": 15
     },
     "MATH0004": {
         "id": "analysis2",
@@ -53,7 +55,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 4
+        "level": 4,
+        "credits": 15
     },
     "MATH0005": {
         "id": "algebra1",
@@ -70,7 +73,8 @@
         "prereqs": [],
         "ancillary": false,
         "group": "",
-        "level": 4
+        "level": 4,
+        "credits": 15
     },
     "MATH0006": {
         "id": "algebra2",
@@ -92,7 +96,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 4
+        "level": 4,
+        "credits": 15
     },
     "MATH0007": {
         "id": "algebraforjointhonours",
@@ -109,7 +114,8 @@
         "prereqs": [],
         "ancillary": false,
         "group": "",
-        "level": 4
+        "level": 4,
+        "credits": 15
     },
     "MATH0008": {
         "id": "applied1",
@@ -126,7 +132,8 @@
         "prereqs": [],
         "ancillary": false,
         "group": "",
-        "level": 4
+        "level": 4,
+        "credits": 15
     },
     "MATH0009": {
         "id": "applied2",
@@ -152,7 +159,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 4
+        "level": 4,
+        "credits": 15
     },
     "MATH0010": {
         "id": "methods1",
@@ -169,7 +177,8 @@
         "prereqs": [],
         "ancillary": false,
         "group": "",
-        "level": 4
+        "level": 4,
+        "credits": 15
     },
     "MATH0011": {
         "id": "methods2",
@@ -191,7 +200,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 4
+        "level": 4,
+        "credits": 15
     },
     "MATH0013": {
         "id": "analysis3",
@@ -217,7 +227,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 5
+        "level": 5,
+        "credits": 15
     },
     "MATH0014": {
         "id": "algebra3",
@@ -239,7 +250,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 5
+        "level": 5,
+        "credits": 15
     },
     "MATH0015": {
         "id": "applied3",
@@ -265,7 +277,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 5
+        "level": 5,
+        "credits": 15
     },
     "MATH0016": {
         "id": "methods3",
@@ -287,7 +300,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 5
+        "level": 5,
+        "credits": 15
     },
     "MATH0051": {
         "id": "analysis4",
@@ -310,7 +324,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0052": {
         "id": "geometryandgroups",
@@ -341,7 +356,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0053": {
         "id": "algebra4",
@@ -364,7 +380,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0054": {
         "id": "analyticaldynamics",
@@ -390,7 +407,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0055": {
         "id": "electromagnetism",
@@ -413,7 +431,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0056": {
         "id": "methods4",
@@ -440,7 +459,8 @@
         ],
         "ancillary": false,
         "group": "2",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0057": {
         "id": "probabilityandstatistics",
@@ -463,7 +483,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0058": {
         "id": "computationalmethods",
@@ -494,7 +515,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0034": {
         "id": "numbertheory",
@@ -517,7 +539,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0017": {
         "id": "measuretheory",
@@ -539,7 +562,8 @@
         ],
         "ancillary": false,
         "group": "1A",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0018": {
         "id": "functionalanalysis",
@@ -561,7 +585,8 @@
         ],
         "ancillary": false,
         "group": "1A",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0019": {
         "id": "multivariableanalysis",
@@ -583,7 +608,8 @@
         ],
         "ancillary": false,
         "group": "1A",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0020": {
         "id": "differentialgeometry",
@@ -605,7 +631,8 @@
         ],
         "ancillary": false,
         "group": "1A",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0021": {
         "id": "commutativealgebra",
@@ -627,7 +654,8 @@
         ],
         "ancillary": false,
         "group": "1B",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0022": {
         "id": "galoistheory",
@@ -649,7 +677,8 @@
         ],
         "ancillary": false,
         "group": "1B",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0023": {
         "id": "algebraictopology",
@@ -671,7 +700,8 @@
         ],
         "ancillary": false,
         "group": "1B",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0024": {
         "id": "geophysicalfluiddynamics",
@@ -697,7 +727,8 @@
         ],
         "ancillary": false,
         "group": "2",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0025": {
         "id": "mathematicsforgeneralrelativity",
@@ -719,7 +750,8 @@
         ],
         "ancillary": false,
         "group": "2",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0026": {
         "id": "biomathematics",
@@ -741,7 +773,8 @@
         ],
         "ancillary": false,
         "group": "2",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0027": {
         "id": "methods5",
@@ -763,7 +796,8 @@
         ],
         "ancillary": false,
         "group": "2",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0028": {
         "id": "combinatorialoptimisation",
@@ -785,7 +819,8 @@
         ],
         "ancillary": false,
         "group": "2",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0029": {
         "id": "graphtheory",
@@ -807,7 +842,8 @@
         ],
         "ancillary": false,
         "group": "1A 1B",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0030": {
         "id": "mathematicalecology",
@@ -829,7 +865,8 @@
         ],
         "ancillary": false,
         "group": "2",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0031": {
         "id": "financialmathematics",
@@ -855,7 +892,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0032": {
         "id": "mathematica",
@@ -872,7 +910,8 @@
         "prereqs": [],
         "ancillary": false,
         "group": "",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0033": {
         "id": "numericalmethods",
@@ -902,7 +941,8 @@
         ],
         "ancillary": false,
         "group": "2",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0035": {
         "id": "algebraicnumbertheory",
@@ -932,7 +972,8 @@
         ],
         "ancillary": false,
         "group": "1B",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0036": {
         "id": "ellipticcurves",
@@ -958,7 +999,8 @@
         ],
         "ancillary": false,
         "group": "1B",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0037": {
         "id": "logic",
@@ -980,7 +1022,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0038": {
         "id": "historyofmathematics",
@@ -997,7 +1040,8 @@
         "prereqs": [],
         "ancillary": false,
         "group": "",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0092": {
         "id": "variationalmethods",
@@ -1019,7 +1063,8 @@
         ],
         "ancillary": false,
         "group": "1A 2",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0090": {
         "id": "ellipticpdes",
@@ -1053,7 +1098,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0102": {
         "id": "appliedstochasticmethods",
@@ -1091,7 +1137,8 @@
         ],
         "ancillary": false,
         "group": "2",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0069": {
         "id": "probability",
@@ -1113,7 +1160,8 @@
         ],
         "ancillary": false,
         "group": "1A",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0070": {
         "id": "lpde",
@@ -1143,7 +1191,8 @@
         ],
         "ancillary": false,
         "group": "1A",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0073": {
         "id": "representationtheory",
@@ -1169,7 +1218,8 @@
         ],
         "ancillary": false,
         "group": "1B",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0077": {
         "id": "realfluids",
@@ -1199,7 +1249,8 @@
         ],
         "ancillary": false,
         "group": "2",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0080": {
         "id": "wavesandwavescattering",
@@ -1221,7 +1272,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0083": {
         "id": "primenumbersandtheirdistribution",
@@ -1251,7 +1303,8 @@
         ],
         "ancillary": false,
         "group": "1A 1B",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0071": {
         "id": "spectraltheory",
@@ -1281,7 +1334,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0072": {
         "id": "riemanniangeometry",
@@ -1307,7 +1361,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0074": {
         "id": "topologyandgroups",
@@ -1333,7 +1388,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0075": {
         "id": "liegroupsandliealgebras",
@@ -1355,7 +1411,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0076": {
         "id": "algebraicgeometry",
@@ -1381,7 +1438,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0078": {
         "id": "asymptoticmethods",
@@ -1403,7 +1461,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0079": {
         "id": "cosmology",
@@ -1425,7 +1484,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0082": {
         "id": "evolutionarygames",
@@ -1455,7 +1515,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0065": {
         "id": "advancedmodelling",
@@ -1485,7 +1546,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0086": {
         "id": "computationalandsimulationmethods",
@@ -1511,7 +1573,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0088": {
         "id": "quantitativeandcomputationalfinance",
@@ -1537,7 +1600,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0104": {
         "id": "modularforms",
@@ -1567,7 +1631,8 @@
         ],
         "ancillary": false,
         "group": "1B",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0106": {
         "id": "industrialgeologicalfluids",
@@ -1593,7 +1658,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0107": {
         "id": "probabilisticmethod",
@@ -1623,7 +1689,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0108": {
         "id": "commringsandalg",
@@ -1645,7 +1712,8 @@
         ],
         "ancillary": false,
         "group": "1B",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0109": {
         "id": "lean",
@@ -1667,7 +1735,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 6
+        "level": 6,
+        "credits": 15
     },
     "MATH0061": {
         "id": "furtherant",
@@ -1693,7 +1762,8 @@
         ],
         "ancillary": false,
         "group": "",
-        "level": 7
+        "level": 7,
+        "credits": 15
     },
     "MATH0110": {
         "name": "Analysis for Joint Honours",
@@ -1709,7 +1779,8 @@
         "level": 4,
         "pathways": [
             "y1y2"
-        ]
+        ],
+        "credits": 15
     },
     "STAT0001": {
         "name": "Economics 2 - Combined Studies",
@@ -1730,7 +1801,8 @@
         "level": 5,
         "pathways": [
             "y1y2"
-        ]
+        ],
+        "credits": 15
     },
     "MATH0114": {
         "name": "Mathematics for Machine Learning and Artificial Intelligence",
@@ -1775,7 +1847,8 @@
         "level": 6,
         "pathways": [
             "Modelling, Computation and Finance"
-        ]
+        ],
+        "credits": 15
     },
     "MATH0115": {
         "name": "Solid Mechanics",
@@ -1800,7 +1873,8 @@
         "level": 7,
         "pathways": [
             "Applied Mathematics"
-        ]
+        ],
+        "credits": 15
     },
     "MATH0117": {
         "name": "Spatial Mathematical Biology",
@@ -1825,7 +1899,8 @@
         "level": 7,
         "pathways": [
             "Modelling, Computation and Finance"
-        ]
+        ],
+        "credits": 15
     },
     "MATH0118": {
         "name": "Mathematics for Quantum Mechanics",
@@ -1850,7 +1925,8 @@
         "level": 7,
         "pathways": [
             "Applied Mathematics"
-        ]
+        ],
+        "credits": 15
     },
     "MATH0119": {
         "name": "Dynamical Systems",
@@ -1879,7 +1955,8 @@
         "level": 7,
         "pathways": [
             "Applied Mathematics"
-        ]
+        ],
+        "credits": 15
     },
     "MATH0101": {
         "pathways": [],
@@ -1898,7 +1975,8 @@
         "is_running": true,
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0101_2026-27.pdf",
         "year": 2,
-        "syllabus_filename": "math0101_2026-27.pdf"
+        "syllabus_filename": "math0101_2026-27.pdf",
+        "credits": 15
     },
     "MATH0040": {
         "pathways": [],
@@ -1917,7 +1995,8 @@
         "is_running": true,
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0040_2026-27.pdf",
         "year": 1,
-        "syllabus_filename": "math0040_2026-27.pdf"
+        "syllabus_filename": "math0040_2026-27.pdf",
+        "credits": 15
     },
     "MATH0039": {
         "pathways": [],
@@ -1936,7 +2015,8 @@
         "is_running": true,
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0039_2026-27.pdf",
         "year": 1,
-        "syllabus_filename": "math0039_2026-27.pdf"
+        "syllabus_filename": "math0039_2026-27.pdf",
+        "credits": 15
     },
     "MATH0041": {
         "pathways": [],
@@ -1955,7 +2035,8 @@
         "is_running": true,
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0041_2026-27.pdf",
         "year": 1,
-        "syllabus_filename": "math0041_2026-27.pdf"
+        "syllabus_filename": "math0041_2026-27.pdf",
+        "credits": 15
     },
     "MATH0048": {
         "pathways": [],
@@ -1974,7 +2055,8 @@
         "is_running": true,
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0048_2026-27.pdf",
         "year": 2,
-        "syllabus_filename": "math0048_2026-27.pdf"
+        "syllabus_filename": "math0048_2026-27.pdf",
+        "credits": 15
     },
     "MATH0045": {
         "pathways": [],
@@ -1993,7 +2075,8 @@
         "is_running": true,
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0045_2026-27.pdf",
         "year": 1,
-        "syllabus_filename": "math0045_2026-27.pdf"
+        "syllabus_filename": "math0045_2026-27.pdf",
+        "credits": 15
     },
     "MATH0046": {
         "pathways": [],
@@ -2012,7 +2095,8 @@
         "is_running": true,
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0046_2026-27.pdf",
         "year": 1,
-        "syllabus_filename": "math0046_2026-27.pdf"
+        "syllabus_filename": "math0046_2026-27.pdf",
+        "credits": 15
     },
     "MATH0042": {
         "pathways": [],
@@ -2035,7 +2119,8 @@
         "is_running": true,
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0042_2026-27.pdf",
         "year": 2,
-        "syllabus_filename": "math0042_2026-27.pdf"
+        "syllabus_filename": "math0042_2026-27.pdf",
+        "credits": 15
     },
     "MATH0047": {
         "pathways": [],
@@ -2054,7 +2139,8 @@
         "is_running": true,
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0047_2026-27.pdf",
         "year": 2,
-        "syllabus_filename": "math0047_2026-27.pdf"
+        "syllabus_filename": "math0047_2026-27.pdf",
+        "credits": 15
     },
     "MATH0043": {
         "code": "MATH0043",
@@ -2073,7 +2159,8 @@
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0043_2026-27.pdf",
         "year": 2,
         "syllabus_filename": "math0043_2026-27.pdf",
-        "pathways": []
+        "pathways": [],
+        "credits": 15
     },
     "MATH0050": {
         "code": "MATH0050",
@@ -2092,7 +2179,8 @@
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0050_2026-27.pdf",
         "year": 3,
         "syllabus_filename": "math0050_2026-27.pdf",
-        "pathways": []
+        "pathways": [],
+        "credits": 15
     },
     "MATH0012": {
         "code": "MATH0012",
@@ -2111,7 +2199,8 @@
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0012_2026-27.pdf",
         "year": 1,
         "syllabus_filename": "math0012_2026-27.pdf",
-        "pathways": []
+        "pathways": [],
+        "credits": 15
     },
     "MATH0103": {
         "code": "MATH0103",
@@ -2130,7 +2219,8 @@
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0103_2026-27.pdf",
         "year": 2,
         "syllabus_filename": "math0103_2026-27.pdf",
-        "pathways": []
+        "pathways": [],
+        "credits": 15
     },
     "MATH0084": {
         "name": "Project in Mathematics",
@@ -2144,7 +2234,8 @@
         "is_running": true,
         "group": "",
         "level": 7,
-        "pathways": []
+        "pathways": [],
+        "credits": 30
     },
     "MATH0128": {
         "name": "Harmonic Analysis",
@@ -2165,7 +2256,8 @@
         "ancillary": false,
         "pathways": [
             "Analysis"
-        ]
+        ],
+        "credits": 15
     },
     "MATH0111": {
         "name": "Frontiers in Computational Mathematics",
@@ -2190,7 +2282,8 @@
         "ancillary": false,
         "pathways": [
             "Modelling, Computation and Finance"
-        ]
+        ],
+        "credits": 15
     },
     "MATH0112": {
         "name": "Manifolds",
@@ -2215,7 +2308,8 @@
         "ancillary": false,
         "pathways": [
             "Analysis"
-        ]
+        ],
+        "credits": 15
     },
     "MATH0116": {
         "name": "Riemann Surfaces",
@@ -2244,7 +2338,8 @@
         "ancillary": false,
         "pathways": [
             "Analysis"
-        ]
+        ],
+        "credits": 15
     },
     "MATH0120": {
         "name": "Complex Function Theory",
@@ -2265,6 +2360,7 @@
         "ancillary": false,
         "pathways": [
             "Analysis"
-        ]
+        ],
+        "credits": 15
     }
 }
