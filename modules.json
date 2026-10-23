@@ -700,7 +700,7 @@
         ],
         "ancillary": false,
         "group": "1B",
-        "level": 6,
+        "level": 7,
         "credits": 15
     },
     "MATH0024": {
@@ -1697,8 +1697,8 @@
         "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0108_2026-27.pdf",
         "name": "Commutative Rings and Algebra",
         "code": "MATH0108",
-        "year": 3,
-        "term": 2,
+        "year": 3.5,
+        "term": 1,
         "syllabus_filename": "math0108_2026-27.pdf",
         "is_running": true,
         "pathways": [
@@ -1712,7 +1712,7 @@
         ],
         "ancillary": false,
         "group": "1B",
-        "level": 6,
+        "level": 7,
         "credits": 15
     },
     "MATH0109": {
