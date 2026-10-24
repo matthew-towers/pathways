@@ -31,7 +31,8 @@ else:
 if not SCRAPE:
     print("Not scraping.")
 
-MODULE_INFO_URL = "https://www.ucl.ac.uk/mathematical-physical-sciences/maths/current-students/current-undergraduates/module-information-undergraduates-2026-27"
+# MODULE_INFO_URL = "https://www.ucl.ac.uk/mathematical-physical-sciences/maths/current-students/current-undergraduates/module-information-undergraduates-2026-27"
+MODULE_INFO_URL = "https://www.ucl.ac.uk/mathematical-physical-sciences/maths/current-students/current-undergraduates/module-information-undergraduates"
 
 ANCILLARY_MODULES = [
     "MATH0012",
@@ -165,9 +166,11 @@ for code, mod_dict in modules_from_json.items():
 
 if SCRAPE:
     print("Trying to download UCL modules webpage...")
+    # UCL filters requests on user agent, so fake one
+    headers = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:158.0) Gecko/20100101 Firefox/158.0"}
 
     try:
-        page = requests.get(MODULE_INFO_URL)
+        page = requests.get(MODULE_INFO_URL, headers=headers)
         page.raise_for_status()  # raise exception if http error is returned
     except requests.exceptions.HTTPError as e:
         print(e)
