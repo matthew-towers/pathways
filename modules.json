@@ -1,12 +1,12 @@
 {
     "MATH0002": {
         "id": "economics1",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0002_2026-07.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0002.pdf",
         "name": "Economics 1 - Combined Studies",
         "code": "MATH0002",
         "year": 1.0,
         "term": 1.5,
-        "syllabus_filename": "math0002_2026-07.pdf",
+        "syllabus_filename": "MATH0002.pdf",
         "is_running": true,
         "pathways": [
             "y1y2"
@@ -19,12 +19,12 @@
     },
     "MATH0003": {
         "id": "analysis1",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0003_2026-07.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0003.pdf",
         "name": "Analysis 1",
         "code": "MATH0003",
         "year": 1.0,
         "term": 1,
-        "syllabus_filename": "math0003_2026-07.pdf",
+        "syllabus_filename": "MATH0003.pdf",
         "is_running": true,
         "pathways": [
             "y1y2"
@@ -37,12 +37,12 @@
     },
     "MATH0004": {
         "id": "analysis2",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0004_2026-07.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0004.pdf",
         "name": "Analysis 2",
         "code": "MATH0004",
         "year": 1.0,
         "term": 2,
-        "syllabus_filename": "math0004_2026-07.pdf",
+        "syllabus_filename": "MATH0004.pdf",
         "is_running": true,
         "pathways": [
             "y1y2"
@@ -60,12 +60,12 @@
     },
     "MATH0005": {
         "id": "algebra1",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/MATH0005_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0005.pdf",
         "name": "Algebra 1",
         "code": "MATH0005",
         "year": 1.0,
         "term": 1,
-        "syllabus_filename": "MATH0005_2026-27.pdf",
+        "syllabus_filename": "MATH0005.pdf",
         "is_running": true,
         "pathways": [
             "y1y2"
@@ -78,12 +78,12 @@
     },
     "MATH0006": {
         "id": "algebra2",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0006_2026-07.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0006.pdf",
         "name": "Algebra 2",
         "code": "MATH0006",
         "year": 1.0,
         "term": 2,
-        "syllabus_filename": "math0006_2026-07.pdf",
+        "syllabus_filename": "MATH0006.pdf",
         "is_running": true,
         "pathways": [
             "y1y2"
@@ -101,12 +101,12 @@
     },
     "MATH0007": {
         "id": "algebraforjointhonours",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0007_2026-07.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0007.pdf",
         "name": "Algebra for Joint Honours Students",
         "code": "MATH0007",
         "year": 1.0,
         "term": 2,
-        "syllabus_filename": "math0007_2026-07.pdf",
+        "syllabus_filename": "MATH0007.pdf",
         "is_running": true,
         "pathways": [
             "y1y2"
@@ -119,12 +119,12 @@
     },
     "MATH0008": {
         "id": "applied1",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0008_2026-07.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0008.pdf",
         "name": "Applied Mathematics",
         "code": "MATH0008",
         "year": 1.0,
         "term": 1,
-        "syllabus_filename": "math0008_2026-07.pdf",
+        "syllabus_filename": "MATH0008.pdf",
         "is_running": true,
         "pathways": [
             "y1y2"
@@ -137,12 +137,12 @@
     },
     "MATH0009": {
         "id": "applied2",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0009_2026-07.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0009.pdf",
         "name": "Newtonian Mechanics",
         "code": "MATH0009",
         "year": 1.0,
         "term": 2,
-        "syllabus_filename": "math0009_2026-07.pdf",
+        "syllabus_filename": "MATH0009.pdf",
         "is_running": true,
         "pathways": [
             "y1y2"
@@ -164,12 +164,12 @@
     },
     "MATH0010": {
         "id": "methods1",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0010_2026-07.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0010.pdf",
         "name": "Mathematical Methods 1",
         "code": "MATH0010",
         "year": 1.0,
         "term": 1,
-        "syllabus_filename": "math0010_2026-07.pdf",
+        "syllabus_filename": "MATH0010.pdf",
         "is_running": true,
         "pathways": [
             "y1y2"
@@ -182,12 +182,12 @@
     },
     "MATH0011": {
         "id": "methods2",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0011_2026-07.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0011.pdf",
         "name": "Mathematical Methods 2",
         "code": "MATH0011",
         "year": 1.0,
         "term": 2,
-        "syllabus_filename": "math0011_2026-07.pdf",
+        "syllabus_filename": "MATH0011.pdf",
         "is_running": true,
         "pathways": [
             "y1y2"
@@ -205,12 +205,12 @@
     },
     "MATH0013": {
         "id": "analysis3",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0013_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0013.pdf",
         "name": "Analysis 3 - Complex Analysis",
         "code": "MATH0013",
         "year": 2.0,
         "term": 1,
-        "syllabus_filename": "math0013_2026-27.pdf",
+        "syllabus_filename": "MATH0013.pdf",
         "is_running": true,
         "pathways": [
             "y1y2"
@@ -232,12 +232,12 @@
     },
     "MATH0014": {
         "id": "algebra3",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0014_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0014.pdf",
         "name": "Algebra 3: Further Linear Algebra",
         "code": "MATH0014",
         "year": 2.0,
         "term": 1,
-        "syllabus_filename": "math0014_2026-27.pdf",
+        "syllabus_filename": "MATH0014.pdf",
         "is_running": true,
         "pathways": [
             "y1y2"
@@ -255,12 +255,12 @@
     },
     "MATH0015": {
         "id": "applied3",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0015_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0015.pdf",
         "name": "Fluid Mechanics",
         "code": "MATH0015",
         "year": 2.0,
         "term": 1,
-        "syllabus_filename": "math0015_2026-27.pdf",
+        "syllabus_filename": "MATH0015.pdf",
         "is_running": true,
         "pathways": [
             "y1y2"
@@ -282,12 +282,12 @@
     },
     "MATH0016": {
         "id": "methods3",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0016_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0016.pdf",
         "name": "Mathematical Methods 3",
         "code": "MATH0016",
         "year": 2,
         "term": 1,
-        "syllabus_filename": "math0016_2026-27.pdf",
+        "syllabus_filename": "MATH0016.pdf",
         "is_running": true,
         "pathways": [
             "y1y2"
@@ -305,12 +305,12 @@
     },
     "MATH0051": {
         "id": "analysis4",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/MATH0051_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0051.pdf",
         "name": "Analysis 4",
         "code": "MATH0051",
         "year": 2.5,
         "term": 2,
-        "syllabus_filename": "MATH0051_2026-27.pdf",
+        "syllabus_filename": "MATH0051.pdf",
         "is_running": true,
         "pathways": [
             "y1y2",
@@ -361,12 +361,12 @@
     },
     "MATH0053": {
         "id": "algebra4",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0053_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0053.pdf",
         "name": "Algebra 4",
         "code": "MATH0053",
         "year": 2.5,
         "term": 2,
-        "syllabus_filename": "math0053_2026-27.pdf",
+        "syllabus_filename": "MATH0053.pdf",
         "is_running": true,
         "pathways": [
             "y1y2",
@@ -385,12 +385,12 @@
     },
     "MATH0054": {
         "id": "analyticaldynamics",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0054_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0054.pdf",
         "name": "Analytical Dynamics",
         "code": "MATH0054",
         "year": 3.0,
         "term": 2,
-        "syllabus_filename": "math0054_2026-27.pdf",
+        "syllabus_filename": "MATH0054.pdf",
         "is_running": true,
         "pathways": [
             "Applied Mathematics"
@@ -412,12 +412,12 @@
     },
     "MATH0055": {
         "id": "electromagnetism",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0055_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0055.pdf",
         "name": "Mathematics of Electromagnetism and Special Relativity",
         "code": "MATH0055",
         "year": 2.5,
         "term": 2,
-        "syllabus_filename": "math0055_2026-27.pdf",
+        "syllabus_filename": "MATH0055.pdf",
         "is_running": true,
         "pathways": [
             "y1y2",
@@ -436,12 +436,12 @@
     },
     "MATH0056": {
         "id": "methods4",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0056_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0056.pdf",
         "name": "Mathematical Methods 4",
         "code": "MATH0056",
         "year": 2.5,
         "term": 2,
-        "syllabus_filename": "math0056_2026-27.pdf",
+        "syllabus_filename": "MATH0056.pdf",
         "is_running": true,
         "pathways": [
             "y1y2",
@@ -464,12 +464,12 @@
     },
     "MATH0057": {
         "id": "probabilityandstatistics",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0057_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0057.pdf",
         "name": "Probability and Statistics",
         "code": "MATH0057",
         "year": 2.5,
         "term": 2,
-        "syllabus_filename": "math0057_2026-27.pdf",
+        "syllabus_filename": "MATH0057.pdf",
         "is_running": true,
         "pathways": [
             "y1y2",
@@ -488,12 +488,12 @@
     },
     "MATH0058": {
         "id": "computationalmethods",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/MATH0058_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0058.pdf",
         "name": "Computational Methods",
         "code": "MATH0058",
         "year": 2.5,
         "term": 2,
-        "syllabus_filename": "MATH0058_2026-27.pdf",
+        "syllabus_filename": "MATH0058.pdf",
         "is_running": true,
         "pathways": [
             "y1y2",
@@ -520,12 +520,12 @@
     },
     "MATH0034": {
         "id": "numbertheory",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0034_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0034.pdf",
         "name": "Number Theory",
         "code": "MATH0034",
         "year": 2.5,
         "term": 2,
-        "syllabus_filename": "math0034_2026-27.pdf",
+        "syllabus_filename": "MATH0034.pdf",
         "is_running": true,
         "pathways": [
             "y1y2",
@@ -544,12 +544,12 @@
     },
     "MATH0017": {
         "id": "measuretheory",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0017_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0017.pdf",
         "name": "Measure Theory",
         "code": "MATH0017",
         "year": 3.0,
         "term": 1,
-        "syllabus_filename": "math0017_2026-27.pdf",
+        "syllabus_filename": "MATH0017.pdf",
         "is_running": true,
         "pathways": [
             "Analysis"
@@ -567,12 +567,12 @@
     },
     "MATH0018": {
         "id": "functionalanalysis",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0018_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0018.pdf",
         "name": "Functional Analysis",
         "code": "MATH0018",
         "year": 3.5,
         "term": 2,
-        "syllabus_filename": "math0018_2026-27.pdf",
+        "syllabus_filename": "MATH0018.pdf",
         "is_running": true,
         "pathways": [
             "Analysis"
@@ -590,12 +590,12 @@
     },
     "MATH0019": {
         "id": "multivariableanalysis",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0019_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0019.pdf",
         "name": "Multivariable Analysis",
         "code": "MATH0019",
         "year": 3.0,
         "term": 1,
-        "syllabus_filename": "math0019_2026-27.pdf",
+        "syllabus_filename": "MATH0019.pdf",
         "is_running": true,
         "pathways": [
             "Analysis"
@@ -613,12 +613,12 @@
     },
     "MATH0020": {
         "id": "differentialgeometry",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/MATH0020_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0020.pdf",
         "name": "Curves and Surfaces",
         "code": "MATH0020",
         "year": 3.0,
         "term": 2,
-        "syllabus_filename": "MATH0020_2026-27.pdf",
+        "syllabus_filename": "MATH0020.pdf",
         "is_running": true,
         "pathways": [
             "Analysis"
@@ -636,12 +636,12 @@
     },
     "MATH0021": {
         "id": "commutativealgebra",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0021_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0021.pdf",
         "name": "Homological Algebra",
         "code": "MATH0021",
         "year": 3.5,
         "term": 2,
-        "syllabus_filename": "math0021_2026-27.pdf",
+        "syllabus_filename": "MATH0021.pdf",
         "is_running": true,
         "pathways": [
             "Algebra"
@@ -659,12 +659,12 @@
     },
     "MATH0022": {
         "id": "galoistheory",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0022_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0022.pdf",
         "name": "Galois Theory",
         "code": "MATH0022",
         "year": 3.0,
         "term": 1,
-        "syllabus_filename": "math0022_2026-27.pdf",
+        "syllabus_filename": "MATH0022.pdf",
         "is_running": true,
         "pathways": [
             "Algebra"
@@ -682,12 +682,12 @@
     },
     "MATH0023": {
         "id": "algebraictopology",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0023_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0023.pdf",
         "name": "Algebraic Topology",
         "code": "MATH0023",
         "year": 3.5,
         "term": 1,
-        "syllabus_filename": "math0023_2026-27.pdf",
+        "syllabus_filename": "MATH0023.pdf",
         "is_running": true,
         "pathways": [
             "Algebra"
@@ -705,12 +705,12 @@
     },
     "MATH0024": {
         "id": "geophysicalfluiddynamics",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0024_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0024.pdf",
         "name": "Geophysical Fluids",
         "code": "MATH0024",
         "year": 3.0,
         "term": 2,
-        "syllabus_filename": "math0024_2026-27.pdf",
+        "syllabus_filename": "MATH0024.pdf",
         "is_running": true,
         "pathways": [
             "Applied Mathematics"
@@ -732,12 +732,12 @@
     },
     "MATH0025": {
         "id": "mathematicsforgeneralrelativity",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0025_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0025.pdf",
         "name": "Mathematics for General Relativity",
         "code": "MATH0025",
         "year": 3.0,
         "term": 1,
-        "syllabus_filename": "math0025_2026-27.pdf",
+        "syllabus_filename": "MATH0025.pdf",
         "is_running": true,
         "pathways": [
             "Applied Mathematics"
@@ -755,12 +755,12 @@
     },
     "MATH0026": {
         "id": "biomathematics",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0026_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0026.pdf",
         "name": "Biomathematics",
         "code": "MATH0026",
         "year": 3.0,
         "term": 1,
-        "syllabus_filename": "math0026_2026-27.pdf",
+        "syllabus_filename": "MATH0026.pdf",
         "is_running": true,
         "pathways": [
             "Modelling, Computation and Finance"
@@ -778,12 +778,12 @@
     },
     "MATH0027": {
         "id": "methods5",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0027_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0027.pdf",
         "name": "Methods 5",
         "code": "MATH0027",
         "year": 3.0,
         "term": 2,
-        "syllabus_filename": "math0027_2026-27.pdf",
+        "syllabus_filename": "MATH0027.pdf",
         "is_running": true,
         "pathways": [
             "Applied Mathematics"
@@ -801,12 +801,12 @@
     },
     "MATH0028": {
         "id": "combinatorialoptimisation",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0028_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0028.pdf",
         "name": "Combinatorial Optimisation",
         "code": "MATH0028",
         "year": 3.0,
         "term": 2,
-        "syllabus_filename": "math0028_2026-27.pdf",
+        "syllabus_filename": "MATH0028.pdf",
         "is_running": true,
         "pathways": [
             "Modelling, Computation and Finance"
@@ -824,12 +824,12 @@
     },
     "MATH0029": {
         "id": "graphtheory",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0029_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0029.pdf",
         "name": "Graph Theory and Combinatorics",
         "code": "MATH0029",
         "year": 3.0,
         "term": 1,
-        "syllabus_filename": "math0029_2026-27.pdf",
+        "syllabus_filename": "MATH0029.pdf",
         "is_running": true,
         "pathways": [
             "Algebra"
@@ -847,12 +847,12 @@
     },
     "MATH0030": {
         "id": "mathematicalecology",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0030_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0030.pdf",
         "name": "Mathematical Ecology",
         "code": "MATH0030",
         "year": 3.0,
         "term": 1,
-        "syllabus_filename": "math0030_2026-27.pdf",
+        "syllabus_filename": "MATH0030.pdf",
         "is_running": true,
         "pathways": [
             "Modelling, Computation and Finance"
@@ -870,12 +870,12 @@
     },
     "MATH0031": {
         "id": "financialmathematics",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0031_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0031.pdf",
         "name": "Financial Mathematics",
         "code": "MATH0031",
         "year": 3.0,
         "term": 2,
-        "syllabus_filename": "math0031_2026-27.pdf",
+        "syllabus_filename": "MATH0031.pdf",
         "is_running": true,
         "pathways": [
             "Modelling, Computation and Finance"
@@ -915,12 +915,12 @@
     },
     "MATH0033": {
         "id": "numericalmethods",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0033_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0033.pdf",
         "name": "Numerical Methods",
         "code": "MATH0033",
         "year": 3.0,
         "term": 1,
-        "syllabus_filename": "math0033_2026-27.pdf",
+        "syllabus_filename": "MATH0033.pdf",
         "is_running": true,
         "pathways": [
             "Modelling, Computation and Finance"
@@ -946,12 +946,12 @@
     },
     "MATH0035": {
         "id": "algebraicnumbertheory",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0035_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0035.pdf",
         "name": "Algebraic Number Theory",
         "code": "MATH0035",
         "year": 3.0,
         "term": 2,
-        "syllabus_filename": "math0035_2026-27.pdf",
+        "syllabus_filename": "MATH0035.pdf",
         "is_running": true,
         "pathways": [
             "Algebra"
@@ -977,12 +977,12 @@
     },
     "MATH0036": {
         "id": "ellipticcurves",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0036_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0036.pdf",
         "name": "Elliptic Curves",
         "code": "MATH0036",
         "year": 3.5,
         "term": 2,
-        "syllabus_filename": "math0036_2026-27.pdf",
+        "syllabus_filename": "MATH0036.pdf",
         "is_running": true,
         "pathways": [
             "Algebra"
@@ -1004,12 +1004,12 @@
     },
     "MATH0037": {
         "id": "logic",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0037_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0037.pdf",
         "name": "Logic",
         "code": "MATH0037",
         "year": 3.0,
         "term": 1,
-        "syllabus_filename": "math0037_2026-27.pdf",
+        "syllabus_filename": "MATH0037.pdf",
         "is_running": true,
         "pathways": [
             "Algebra"
@@ -1027,12 +1027,12 @@
     },
     "MATH0038": {
         "id": "historyofmathematics",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0038_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0038.pdf",
         "name": "History of Mathematics",
         "code": "MATH0038",
         "year": 3.0,
         "term": 2,
-        "syllabus_filename": "math0038_2026-27.pdf",
+        "syllabus_filename": "MATH0038.pdf",
         "is_running": true,
         "pathways": [
             "Algebra"
@@ -1045,12 +1045,12 @@
     },
     "MATH0092": {
         "id": "variationalmethods",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0092_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0092.pdf",
         "name": "Variational Methods for Partial Differential Equations",
         "code": "MATH0092",
         "year": 3.5,
         "term": 2,
-        "syllabus_filename": "math0092_2026-27.pdf",
+        "syllabus_filename": "MATH0092.pdf",
         "is_running": true,
         "pathways": [
             "Analysis"
@@ -1068,12 +1068,12 @@
     },
     "MATH0090": {
         "id": "ellipticpdes",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0090_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0090.pdf",
         "name": "Elliptic Partial Differential Equations",
         "code": "MATH0090",
         "year": 3.5,
         "term": 2,
-        "syllabus_filename": "math0090_2026-27.pdf",
+        "syllabus_filename": "MATH0090.pdf",
         "is_running": true,
         "pathways": [
             "Analysis"
@@ -1103,12 +1103,12 @@
     },
     "MATH0102": {
         "id": "appliedstochasticmethods",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0102_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0102.pdf",
         "name": "Applied Stochastic Methods",
         "code": "MATH0102",
         "year": 3.5,
         "term": 2,
-        "syllabus_filename": "math0102_2026-27.pdf",
+        "syllabus_filename": "MATH0102.pdf",
         "is_running": true,
         "pathways": [
             "Modelling, Computation and Finance"
@@ -1142,12 +1142,12 @@
     },
     "MATH0069": {
         "id": "probability",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0069_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0069.pdf",
         "name": "Probability",
         "code": "MATH0069",
         "year": 3.5,
         "term": 2,
-        "syllabus_filename": "math0069_2026-27.pdf",
+        "syllabus_filename": "MATH0069.pdf",
         "is_running": true,
         "pathways": [
             "Analysis"
@@ -1165,12 +1165,12 @@
     },
     "MATH0070": {
         "id": "lpde",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0070_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0070.pdf",
         "name": "Linear Partial Differential Equations",
         "code": "MATH0070",
         "year": 3.5,
         "term": 1,
-        "syllabus_filename": "math0070_2026-27.pdf",
+        "syllabus_filename": "MATH0070.pdf",
         "is_running": true,
         "pathways": [
             "Analysis"
@@ -1196,12 +1196,12 @@
     },
     "MATH0073": {
         "id": "representationtheory",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0073_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0073.pdf",
         "name": "Representation Theory",
         "code": "MATH0073",
         "year": 3.5,
         "term": 1,
-        "syllabus_filename": "math0073_2026-27.pdf",
+        "syllabus_filename": "MATH0073.pdf",
         "is_running": true,
         "pathways": [
             "Algebra"
@@ -1223,12 +1223,12 @@
     },
     "MATH0077": {
         "id": "realfluids",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0077_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0077.pdf",
         "name": "Real Fluids",
         "code": "MATH0077",
         "year": 3.5,
         "term": 1,
-        "syllabus_filename": "math0077_2026-27.pdf",
+        "syllabus_filename": "MATH0077.pdf",
         "is_running": true,
         "pathways": [
             "Applied Mathematics"
@@ -1254,12 +1254,12 @@
     },
     "MATH0080": {
         "id": "wavesandwavescattering",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0080_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0080.pdf",
         "name": "Waves and Wave Scattering",
         "code": "MATH0080",
         "year": 3.5,
         "term": 2,
-        "syllabus_filename": "math0080_2026-27.pdf",
+        "syllabus_filename": "MATH0080.pdf",
         "is_running": true,
         "pathways": [
             "Applied Mathematics"
@@ -1277,12 +1277,12 @@
     },
     "MATH0083": {
         "id": "primenumbersandtheirdistribution",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0083_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0083.pdf",
         "name": "Prime Numbers and their Distribution",
         "code": "MATH0083",
         "year": 3.5,
         "term": 1,
-        "syllabus_filename": "math0083_2026-27.pdf",
+        "syllabus_filename": "MATH0083.pdf",
         "is_running": true,
         "pathways": [
             "Algebra"
@@ -1308,12 +1308,12 @@
     },
     "MATH0071": {
         "id": "spectraltheory",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0071_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0071.pdf",
         "name": "Spectral Theory",
         "code": "MATH0071",
         "year": 4.0,
         "term": 1,
-        "syllabus_filename": "math0071_2026-27.pdf",
+        "syllabus_filename": "MATH0071.pdf",
         "is_running": true,
         "pathways": [
             "Analysis"
@@ -1366,12 +1366,12 @@
     },
     "MATH0074": {
         "id": "topologyandgroups",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0074_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0074.pdf",
         "name": "Topology and Groups",
         "code": "MATH0074",
         "year": 3.5,
         "term": 1,
-        "syllabus_filename": "math0074_2026-27.pdf",
+        "syllabus_filename": "MATH0074.pdf",
         "is_running": true,
         "pathways": [
             "Analysis"
@@ -1393,12 +1393,12 @@
     },
     "MATH0075": {
         "id": "liegroupsandliealgebras",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0075_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0075.pdf",
         "name": "Lie Groups and Lie Algebras",
         "code": "MATH0075",
         "year": 3.5,
         "term": 2,
-        "syllabus_filename": "math0075_2026-27.pdf",
+        "syllabus_filename": "MATH0075.pdf",
         "is_running": true,
         "pathways": [
             "Algebra"
@@ -1416,12 +1416,12 @@
     },
     "MATH0076": {
         "id": "algebraicgeometry",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0076_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0076.pdf",
         "name": "Algebraic Geometry",
         "code": "MATH0076",
         "year": 4.0,
         "term": 1,
-        "syllabus_filename": "math0076_2026-27.pdf",
+        "syllabus_filename": "MATH0076.pdf",
         "is_running": true,
         "pathways": [
             "Algebra"
@@ -1443,12 +1443,12 @@
     },
     "MATH0078": {
         "id": "asymptoticmethods",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0078_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0078.pdf",
         "name": "Asymptotic Approximation Methods",
         "code": "MATH0078",
         "year": 4.0,
         "term": 2,
-        "syllabus_filename": "math0078_2026-27.pdf",
+        "syllabus_filename": "MATH0078.pdf",
         "is_running": true,
         "pathways": [
             "Applied Mathematics"
@@ -1466,12 +1466,12 @@
     },
     "MATH0079": {
         "id": "cosmology",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0079_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0079.pdf",
         "name": "Cosmology",
         "code": "MATH0079",
         "year": 3.5,
         "term": 2,
-        "syllabus_filename": "math0079_2026-27.pdf",
+        "syllabus_filename": "MATH0079.pdf",
         "is_running": true,
         "pathways": [
             "Applied Mathematics"
@@ -1489,12 +1489,12 @@
     },
     "MATH0082": {
         "id": "evolutionarygames",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0082_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0082.pdf",
         "name": "Evolutionary Games and Population Genetics",
         "code": "MATH0082",
         "year": 4.0,
         "term": 2,
-        "syllabus_filename": "math0082_2026-27.pdf",
+        "syllabus_filename": "MATH0082.pdf",
         "is_running": true,
         "pathways": [
             "Modelling, Computation and Finance"
@@ -1551,12 +1551,12 @@
     },
     "MATH0086": {
         "id": "computationalandsimulationmethods",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0086_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0086.pdf",
         "name": "Computational and Simulation Methods",
         "code": "MATH0086",
         "year": 4.0,
         "term": 1,
-        "syllabus_filename": "math0086_2026-27.pdf",
+        "syllabus_filename": "MATH0086.pdf",
         "is_running": true,
         "pathways": [
             "Modelling, Computation and Finance"
@@ -1578,12 +1578,12 @@
     },
     "MATH0088": {
         "id": "quantitativeandcomputationalfinance",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0088_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0088.pdf",
         "name": "Quantitative and Computational Finance",
         "code": "MATH0088",
         "year": 4.0,
         "term": 2,
-        "syllabus_filename": "math0088_2026-27.pdf",
+        "syllabus_filename": "MATH0088.pdf",
         "is_running": true,
         "pathways": [
             "Modelling, Computation and Finance"
@@ -1605,12 +1605,12 @@
     },
     "MATH0104": {
         "id": "modularforms",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0104_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0104.pdf",
         "name": "Modular Forms",
         "code": "MATH0104",
         "year": 3.5,
         "term": 1,
-        "syllabus_filename": "math0104_2026-27.pdf",
+        "syllabus_filename": "MATH0104.pdf",
         "is_running": true,
         "pathways": [
             "Algebra"
@@ -1663,12 +1663,12 @@
     },
     "MATH0107": {
         "id": "probabilisticmethod",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0107_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0107.pdf",
         "name": "Probabilistic Method in Combinatorics",
         "code": "MATH0107",
         "year": 3.5,
         "term": 2,
-        "syllabus_filename": "math0107_2026-27.pdf",
+        "syllabus_filename": "MATH0107.pdf",
         "is_running": true,
         "pathways": [
             "Analysis"
@@ -1694,12 +1694,12 @@
     },
     "MATH0108": {
         "id": "commringsandalg",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0108_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0108.pdf",
         "name": "Commutative Rings and Algebra",
         "code": "MATH0108",
         "year": 3.5,
         "term": 1,
-        "syllabus_filename": "math0108_2026-27.pdf",
+        "syllabus_filename": "MATH0108.pdf",
         "is_running": true,
         "pathways": [
             "Algebra"
@@ -1717,12 +1717,12 @@
     },
     "MATH0109": {
         "id": "lean",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0109_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0109.pdf",
         "name": "Theorem Proving in Lean",
         "code": "MATH0109",
         "year": 3,
         "term": 1,
-        "syllabus_filename": "math0109_2026-27.pdf",
+        "syllabus_filename": "MATH0109.pdf",
         "is_running": true,
         "pathways": [
             "Algebra"
@@ -1740,12 +1740,12 @@
     },
     "MATH0061": {
         "id": "furtherant",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0061_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0061.pdf",
         "name": "Further Topics in Algebraic Number Theory",
         "code": "MATH0061",
         "year": 4,
         "term": 2,
-        "syllabus_filename": "math0061_2026-27.pdf",
+        "syllabus_filename": "MATH0061.pdf",
         "is_running": true,
         "pathways": [
             "Algebra"
@@ -1770,10 +1770,10 @@
         "code": "MATH0110",
         "year": 1,
         "term": 1,
-        "syllabus_filename": "math0110_2026-07.pdf",
+        "syllabus_filename": "MATH0110.pdf",
         "prereqs": [],
         "ancillary": false,
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0110_2026-07.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0110.pdf",
         "is_running": true,
         "group": "",
         "level": 4,
@@ -1809,7 +1809,7 @@
         "code": "MATH0114",
         "year": 3,
         "term": 2,
-        "syllabus_filename": "MATH0114_2026-27.pdf",
+        "syllabus_filename": "MATH0114.pdf",
         "prereqs": [
             [
                 "MATH0003",
@@ -1841,7 +1841,7 @@
             ]
         ],
         "ancillary": false,
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/MATH0114_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0114.pdf",
         "is_running": true,
         "group": "",
         "level": 6,
@@ -1855,7 +1855,7 @@
         "code": "MATH0115",
         "year": 3.5,
         "term": 2,
-        "syllabus_filename": "math0115_2026-27.pdf",
+        "syllabus_filename": "MATH0115.pdf",
         "prereqs": [
             [
                 "MATH0015",
@@ -1867,7 +1867,7 @@
             ]
         ],
         "ancillary": false,
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0115_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0115.pdf",
         "is_running": true,
         "group": "",
         "level": 7,
@@ -1881,7 +1881,7 @@
         "code": "MATH0117",
         "year": 3.5,
         "term": 2,
-        "syllabus_filename": "math0117_2026-27.pdf",
+        "syllabus_filename": "MATH0117.pdf",
         "prereqs": [
             [
                 "MATH0030",
@@ -1893,7 +1893,7 @@
             ]
         ],
         "ancillary": false,
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0117_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0117.pdf",
         "is_running": true,
         "group": "",
         "level": 7,
@@ -1907,7 +1907,7 @@
         "code": "MATH0118",
         "year": 3.5,
         "term": 1,
-        "syllabus_filename": "math0118_2026-27.pdf",
+        "syllabus_filename": "MATH0118.pdf",
         "prereqs": [
             [
                 "MATH0056",
@@ -1919,7 +1919,7 @@
             ]
         ],
         "ancillary": false,
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0118_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0118.pdf",
         "is_running": true,
         "group": "",
         "level": 7,
@@ -1933,7 +1933,7 @@
         "code": "MATH0119",
         "year": 3.5,
         "term": 2,
-        "syllabus_filename": "math0119_2026-27.pdf",
+        "syllabus_filename": "MATH0119.pdf",
         "prereqs": [
             [
                 "MATH0017",
@@ -1949,7 +1949,7 @@
             ]
         ],
         "ancillary": false,
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0119_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0119.pdf",
         "is_running": true,
         "group": "",
         "level": 7,
@@ -1973,9 +1973,9 @@
         "ancillary": true,
         "group": "",
         "is_running": true,
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0101_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-09/MATH0101.pdf",
         "year": 2,
-        "syllabus_filename": "math0101_2026-27.pdf",
+        "syllabus_filename": "MATH0101.pdf",
         "credits": 15
     },
     "MATH0040": {
@@ -1993,9 +1993,9 @@
         "ancillary": true,
         "group": "",
         "is_running": true,
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0040_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0040.pdf",
         "year": 1,
-        "syllabus_filename": "math0040_2026-27.pdf",
+        "syllabus_filename": "MATH0040.pdf",
         "credits": 15
     },
     "MATH0039": {
@@ -2013,9 +2013,9 @@
         "ancillary": true,
         "group": "",
         "is_running": true,
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0039_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-09/MATH0039.pdf",
         "year": 1,
-        "syllabus_filename": "math0039_2026-27.pdf",
+        "syllabus_filename": "MATH0039.pdf",
         "credits": 15
     },
     "MATH0041": {
@@ -2033,9 +2033,9 @@
         "ancillary": true,
         "group": "",
         "is_running": true,
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0041_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0041.pdf",
         "year": 1,
-        "syllabus_filename": "math0041_2026-27.pdf",
+        "syllabus_filename": "MATH0041.pdf",
         "credits": 15
     },
     "MATH0048": {
@@ -2053,9 +2053,9 @@
         "ancillary": true,
         "group": "",
         "is_running": true,
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0048_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0048.pdf",
         "year": 2,
-        "syllabus_filename": "math0048_2026-27.pdf",
+        "syllabus_filename": "MATH0048.pdf",
         "credits": 15
     },
     "MATH0045": {
@@ -2073,9 +2073,9 @@
         "ancillary": true,
         "group": "",
         "is_running": true,
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0045_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0045.pdf",
         "year": 1,
-        "syllabus_filename": "math0045_2026-27.pdf",
+        "syllabus_filename": "MATH0045.pdf",
         "credits": 15
     },
     "MATH0046": {
@@ -2093,9 +2093,9 @@
         "ancillary": true,
         "group": "",
         "is_running": true,
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0046_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0046.pdf",
         "year": 1,
-        "syllabus_filename": "math0046_2026-27.pdf",
+        "syllabus_filename": "MATH0046.pdf",
         "credits": 15
     },
     "MATH0042": {
@@ -2117,9 +2117,9 @@
         "ancillary": true,
         "group": "",
         "is_running": true,
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0042_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0042.pdf",
         "year": 2,
-        "syllabus_filename": "math0042_2026-27.pdf",
+        "syllabus_filename": "MATH0042.pdf",
         "credits": 15
     },
     "MATH0047": {
@@ -2137,9 +2137,9 @@
         "ancillary": true,
         "group": "",
         "is_running": true,
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0047_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0047.pdf",
         "year": 2,
-        "syllabus_filename": "math0047_2026-27.pdf",
+        "syllabus_filename": "MATH0047.pdf",
         "credits": 15
     },
     "MATH0043": {
@@ -2156,9 +2156,9 @@
         "ancillary": true,
         "group": "",
         "is_running": true,
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0043_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0043.pdf",
         "year": 2,
-        "syllabus_filename": "math0043_2026-27.pdf",
+        "syllabus_filename": "MATH0043.pdf",
         "pathways": [],
         "credits": 15
     },
@@ -2176,9 +2176,9 @@
         "ancillary": true,
         "group": "",
         "is_running": true,
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0050_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0050.pdf",
         "year": 3,
-        "syllabus_filename": "math0050_2026-27.pdf",
+        "syllabus_filename": "MATH0050.pdf",
         "pathways": [],
         "credits": 15
     },
@@ -2196,9 +2196,9 @@
         "ancillary": true,
         "group": "",
         "is_running": true,
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0012_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0012.pdf",
         "year": 1,
-        "syllabus_filename": "math0012_2026-27.pdf",
+        "syllabus_filename": "MATH0012.pdf",
         "pathways": [],
         "credits": 15
     },
@@ -2216,9 +2216,9 @@
         "ancillary": true,
         "group": "",
         "is_running": true,
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0103_2026-27.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-09/MATH0103.pdf",
         "year": 2,
-        "syllabus_filename": "math0103_2026-27.pdf",
+        "syllabus_filename": "MATH0103.pdf",
         "pathways": [],
         "credits": 15
     },
@@ -2243,8 +2243,8 @@
         "year": 4,
         "term": 2,
         "level": 7,
-        "syllabus_filename": "math0128_2026-27.pdf",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/math0128_2026-27.pdf",
+        "syllabus_filename": "MATH0128.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0128.pdf",
         "prereqs": [
             [
                 "MATH0017",
@@ -2265,8 +2265,8 @@
         "year": 4,
         "term": 2,
         "level": 7,
-        "syllabus_filename": "MATH0111_2026-27.pdf",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/MATH0111_2026-27.pdf",
+        "syllabus_filename": "MATH0111.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0111.pdf",
         "prereqs": [
             [
                 "MATH0058",
@@ -2291,8 +2291,8 @@
         "year": 4,
         "term": 1,
         "level": 7,
-        "syllabus_filename": "MATH0112_2026-27.pdf",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/MATH0112_2026-27.pdf",
+        "syllabus_filename": "MATH0112.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0112.pdf",
         "prereqs": [
             [
                 "MATH0020",
@@ -2317,8 +2317,8 @@
         "year": 4,
         "term": 2,
         "level": 7,
-        "syllabus_filename": "MATH0116_2026-27.pdf",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/MATH0116_2026-27.pdf",
+        "syllabus_filename": "MATH0116.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0116.pdf",
         "prereqs": [
             [
                 "MATH0013",
@@ -2347,8 +2347,8 @@
         "year": 4,
         "term": 2,
         "level": 7,
-        "syllabus_filename": "MATH0120_2026-27.pdf",
-        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-03/MATH0120_2026-27.pdf",
+        "syllabus_filename": "MATH0120.pdf",
+        "url": "https://www.ucl.ac.uk/mathematical-physical-sciences/sites/mathematical_physical_sciences/files/2026-08/MATH0120.pdf",
         "prereqs": [
             [
                 "MATH0013",
